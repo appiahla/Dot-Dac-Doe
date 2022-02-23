@@ -7,14 +7,16 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="167dp"
+        android:id="@+id/app_title"
+        android:layout_width="200dp"
         android:layout_height="545dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="144dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="DOT DAC DOE"
+        android:text="@string/title"
         android:textAlignment="center"
-        android:textSize="50"
+        android:textSize="80sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

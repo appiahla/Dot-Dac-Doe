@@ -116,9 +116,9 @@
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Grid Size"
         android:textColor="#131313"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="187dp" />
+        android:textSize="28"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="177dp" />
 
     <TextView
         android:id="@+id/back_arrow_button"

@@ -8,32 +8,43 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="330dp"
-        android:layout_height="176dp"
+        android:layout_width="321dp"
+        android:layout_height="83dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="HOW TO PLAY!"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="38dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="294dp"
-        android:layout_height="145dp"
+        android:layout_width="312dp"
+        android:layout_height="129dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The goal of the game is to create a square by joining four dots."
         android:textColor="#000000"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="132dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="284dp"
-        android:layout_height="202dp"
+        android:layout_width="222dp"
+        android:layout_height="154dp"
         app:srcCompat="@drawable/tutorial_header"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="375dp" />
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="343dp"
+        android:layout_height="208dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="The first player draws a line to any dot horizontally or vertically next to it. The next player does the same."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="460dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

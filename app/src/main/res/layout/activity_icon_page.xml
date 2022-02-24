@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/tree"
-        android:layout_width="53dp"
-        android:layout_height="51dp"
+        android:layout_width="60dp"
+        android:layout_height="54dp"
         app:srcCompat="@drawable/tree"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="203dp" />
@@ -45,5 +45,13 @@
         app:srcCompat="@drawable/peach"
         tools:layout_editor_absoluteX="255dp"
         tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/saturn"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/saturn"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="369dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

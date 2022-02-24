@@ -12,7 +12,7 @@
         android:layout_width="60dp"
         android:layout_height="54dp"
         app:srcCompat="@drawable/tree"
-        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteX="56dp"
         tools:layout_editor_absoluteY="203dp" />
 
     <ImageView
@@ -20,104 +20,104 @@
         android:layout_width="56dp"
         android:layout_height="52dp"
         app:srcCompat="@drawable/umbrella"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="203dp" />
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="208dp" />
 
     <ImageView
         android:id="@+id/fries"
         android:layout_width="63dp"
         android:layout_height="56dp"
         app:srcCompat="@drawable/fries"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="299dp" />
 
     <ImageView
         android:id="@+id/waves"
         android:layout_width="60dp"
         android:layout_height="57dp"
         app:srcCompat="@drawable/wave"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="299dp" />
 
     <ImageView
         android:id="@+id/peach"
         android:layout_width="55dp"
         android:layout_height="54dp"
         app:srcCompat="@drawable/peach"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="289dp" />
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="299dp" />
 
     <ImageView
         android:id="@+id/saturn"
         android:layout_width="61dp"
         android:layout_height="55dp"
         app:srcCompat="@drawable/saturn"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="369dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="391dp" />
 
     <ImageView
         android:id="@+id/raincloud"
         android:layout_width="62dp"
         android:layout_height="56dp"
         app:srcCompat="@drawable/raincloud"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="369dp" />
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="391dp" />
 
     <ImageView
         android:id="@+id/cat"
         android:layout_width="64dp"
         android:layout_height="57dp"
         app:srcCompat="@drawable/cat"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="389dp" />
 
     <ImageView
         android:id="@+id/flower"
         android:layout_width="64dp"
         android:layout_height="62dp"
         app:srcCompat="@drawable/flower"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="483dp" />
 
     <ImageView
         android:id="@+id/goggle"
         android:layout_width="62dp"
         android:layout_height="57dp"
         app:srcCompat="@drawable/goggles"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="447dp" />
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="483dp" />
 
     <ImageView
         android:id="@+id/paint"
         android:layout_width="61dp"
         android:layout_height="56dp"
         app:srcCompat="@drawable/paint"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="442dp" />
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="483dp" />
 
     <ImageView
         android:id="@+id/lightning"
         android:layout_width="63dp"
         android:layout_height="59dp"
         app:srcCompat="@drawable/lightning"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="524dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="587dp" />
 
     <ImageView
         android:id="@+id/face"
         android:layout_width="70dp"
         android:layout_height="68dp"
         app:srcCompat="@drawable/smile"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="524dp" />
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="578dp" />
 
     <ImageView
         android:id="@+id/fish"
         android:layout_width="70dp"
         android:layout_height="63dp"
         app:srcCompat="@drawable/fish"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="524dp" />
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="583dp" />
 
     <ImageView
         android:id="@+id/pan"
@@ -126,5 +126,15 @@
         app:srcCompat="@drawable/pan"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 1"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="61dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

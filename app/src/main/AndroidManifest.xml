@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.dot_dac_doe">
+    package="com.example.dot_dac_doe" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DotDacDoe">
+        android:theme="@style/Theme.DotDacDoe" >
+        <activity
+            android:name=".tutorial_page_part2"
+            android:exported="false" />
+        <activity
+            android:name=".tutorial_scrolling_page"
+            android:exported="false"
+            android:label="@string/title_activity_tutorial_scrolling_page"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".tutorial_page"
             android:exported="false" />
@@ -17,7 +25,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

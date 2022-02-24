@@ -79,4 +79,12 @@
         tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="442dp" />
 
+    <ImageView
+        android:id="@+id/goggle"
+        android:layout_width="62dp"
+        android:layout_height="57dp"
+        app:srcCompat="@drawable/goggles"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="447dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -214,4 +214,21 @@
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="709dp" />
 
+    <Button
+        android:id="@+id/play_button_user_select"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Play"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:backgroundTint="@android:color/white"
+        app:cornerRadius="12dp"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="800dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

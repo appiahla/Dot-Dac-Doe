@@ -103,7 +103,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#070707"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="462dp" />
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="© Dot Dac Doe, Inc. 2022"
+        android:textColor="#100F0F"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="683dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,15 +17,7 @@
         android:textAlignment="center"
         android:textSize="48sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="80dp" />
-
-    <ImageView
-        android:id="@+id/markerMain"
-        android:layout_width="94dp"
-        android:layout_height="80dp"
-        app:srcCompat="@drawable/opening_pen"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="254dp" />
+        tools:layout_editor_absoluteY="47dp" />
 
     <ImageView
         android:id="@+id/dotsBox"
@@ -33,23 +25,36 @@
         android:layout_height="191dp"
         app:srcCompat="@drawable/opening_grid2"
         tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteY="221dp" />
+
+    <ImageView
+        android:id="@+id/markerMain"
+        android:layout_width="94dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/opening_pen"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="205dp" />
 
     <Button
         android:id="@+id/singlePlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
+        android:layout_width="220dp"
+        android:layout_height="71dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Single Player"
         android:textAlignment="viewStart"
-        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:iconTint="@color/white"
-        app:strokeColor="#040404"
-        app:strokeWidth="20sp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="515dp" />
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <Button
+        android:id="@+id/multiplayerButton"
+        android:layout_width="222dp"
+        android:layout_height="68dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Multiplayer"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="562dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

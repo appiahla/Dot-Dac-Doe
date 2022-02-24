@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="203dp" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/fries"
         android:layout_width="63dp"
         android:layout_height="56dp"
         app:srcCompat="@drawable/fries"
@@ -31,11 +31,19 @@
         tools:layout_editor_absoluteY="289dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/waves"
         android:layout_width="60dp"
         android:layout_height="57dp"
         app:srcCompat="@drawable/wave"
-        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:id="@+id/peach"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/peach"
+        tools:layout_editor_absoluteX="255dp"
         tools:layout_editor_absoluteY="289dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

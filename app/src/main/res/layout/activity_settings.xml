@@ -7,6 +7,17 @@
     tools:context=".Settings">
 
     <TextView
+        android:id="@+id/darkmode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Dark Mode"
+        android:textColor="#151414"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
         android:id="@+id/music_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

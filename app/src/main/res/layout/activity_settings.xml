@@ -7,6 +7,17 @@
     tools:context=".Settings">
 
     <TextView
+        android:id="@+id/music_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Music"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <TextView
         android:id="@+id/notification_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

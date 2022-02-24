@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
+    <Spinner
+        android:id="@+id/dropdown_gridsize"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="151dp" />
+
     <ImageView
         android:id="@+id/text_border_notif"
         android:layout_width="274dp"
@@ -14,14 +21,6 @@
         app:srcCompat="@drawable/text_border"
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="261dp" />
-
-    <ImageView
-        android:id="@+id/text_border_gridsize"
-        android:layout_width="274dp"
-        android:layout_height="84dp"
-        app:srcCompat="@drawable/text_border"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="164dp" />
 
     <ImageView
         android:id="@+id/text_border_music"
@@ -126,7 +125,7 @@
         android:textColor="#131313"
         android:textSize="28"
         tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="177dp" />
+        tools:layout_editor_absoluteY="188dp" />
 
     <TextView
         android:id="@+id/back_arrow_button"
@@ -157,5 +156,13 @@
         android:textSize="16sp"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="683dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="167dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

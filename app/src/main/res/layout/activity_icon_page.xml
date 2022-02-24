@@ -71,4 +71,12 @@
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="368dp" />
 
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="64dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/flower"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="442dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

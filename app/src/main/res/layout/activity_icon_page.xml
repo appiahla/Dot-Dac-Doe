@@ -87,4 +87,12 @@
         tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="447dp" />
 
+    <ImageView
+        android:id="@+id/paint"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/paint"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="442dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

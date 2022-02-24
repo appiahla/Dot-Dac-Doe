@@ -7,6 +7,17 @@
     tools:context=".Settings">
 
     <TextView
+        android:id="@+id/change_language_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Change Language"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <TextView
         android:id="@+id/darkmode_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

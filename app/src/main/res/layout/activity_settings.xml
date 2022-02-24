@@ -22,12 +22,12 @@
         tools:layout_editor_absoluteY="178dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="248dp"
-        android:layout_height="65dp"
+        android:id="@+id/text_border_notif"
+        android:layout_width="274dp"
+        android:layout_height="84dp"
         app:srcCompat="@drawable/text_border"
         tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="269dp" />
+        tools:layout_editor_absoluteY="261dp" />
 
     <TextView
         android:id="@+id/change_language_button"

@@ -11,159 +11,203 @@
         android:id="@+id/dropdown_gridsize"
         android:layout_width="47dp"
         android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="23dp"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/text_border_gridsize"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_gridsize"
+        app:layout_constraintStart_toEndOf="@+id/grid_size_button"
+        app:layout_constraintTop_toTopOf="@+id/text_border_gridsize" />
 
     <ImageView
         android:id="@+id/text_border_gridsize"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="167dp" />
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toBottomOf="@+id/music_button"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_notif"
+        app:layout_constraintStart_toStartOf="@+id/text_border_notif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <ImageView
         android:id="@+id/text_border_notif"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="261dp" />
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_border_music"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_music"
+        app:layout_constraintStart_toStartOf="@+id/text_border_music"
+        app:layout_constraintTop_toTopOf="@+id/text_border_gridsize"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <ImageView
         android:id="@+id/text_border_music"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="355dp" />
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_border_darkMode"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_darkMode"
+        app:layout_constraintStart_toStartOf="@+id/text_border_darkMode"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_gridsize"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <ImageView
         android:id="@+id/text_border_changeLanguage"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="543dp" />
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_border_darkMode"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <ImageView
         android:id="@+id/text_border_darkMode"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="449dp" />
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_changeLanguage"
+        app:layout_constraintStart_toStartOf="@+id/text_border_changeLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_gridsize"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <Switch
         android:id="@+id/notif_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="290dp" />
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notification_button"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_gridsize" />
 
     <Switch
         android:id="@+id/music_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="386dp" />
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_notif"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_notif" />
 
     <Switch
         android:id="@+id/dark_mode_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="32dp"
         android:textColor="#070707"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="479dp" />
+        app:layout_constraintEnd_toEndOf="@+id/text_border_music"
+        app:layout_constraintTop_toTopOf="@+id/darkmode_button" />
 
     <TextView
         android:id="@+id/change_language_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="117dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Change Language"
         android:textColor="#0E0E0E"
         android:textSize="27"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_border_darkMode" />
 
     <TextView
         android:id="@+id/darkmode_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Dark Mode"
         android:textColor="#151414"
         android:textSize="27"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="466dp" />
+        app:layout_constraintBottom_toTopOf="@+id/change_language_button"
+        app:layout_constraintEnd_toStartOf="@+id/dark_mode_toggle" />
 
     <TextView
         android:id="@+id/music_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="38dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Music"
         android:textColor="#090909"
         android:textSize="27"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="374dp" />
+        app:layout_constraintBottom_toTopOf="@+id/darkmode_button"
+        app:layout_constraintEnd_toEndOf="@+id/darkmode_button" />
 
     <TextView
         android:id="@+id/notification_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Notification"
         android:textColor="#171616"
         android:textSize="27"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="276dp" />
+        app:layout_constraintEnd_toStartOf="@+id/notif_toggle"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_gridsize" />
 
     <TextView
         android:id="@+id/grid_size_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Grid Size"
         android:textColor="#131313"
         android:textSize="28"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/text_border_gridsize"
+        app:layout_constraintEnd_toEndOf="@+id/notification_button" />
 
     <TextView
         android:id="@+id/back_arrow_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="47dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="<-"
         android:textColor="#090909"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/settings_heading"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/copyright_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="© Dot Dac Doe, Inc. 2022"
         android:textColor="#100F0F"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="683dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/settings_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Settings"
         android:textColor="#050505"
         android:textSize="48sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="105dp" />
+        app:layout_constraintStart_toStartOf="@+id/text_border_gridsize"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

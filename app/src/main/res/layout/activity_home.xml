@@ -20,20 +20,20 @@
         tools:layout_editor_absoluteY="47dp" />
 
     <ImageView
-        android:id="@+id/dotsBox"
-        android:layout_width="184dp"
-        android:layout_height="191dp"
-        app:srcCompat="@drawable/opening_grid2"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="221dp" />
-
-    <ImageView
         android:id="@+id/markerMain"
         android:layout_width="94dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/opening_pen"
         tools:layout_editor_absoluteX="137dp"
         tools:layout_editor_absoluteY="205dp" />
+
+    <ImageView
+        android:id="@+id/dotsBox"
+        android:layout_width="184dp"
+        android:layout_height="191dp"
+        app:srcCompat="@drawable/opening_grid2"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="221dp" />
 
     <Button
         android:id="@+id/singlePlayer"
@@ -56,5 +56,13 @@
         android:textSize="20sp"
         tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="562dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/question"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="663dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

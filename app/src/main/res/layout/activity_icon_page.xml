@@ -111,4 +111,12 @@
         tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="524dp" />
 
+    <ImageView
+        android:id="@+id/fish"
+        android:layout_width="70dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/fish"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="524dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

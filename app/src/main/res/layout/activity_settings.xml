@@ -15,7 +15,7 @@
         android:textColor="#0E0E0E"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="540dp" />
+        tools:layout_editor_absoluteY="556dp" />
 
     <TextView
         android:id="@+id/darkmode_button"

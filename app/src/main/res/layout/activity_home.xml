@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/TitleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="80dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/markerMain"
         android:layout_width="94dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/opening_pen"
@@ -28,11 +28,28 @@
         tools:layout_editor_absoluteY="254dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/dotsBox"
         android:layout_width="184dp"
         android:layout_height="191dp"
         app:srcCompat="@drawable/opening_grid2"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="270dp" />
+
+    <Button
+        android:id="@+id/singlePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Single Player"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:iconTint="@color/white"
+        app:strokeColor="#040404"
+        app:strokeWidth="20sp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="515dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

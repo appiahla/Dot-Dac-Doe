@@ -84,4 +84,11 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-2dp" />
 
+    <Switch
+        android:id="@+id/notif_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="290dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -73,4 +73,20 @@
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="391dp" />
 
+    <ImageView
+        android:id="@+id/pick_yellow_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/yellow_color_pick"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <ImageView
+        android:id="@+id/pick_green_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/green_color_pick"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="555dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

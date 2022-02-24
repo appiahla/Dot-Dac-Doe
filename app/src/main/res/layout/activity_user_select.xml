@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteY="90dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/user_select_back_arrow"
         android:layout_width="74dp"
         android:layout_height="101dp"
         android:fontFamily="@font/gloria_hallelujah"
@@ -39,4 +39,12 @@
         android:textSize="60sp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="-11dp" />
+
+    <ImageView
+        android:id="@+id/user_select_player1_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/player_circle"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="168dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

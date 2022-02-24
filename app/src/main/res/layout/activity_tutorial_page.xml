@@ -28,4 +28,12 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="58dp"
         tools:layout_editor_absoluteY="213dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="284dp"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/tutorial_header"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="375dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

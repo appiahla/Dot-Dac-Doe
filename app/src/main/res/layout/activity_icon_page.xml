@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/raincloud"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".iconPage">
@@ -52,6 +53,14 @@
         android:layout_height="55dp"
         app:srcCompat="@drawable/saturn"
         tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/raincloud"
+        tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="369dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

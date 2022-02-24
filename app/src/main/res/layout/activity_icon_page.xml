@@ -119,4 +119,12 @@
         tools:layout_editor_absoluteX="257dp"
         tools:layout_editor_absoluteY="524dp" />
 
+    <ImageView
+        android:id="@+id/pan"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        app:srcCompat="@drawable/pan"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="203dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

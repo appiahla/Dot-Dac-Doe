@@ -137,4 +137,14 @@
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="61dp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 2"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="61dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

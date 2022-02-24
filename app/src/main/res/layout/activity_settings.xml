@@ -14,6 +14,46 @@
         tools:layout_editor_absoluteX="-14dp"
         tools:layout_editor_absoluteY="151dp" />
 
+    <ImageView
+        android:id="@+id/text_border_gridsize"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <ImageView
+        android:id="@+id/text_border_notif"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <ImageView
+        android:id="@+id/text_border_music"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <ImageView
+        android:id="@+id/text_border_changeLanguage"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+    <ImageView
+        android:id="@+id/text_border_darkMode"
+        android:layout_width="274dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="449dp" />
+
     <Switch
         android:id="@+id/notif_toggle"
         android:layout_width="wrap_content"
@@ -59,7 +99,7 @@
         android:textColor="#090909"
         android:textSize="27"
         tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="360dp" />
+        tools:layout_editor_absoluteY="368dp" />
 
     <TextView
         android:id="@+id/notification_button"
@@ -124,21 +164,5 @@
         android:textSize="16sp"
         tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="683dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="274dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="274dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="261dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

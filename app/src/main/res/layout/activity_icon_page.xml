@@ -103,4 +103,12 @@
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="524dp" />
 
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="70dp"
+        android:layout_height="68dp"
+        app:srcCompat="@drawable/smile"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="524dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,4 +57,12 @@
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="168dp" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/red_color_pick"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="311dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

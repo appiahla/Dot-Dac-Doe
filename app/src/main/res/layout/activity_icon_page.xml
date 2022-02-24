@@ -95,4 +95,12 @@
         tools:layout_editor_absoluteX="257dp"
         tools:layout_editor_absoluteY="442dp" />
 
+    <ImageView
+        android:id="@+id/lightning"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/lightning"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="524dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

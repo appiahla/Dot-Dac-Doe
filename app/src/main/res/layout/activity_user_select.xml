@@ -214,25 +214,32 @@
     <Button
         android:id="@+id/orientation_button_user_select"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        app:cornerRadius="12dp"
         android:layout_width="300dp"
         android:layout_height="75dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Orientation"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20dp"
         app:backgroundTint="@android:color/white"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="709dp" />
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/play_button_user_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/play_button_user_select"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="300dp"
         android:layout_height="75dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play"
         android:textAlignment="center"
@@ -240,9 +247,10 @@
         android:textSize="20dp"
         app:backgroundTint="@android:color/white"
         app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="800dp" />
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

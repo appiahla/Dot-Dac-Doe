@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_select_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserSelectActivity">
@@ -53,6 +54,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/player_circle"
-        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="168dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@
         android:textColor="#0E0E0E"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="556dp" />
+        tools:layout_editor_absoluteY="537dp" />
 
     <TextView
         android:id="@+id/darkmode_button"
@@ -72,5 +72,16 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="187dp" />
+
+    <TextView
+        android:id="@+id/back_arrow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="<-"
+        android:textColor="#090909"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

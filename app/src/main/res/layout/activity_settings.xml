@@ -13,6 +13,22 @@
         tools:layout_editor_absoluteX="236dp"
         tools:layout_editor_absoluteY="371dp" />
 
+    <ImageView
+        android:id="@+id/text_border_gridsize"
+        android:layout_width="248dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/text_border"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="248dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/text_border"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="269dp" />
+
     <TextView
         android:id="@+id/change_language_button"
         android:layout_width="wrap_content"

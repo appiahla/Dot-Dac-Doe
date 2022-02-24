@@ -58,11 +58,19 @@
         tools:layout_editor_absoluteY="168dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/pick_red_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/red_color_pick"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="311dp" />
+
+    <ImageView
+        android:id="@+id/pick_orange_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/orange_color_pick"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="391dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

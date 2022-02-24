@@ -91,8 +91,8 @@
         android:text="Music"
         android:textColor="#090909"
         android:textSize="27"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="363dp" />
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="360dp" />
 
     <TextView
         android:id="@+id/notification_button"

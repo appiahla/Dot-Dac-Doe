@@ -11,7 +11,7 @@
         android:layout_width="331dp"
         android:layout_height="175dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="HOW TO PLAY"
+        android:text="HOW TO PLAY!"
         android:textAlignment="center"
         android:textColor="#BF000000"
         android:textSize="48sp"

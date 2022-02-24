@@ -15,11 +15,19 @@
         tools:layout_editor_absoluteY="203dp" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/umbrella"
         android:layout_width="56dp"
         android:layout_height="52dp"
         app:srcCompat="@drawable/umbrella"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="203dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/fries"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="289dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,6 +45,14 @@
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="429dp" />
 
+    <ImageView
+        android:id="@+id/text_border_changeLanguage"
+        android:layout_width="274dp"
+        android:layout_height="84dp"
+        app:srcCompat="@drawable/text_border"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="522dp" />
+
     <TextView
         android:id="@+id/change_language_button"
         android:layout_width="wrap_content"

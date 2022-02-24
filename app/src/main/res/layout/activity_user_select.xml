@@ -126,7 +126,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/rainbow_color_pick"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="629dp" />
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="628dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

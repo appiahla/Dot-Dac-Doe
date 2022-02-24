@@ -2,16 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Settings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Settings">
-
-    <Switch
-        android:id="@+id/music_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="371dp" />
 
     <ImageView
         android:id="@+id/text_border_notif"
@@ -52,6 +46,20 @@
         app:srcCompat="@drawable/text_border"
         tools:layout_editor_absoluteX="81dp"
         tools:layout_editor_absoluteY="522dp" />
+
+    <Switch
+        android:id="@+id/notif_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <Switch
+        android:id="@+id/music_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="376dp" />
 
     <TextView
         android:id="@+id/change_language_button"
@@ -94,7 +102,7 @@
         android:text="Notification"
         android:textColor="#171616"
         android:textSize="27"
-        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteX="104dp"
         tools:layout_editor_absoluteY="276dp" />
 
     <TextView
@@ -132,19 +140,12 @@
         tools:layout_editor_absoluteY="-2dp" />
 
     <Switch
-        android:id="@+id/notif_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="290dp" />
-
-    <Switch
         android:id="@+id/dark_mode_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#070707"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="457dp" />
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="455dp" />
 
     <TextView
         android:id="@+id/copyright_text"

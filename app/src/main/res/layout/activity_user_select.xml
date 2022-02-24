@@ -89,4 +89,44 @@
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="555dp" />
 
+    <ImageView
+        android:id="@+id/pick_blue_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/blue_color_pick"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <ImageView
+        android:id="@+id/pick_purple_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/purple_color_pick"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <ImageView
+        android:id="@+id/pick_pink_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/pink_color_pick"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <ImageView
+        android:id="@+id/pick_grey_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/grey_color_pick"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <ImageView
+        android:id="@+id/pick_rainbow_user_select"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/rainbow_color_pick"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="629dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

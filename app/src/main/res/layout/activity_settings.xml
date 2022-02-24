@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
+    <Switch
+        android:id="@+id/music_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="371dp" />
+
     <TextView
         android:id="@+id/change_language_button"
         android:layout_width="wrap_content"

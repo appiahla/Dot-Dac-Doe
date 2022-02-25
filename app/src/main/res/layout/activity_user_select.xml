@@ -59,24 +59,13 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="42dp"
         android:contentDescription="@string/player_2_color_picker_green"
+        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
         app:layout_constraintEnd_toStartOf="@+id/pick_grey_2_user_select"
         app:layout_constraintTop_toBottomOf="@+id/pick_yellow_2_user_select"
         app:srcCompat="@drawable/green_color_pick"
         tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/pick_rainbow_2_user_select"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="21dp"
-        android:contentDescription="@string/player_2_color_picker_rainbow"
-        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_grey_2_user_select"
-        app:srcCompat="@drawable/rainbow_color_pick" />
 
     <ImageView
         android:id="@+id/pick_blue_2_user_select"
@@ -205,7 +194,9 @@
         android:layout_height="60dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="47dp"
         android:contentDescription="@string/player_1_color_picker_green"
+        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pick_yellow_1_user_select"
         app:srcCompat="@drawable/green_color_pick"
@@ -250,24 +241,13 @@
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="47dp"
         android:contentDescription="@string/player_1_color_picker_grey"
+        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
         app:layout_constraintStart_toEndOf="@+id/pick_green_1_user_select"
         app:layout_constraintTop_toBottomOf="@+id/pick_pink_1_user_select"
         app:srcCompat="@drawable/grey_color_pick"
         tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/pick_rainbow_1_user_select"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="21dp"
-        android:contentDescription="@string/player_1_color_picker_rainbow"
-        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_grey_1_user_select"
-        app:srcCompat="@drawable/rainbow_color_pick" />
 
     <ImageView
         android:id="@+id/back_arrow"
@@ -288,8 +268,9 @@
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/orientation"
         android:textAlignment="center"
@@ -299,7 +280,9 @@
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toTopOf="@+id/play_button_user_select"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_grey_2_user_select"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -310,7 +293,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="52dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/play_button"
         android:textAlignment="center"
@@ -320,6 +303,7 @@
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />

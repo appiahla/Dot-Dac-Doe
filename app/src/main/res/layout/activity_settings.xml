@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-    //Spinner spinnerLanguages=findViewById(R.id.dropdown_gridsize);
-    //ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
-    //adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-
     <Spinner
         android:id="@+id/dropdown_gridsize"
         android:layout_width="47dp"
@@ -22,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="@+id/text_border_gridsize"
         app:layout_constraintStart_toEndOf="@+id/grid_size_button"
         app:layout_constraintTop_toTopOf="@+id/text_border_gridsize" />
+
 
     <ImageView
         android:id="@+id/text_border_gridsize"
@@ -114,30 +111,16 @@
         app:layout_constraintTop_toTopOf="@+id/darkmode_button" />
 
     <TextView
-        android:id="@+id/change_language_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="116dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Change Language"
-        android:textColor="#0E0E0E"
-        android:textSize="27"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/text_border_darkMode" />
-
-    <TextView
         android:id="@+id/darkmode_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="40dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Dark Mode"
         android:textColor="#151414"
         android:textSize="27"
-        app:layout_constraintBottom_toTopOf="@+id/change_language_button"
-        app:layout_constraintEnd_toStartOf="@+id/dark_mode_toggle" />
+        app:layout_constraintEnd_toStartOf="@+id/dark_mode_toggle"
+        tools:layout_editor_absoluteY="468dp" />
 
     <TextView
         android:id="@+id/music_button"
@@ -178,19 +161,6 @@
         app:layout_constraintEnd_toEndOf="@+id/notification_button" />
 
     <TextView
-        android:id="@+id/back_arrow_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="47dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="<-"
-        android:textColor="#090909"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_heading"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/copyright_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -215,5 +185,26 @@
         android:textSize="48sp"
         app:layout_constraintStart_toStartOf="@+id/text_border_gridsize"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/change_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="564dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Change Language"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/text_border_gridsize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_arrow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_arrow"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="17dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

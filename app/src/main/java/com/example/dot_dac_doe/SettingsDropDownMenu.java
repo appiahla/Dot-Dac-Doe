@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class settings_drop_down extends AppCompatActivity {
+public class SettingsDropDownMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings_drop_down);
+        setContentView(R.layout.activity_settings_drop_down_menu);
     }
 }

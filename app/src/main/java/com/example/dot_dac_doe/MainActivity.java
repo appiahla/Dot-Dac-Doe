@@ -15,4 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    //Spinner spinnerLanguages=findViewById(R.id.dropdown_gridsize);
+    //ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
+    //adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
+
+
 }

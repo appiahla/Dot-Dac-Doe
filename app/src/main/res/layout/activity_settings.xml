@@ -31,8 +31,10 @@
         android:layout_marginBottom="167dp"
         app:layout_constraintBottom_toBottomOf="@+id/music_button"
         app:layout_constraintEnd_toEndOf="@+id/text_border_notif"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/text_border_notif"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <ImageView
@@ -115,8 +117,8 @@
         android:id="@+id/change_language_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="117dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="116dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Change Language"
         android:textColor="#0E0E0E"
@@ -205,8 +207,8 @@
         android:id="@+id/settings_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Settings"
         android:textColor="#050505"

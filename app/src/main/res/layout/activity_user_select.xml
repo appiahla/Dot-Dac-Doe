@@ -11,116 +11,96 @@
         android:id="@+id/pick_grey_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="27dp"
         android:contentDescription="@string/player_2_color_picker_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_pink_2_user_select"
         app:srcCompat="@drawable/grey_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="393dp"
+        tools:layout_editor_absoluteY="555dp" />
 
     <ImageView
         android:id="@+id/pick_red_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
         android:contentDescription="@string/player_2_color_picker_red"
-        app:layout_constraintEnd_toStartOf="@+id/pick_blue_2_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_circle"
-        app:srcCompat="@drawable/red_color_pick" />
+        app:srcCompat="@drawable/red_color_pick"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="315dp" />
 
     <ImageView
         android:id="@+id/pick_pink_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="27dp"
         android:contentDescription="@string/player_2_color_picker_pink"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_purple_2_user_select"
-        app:srcCompat="@drawable/pink_color_pick" />
+        app:srcCompat="@drawable/pink_color_pick"
+        tools:layout_editor_absoluteX="393dp"
+        tools:layout_editor_absoluteY="475dp" />
 
     <ImageView
         android:id="@+id/pick_yellow_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
         android:contentDescription="@string/player_2_color_picker_yellow"
-        app:layout_constraintEnd_toStartOf="@+id/pick_pink_2_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_orange_2_user_select"
         app:srcCompat="@drawable/yellow_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="475dp" />
 
     <ImageView
         android:id="@+id/pick_green_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="42dp"
         android:contentDescription="@string/player_2_color_picker_green"
-        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
-        app:layout_constraintEnd_toStartOf="@+id/pick_grey_2_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_yellow_2_user_select"
         app:srcCompat="@drawable/green_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="600dp" />
 
     <ImageView
         android:id="@+id/pick_blue_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="27dp"
         android:contentDescription="@string/player_2_color_picker_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_circle"
-        app:srcCompat="@drawable/blue_color_pick" />
+        app:srcCompat="@drawable/blue_color_pick"
+        tools:layout_editor_absoluteX="393dp"
+        tools:layout_editor_absoluteY="315dp" />
 
     <ImageView
         android:id="@+id/pick_orange_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
         android:contentDescription="@string/player_2_color_picker_orange"
-        app:layout_constraintEnd_toStartOf="@+id/pick_purple_2_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_red_2_user_select"
         app:srcCompat="@drawable/orange_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="395dp" />
 
     <ImageView
         android:id="@+id/pick_purple_2_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="27dp"
         android:contentDescription="@string/player_2_color_picker_purple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_blue_2_user_select"
-        app:srcCompat="@drawable/purple_color_pick" />
+        app:srcCompat="@drawable/purple_color_pick"
+        tools:layout_editor_absoluteX="393dp"
+        tools:layout_editor_absoluteY="395dp" />
 
     <ImageView
         android:id="@+id/user_select_player2_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="54dp"
         android:contentDescription="@string/player_2_icon_circle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/user_select_player1_circle"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player_2"
         app:srcCompat="@drawable/player_circle"
         tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/user_select_player_1"
-        android:layout_width="134dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="90dp"
+        android:layout_width="114dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="88dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/player_1_name_place"
         android:textColor="#000000"
@@ -132,8 +112,8 @@
         android:id="@+id/user_select_player_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="45dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="52dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/player_2_name_place"
         android:textColor="#040404"
@@ -145,8 +125,8 @@
         android:id="@+id/user_select_player1_circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="22dp"
         android:contentDescription="@string/player_1_icon_circle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player_1"
@@ -157,8 +137,8 @@
         android:id="@+id/pick_red_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="33dp"
         android:contentDescription="@string/player_1_color_picker_red"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player1_circle"
@@ -168,46 +148,41 @@
         android:id="@+id/pick_orange_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="46dp"
         android:contentDescription="@string/player_1_color_picker_orange"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_red_1_user_select"
         app:srcCompat="@drawable/orange_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteY="415dp" />
 
     <ImageView
         android:id="@+id/pick_yellow_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="46dp"
         android:contentDescription="@string/player_1_color_picker_yellow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_orange_1_user_select"
         app:srcCompat="@drawable/yellow_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteY="503dp" />
 
     <ImageView
         android:id="@+id/pick_green_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginStart="46dp"
         android:contentDescription="@string/player_1_color_picker_green"
-        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_yellow_1_user_select"
         app:srcCompat="@drawable/green_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteY="595dp" />
 
     <ImageView
         android:id="@+id/pick_blue_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="33dp"
         android:contentDescription="@string/player_1_color_picker_blue"
         app:layout_constraintStart_toEndOf="@+id/pick_red_1_user_select"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player1_circle"
@@ -217,47 +192,37 @@
         android:id="@+id/pick_purple_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
         android:contentDescription="@string/player_1_color_picker_purple"
-        app:layout_constraintStart_toEndOf="@+id/pick_orange_1_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_blue_1_user_select"
-        app:srcCompat="@drawable/purple_color_pick" />
+        app:srcCompat="@drawable/purple_color_pick"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="415dp" />
 
     <ImageView
         android:id="@+id/pick_pink_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
         android:contentDescription="@string/player_1_color_picker_pink"
-        app:layout_constraintStart_toEndOf="@+id/pick_yellow_1_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_purple_1_user_select"
-        app:srcCompat="@drawable/pink_color_pick" />
+        app:srcCompat="@drawable/pink_color_pick"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="503dp" />
 
     <ImageView
         android:id="@+id/pick_grey_1_user_select"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="47dp"
         android:contentDescription="@string/player_1_color_picker_grey"
-        app:layout_constraintBottom_toTopOf="@+id/orientation_button_user_select"
-        app:layout_constraintStart_toEndOf="@+id/pick_green_1_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/pick_pink_1_user_select"
         app:srcCompat="@drawable/grey_color_pick"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="595dp" />
 
     <ImageView
         android:id="@+id/back_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="334dp"
         android:contentDescription="@string/user_select_back_arrow"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_arrow" />
@@ -267,10 +232,6 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="30dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/orientation"
         android:textAlignment="center"
@@ -278,22 +239,16 @@
         android:textSize="20sp"
         app:backgroundTint="@android:color/white"
         app:cornerRadius="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/play_button_user_select"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pick_grey_2_user_select"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="748dp" />
 
     <Button
         android:id="@+id/play_button_user_select"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="52dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/play_button"
         android:textAlignment="center"
@@ -301,11 +256,9 @@
         android:textSize="20sp"
         app:backgroundTint="@android:color/white"
         app:cornerRadius="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#000000"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="873dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -258,7 +258,7 @@
         android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="56dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="@string/orientation"

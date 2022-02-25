@@ -11,7 +11,7 @@
         android:theme="@style/Theme.DotDacDoe">
         <activity
             android:name=".UserSelectActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

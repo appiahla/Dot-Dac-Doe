@@ -7,76 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-    <Spinner
-        android:id="@+id/dropdown_gridsize"
-        android:layout_width="47dp"
-        android:layout_height="28dp"
-        android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="200dp" />
-
-
-    <ImageView
-        android:id="@+id/text_border_gridsize"
-        android:layout_width="307dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <ImageView
-        android:id="@+id/text_border_notif"
-        android:layout_width="307dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="275dp" />
-
-    <ImageView
-        android:id="@+id/text_border_music"
-        android:layout_width="307dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="376dp" />
-
-    <ImageView
-        android:id="@+id/text_border_changeLanguage"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="617dp" />
 
     <ImageView
         android:id="@+id/text_border_darkMode"
         android:layout_width="307dp"
         android:layout_height="94dp"
         app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="498dp" />
-
-    <Switch
-        android:id="@+id/notif_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="309dp" />
-
-    <Switch
-        android:id="@+id/music_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="401dp" />
-
-    <Switch
-        android:id="@+id/dark_mode_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#070707"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="525dp" />
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="616dp" />
 
     <TextView
         android:id="@+id/darkmode_button"
@@ -86,8 +24,16 @@
         android:text="Dark Mode"
         android:textColor="#151414"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="512dp" />
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <Switch
+        android:id="@+id/dark_mode_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="643dp" />
 
     <TextView
         android:id="@+id/music_button"
@@ -97,8 +43,16 @@
         android:text="Music"
         android:textColor="#090909"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="388dp" />
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <Switch
+        android:id="@+id/music_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="555dp" />
 
     <TextView
         android:id="@+id/notification_button"
@@ -108,19 +62,23 @@
         android:text="Notification"
         android:textColor="#171616"
         android:textSize="28"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="293dp" />
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="453dp" />
 
-    <TextView
-        android:id="@+id/grid_size_button"
+    <ImageView
+        android:id="@+id/text_border_notif"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/text_border_removebg_preview"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <Switch
+        android:id="@+id/notif_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Grid Size"
-        android:textColor="#131313"
-        android:textSize="28sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="188dp" />
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="469dp" />
 
     <TextView
         android:id="@+id/copyright_text"
@@ -130,8 +88,8 @@
         android:text="© Dot Dac Doe, Inc. 2022"
         android:textColor="#100F0F"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="781dp" />
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="843dp" />
 
     <TextView
         android:id="@+id/settings_heading"
@@ -141,8 +99,8 @@
         android:text="Settings"
         android:textColor="#050505"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="31dp" />
 
     <TextView
         android:id="@+id/change_language"
@@ -152,8 +110,8 @@
         android:text="Change Language"
         android:textColor="#050505"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="636dp" />
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="744dp" />
 
     <ImageView
         android:id="@+id/back_arrow_button"
@@ -162,5 +120,26 @@
         app:srcCompat="@drawable/back_arrow"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_border_notif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_heading">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="English" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,0 @@
-<resources>
-    <string name="grid_size">dropDownMenuGridSize>
-        <item>5x8</item>
-        <item>6x6</item>
-        <item>6x9</item>
-        <item>9x12</item>
-    </string-array>
-</resources>
-

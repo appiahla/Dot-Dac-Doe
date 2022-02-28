@@ -26,4 +26,13 @@
     <string name="player_1_color_picker_green">player_1_color_picker_green</string>
     <string name="player_2_color_picker_green">player_2_color_picker_green</string>
     <string name="player_1_color_picker_red">player_1_color_picker_red</string>
+    <string name="portrait">Portrait</string>
+    <string name="back_button">back button</string>
+    <string name="orientation">Orientation</string>
+    <string name="landscape">Landscape</string>
+    <string name="back_to_page">back to page</string>
+    <string name="portrait_with_opposite_side_players">portrait with opposite side players</string>
+    <string name="portrait_with_same_side_players">portrait with same side players</string>
+    <string name="landscape_with_opposite_side_players">landscape with opposite side players</string>
+    <string name="landscape_with_same_side_players">landscape with same side players</string>
 </resources>

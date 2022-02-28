@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class Settings extends AppCompatActivity {
 
     TextInputLayout textInputLayout;
@@ -29,7 +31,7 @@ public class Settings extends AppCompatActivity {
         autoCompleteTextView.setOnClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                textView.setText(parent.getItemAtPosition(position));
+                textView.setText((String) parent.getItemAtPosition(position));
             }
         });
 

@@ -2,8 +2,8 @@
    <string name="app_name">Dot-Dac-Doe</string>
 
     <string-array name="grid_sizes">
-        <item>4x4</item>
-        <item>5x5</item>
-        <item>6x6</item>
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
     </string-array>
 </resources>

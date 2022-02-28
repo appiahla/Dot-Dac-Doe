@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+            android:name=".Orientation"
+            android:exported="false" />
+        <activity
             android:name=".iconPage"
             android:exported="true" />
         <activity

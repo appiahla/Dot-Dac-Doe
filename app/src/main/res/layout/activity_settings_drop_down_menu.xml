@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".SettingsDropDownMenu">
 
-
-        <string-array name="Grid_Sizes">
+    <string-array name="Grid_Sizes">
             <item>5x5</item>
             <item>6x6</item>
             <item>7x7</item>
             <item>8x8</item>
-        </string-array>
+    </string-array>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

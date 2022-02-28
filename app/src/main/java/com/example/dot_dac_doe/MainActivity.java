@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Spinner spinnerLanguages=findViewById(R.id.dropdown_gridsize);
+
+        ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        Spinner.setAdapter(adapter);
     }
-
-    //Spinner spinnerLanguages=findViewById(R.id.dropdown_gridsize);
-    //ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
-    //adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-
-
 
 }

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Dot-Dac-Doe</string>
-    <string name="title">DOT DAC DOE</string>
+    <string name="Grid_Size">DOT DAC DOE</string>
+        <item>5x5</item>
+        <item>6x6</item>
+        <item>7x7</item>
+        <item>8x8</item>
+    </string-array>
 </resources>

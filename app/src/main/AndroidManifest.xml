@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+<<<<<<< HEAD
             android:name=".winner_page"
             android:exported="false" />
         <activity
@@ -23,9 +24,16 @@
         <activity
             android:name=".tutorial_page"
             android:exported="false" />
+=======
+            android:name=".iconPage"
+            android:exported="true" />
+        <activity
+            android:name=".UserSelectActivity"
+            android:exported="true" />
+>>>>>>> df259b15d42ed26f17cd46a4c2e2f2f9524c1378
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

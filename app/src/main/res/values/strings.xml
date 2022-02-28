@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Dot-Dac-Doe</string>
     <string name="title">DOT DAC DOE</string>
+<<<<<<< HEAD
     <string name="title_activity_tutorial_scrolling_page">tutorial_scrolling_page</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -92,4 +93,31 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+=======
+    <string name="orientation">Orientation</string>
+    <string name="player_1_name_place">Player 1</string>
+    <string name="player_2_name_place">Player 2</string>
+    <string name="play_button">Play</string>
+    <string name="player_1_color_picker_purple">Player 1 color-picker purple</string>
+    <string name="player_2_color_picker_grey">Player 2 color-picker grey</string>
+    <string name="player_2_color_picker_yellow">Player 2 color-picker-yellow</string>
+    <string name="player_1_color_picker_grey">player_1_color_picker_grey</string>
+    <string name="player_1_icon_circle">player_1_icon_circle</string>
+    <string name="player_1_color_picker_pink">player_1_color_picker_pink</string>
+    <string name="player_1_color_picker_blue">player_1_color_picker_blue</string>
+    <string name="player_2_color_picker_blue">player_2_color_picker_blue</string>
+    <string name="player_2_color_picker_pink">player_2_color_picker_pink</string>
+    <string name="player_2_color_picker_red">player_2_color_picker_red</string>
+    <string name="player_2_color_picker_orange">player_2_color_picker_orange</string>
+    <string name="player_2_color_picker_rainbow">player_2_color_picker_rainbow</string>
+    <string name="player_1_color_picker_rainbow">player_1_color_picker_rainbow</string>
+    <string name="user_select_back_arrow">user_select_back_arrow</string>
+    <string name="player_2_icon_circle">player_2_icon_circle</string>
+    <string name="player_1_color_picker_orange">player_1_color_picker_orange</string>
+    <string name="player_2_color_picker_purple">player_2_color_picker_purple</string>
+    <string name="player_1_color_picker_yellow">player_1_color_picker_yellow</string>
+    <string name="player_1_color_picker_green">player_1_color_picker_green</string>
+    <string name="player_2_color_picker_green">player_2_color_picker_green</string>
+    <string name="player_1_color_picker_red">player_1_color_picker_red</string>
+>>>>>>> df259b15d42ed26f17cd46a4c2e2f2f9524c1378
 </resources>

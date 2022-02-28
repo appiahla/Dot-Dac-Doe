@@ -14,6 +14,7 @@ public class Orientation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orientation);
 
+        // action for back btn between orientation and user-select
         ImageView back = findViewById(R.id.orientation_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

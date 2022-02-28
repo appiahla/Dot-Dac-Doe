@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+            android:name=".iconPage"
+            android:exported="true" />
+        <activity
             android:name=".UserSelectActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

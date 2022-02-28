@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EBFFFFFF"
     tools:context=".tutorial_page_part2">
 
     <TextView
@@ -55,11 +56,21 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="21dp" />
+        android:id="@+id/backArrow"
+        android:layout_width="93dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="4dp"
+        android:background="FFFFFF"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="<-"
+        android:textAlignment="textStart"
+        android:textColor="#F7000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

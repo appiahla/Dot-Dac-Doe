@@ -2,35 +2,33 @@ package com.example.dot_dac_doe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.TextView;
 
-//public class Settings extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_settings);
-//    }
-//}
+public class Settings extends AppCompatActivity {
 
-class Settings : Settings(){
-private var binding:SettingsBinding? = null
-private val binding get() = binding!!
+    TextInputLayout textInputLayout;
+    AutoCompleteTextView autoCompleteTextView;
+    TextView textView;
 
-        override fun onCreateView(
-        inflater:LayoutInflater,container:ViewGroup?,savedInstanceState:Bundle?
-        ):View {
-        binding = SettingsBinding.inflate(inflater,container,false)
-        val langauges=resources.getString(R.array.languages)
-        val arrayAdapter=ArrayAdapter(requireContext(),R.layout.dropdown_item,langauges)
-        binding.autoCompleteTextView.SetAdapter(arrayAdapter)
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_settings);
 
-        return binding.root
-        }
-        override fun onDestroyView(){
-        super.onDestroyView()
-        binding=null
-        }
+        textInputLayout = findViewById(R.id.autoCompleteTextView);
+        autoCompleteTextView = findViewById(R.id.autoCompleteTextView); //i think wrong i
+        textView = findViewById(R.id.autoCompleteTextView);
+
+        String [] items = {"Item1", "Item2", "Item3"};
+        ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(AutoCompleteTextView.this, R.layout.dropdown_item, items);
+        autoCompleteTextView.setAdapter(itemAdapter);
+        //autoCompleteTextView.setOnClickListener(new Ad);
+
+    }
 
 }
+
 

@@ -1,9 +1,9 @@
 <resources>
    <string name="app_name">Dot-Dac-Doe</string>
 
-    <string-array name="languages">
-        <item>English</item>
-        <item>German</item>
-        <item>Chinese</item>
+    <string-array name="grid_sizes">
+        <item>4x4</item>
+        <item>5x5</item>
+        <item>6x6</item>
     </string-array>
 </resources>

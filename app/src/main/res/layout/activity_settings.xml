@@ -7,14 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-
     <ImageView
         android:id="@+id/text_border_darkMode"
         android:layout_width="307dp"
         android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="616dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_notif2"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <TextView
         android:id="@+id/darkmode_button"
@@ -24,16 +27,16 @@
         android:text="Dark Mode"
         android:textColor="#151414"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="630dp" />
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="521dp" />
 
     <Switch
         android:id="@+id/dark_mode_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#070707"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="643dp" />
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="534dp" />
 
     <TextView
         android:id="@+id/music_button"
@@ -44,15 +47,15 @@
         android:textColor="#090909"
         android:textSize="28sp"
         tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="542dp" />
+        tools:layout_editor_absoluteY="397dp" />
 
     <Switch
         android:id="@+id/music_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="555dp" />
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="408dp" />
 
     <TextView
         android:id="@+id/notification_button"
@@ -62,23 +65,39 @@
         android:text="Notification"
         android:textColor="#171616"
         android:textSize="28"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="453dp" />
-
-    <ImageView
-        android:id="@+id/text_border_notif"
-        android:layout_width="307dp"
-        android:layout_height="94dp"
-        app:srcCompat="@drawable/text_border_removebg_preview"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="435dp" />
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="271dp" />
 
     <Switch
         android:id="@+id/notif_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="281dp"
-        tools:layout_editor_absoluteY="469dp" />
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <ImageView
+        android:id="@+id/text_border_notif"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_drop"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/text_border_notif3"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_darkMode"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
     <TextView
         android:id="@+id/copyright_text"
@@ -95,12 +114,16 @@
         android:id="@+id/settings_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Settings"
         android:textColor="#050505"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="31dp" />
+        app:layout_constraintBottom_toTopOf="@+id/menu_drop"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/change_language"
@@ -110,8 +133,8 @@
         android:text="Change Language"
         android:textColor="#050505"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="744dp" />
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="646dp" />
 
     <ImageView
         android:id="@+id/back_arrow_button"
@@ -121,21 +144,52 @@
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="17dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/text_border_notif2"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_border_notif"
+        app:srcCompat="@drawable/text_border_removebg_preview" />
 
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
-        android:layout_width="332dp"
-        android:layout_height="60dp"
-        android:layout_weight="1"
-        android:inputType="none"
-        android:text="English"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="176dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu_drop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="333dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_border_notif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_heading">
+
+        <AutoCompleteTextView
+            android:id="@+id/drop_items"
+            android:layout_width="332dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:inputType="none"
+            android:text="Grid Sizes" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/itemSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="TextView"
+        android:textColor="#F3EFEF"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="17dp" />
+
 </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

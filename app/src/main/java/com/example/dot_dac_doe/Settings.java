@@ -3,6 +3,7 @@ package com.example.dot_dac_doe;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
@@ -18,14 +19,19 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        textInputLayout = findViewById(R.id.autoCompleteTextView);
-        autoCompleteTextView = findViewById(R.id.autoCompleteTextView); //i think wrong i
-        textView = findViewById(R.id.autoCompleteTextView);
+        textInputLayout = findViewById(R.id.menu_drop);
+        autoCompleteTextView = findViewById(R.id.drop_items);
+        textView = findViewById(R.id.itemSelected);
 
         String [] items = {"Item1", "Item2", "Item3"};
-        ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(AutoCompleteTextView.this, R.layout.dropdown_item, items);
+        ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(Settings.this, R.layout.dropdown_item, items);
         autoCompleteTextView.setAdapter(itemAdapter);
-        //autoCompleteTextView.setOnClickListener(new Ad);
+        autoCompleteTextView.setOnClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                textView.setText(parent.getItemAtPosition(position));
+            }
+        });
 
     }
 

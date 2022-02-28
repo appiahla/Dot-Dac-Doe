@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".Orientation">
 
+    <ImageView
+        android:id="@+id/orientation_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_arrow"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/orientation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Orientation"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="67dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,4 +24,26 @@
         android:textSize="50sp"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/portrait_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Portrait"
+        android:textColor="#020202"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <TextView
+        android:id="@+id/landscape_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Landscape"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="611dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

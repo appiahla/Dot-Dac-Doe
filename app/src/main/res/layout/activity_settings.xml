@@ -193,6 +193,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:textColorHint="#0B0A0A"
+        app:boxBackgroundMode="outline"
+        app:boxCollapsedPaddingTop="1dp"
+        app:boxStrokeColor="#100F0F"
+        app:boxStrokeWidth="1dp"
+        app:hintAnimationEnabled="false"
         app:layout_constraintBottom_toTopOf="@+id/text_border_notif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
@@ -219,7 +225,5 @@
         android:textColor="#00000"
         tools:layout_editor_absoluteX="331dp"
         tools:layout_editor_absoluteY="17dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

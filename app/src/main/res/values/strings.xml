@@ -28,7 +28,7 @@
     <string name="player_1_color_picker_red">player_1_color_picker_red</string>
     <string name="portrait">Portrait</string>
     <string name="back_button">back button</string>
-    <string name="orientation">Orientation</string>
+    <string name="orientation_title">Orientation</string>
     <string name="landscape">Landscape</string>
     <string name="back_to_page">back to page</string>
     <string name="portrait_with_opposite_side_players">portrait with opposite side players</string>

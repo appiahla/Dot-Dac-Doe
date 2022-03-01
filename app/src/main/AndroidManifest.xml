@@ -10,11 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+<<<<<<< HEAD
+            android:name=".winner_page"
+            android:exported="false" />
+        <activity
+            android:name=".tutorial_page_part2"
+            android:exported="false" />
+        <activity
+            android:name=".tutorial_scrolling_page"
+            android:exported="false"
+            android:label="@string/title_activity_tutorial_scrolling_page"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+        <activity
+            android:name=".tutorial_page"
+            android:exported="false" />
+=======
             android:name=".iconPage"
             android:exported="true" />
         <activity
             android:name=".UserSelectActivity"
             android:exported="true" />
+>>>>>>> df259b15d42ed26f17cd46a4c2e2f2f9524c1378
         <activity
             android:name=".HomeActivity"
             android:exported="true" />

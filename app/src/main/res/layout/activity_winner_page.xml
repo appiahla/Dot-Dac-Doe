@@ -8,13 +8,14 @@
 
     <TextView
         android:id="@+id/winner_header"
-        android:layout_width="120dp"
-        android:layout_height="41dp"
+        android:layout_width="154dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="128dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="WINNER!"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="28dp" />
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -222,7 +222,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="TextView"
-        android:textColor="#00000"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="331dp"
         tools:layout_editor_absoluteY="17dp" />
 

@@ -12,7 +12,7 @@
         android:layout_height="545dp"
         android:layout_marginBottom="160dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="@string/title"
+        android:text="title"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="80sp"

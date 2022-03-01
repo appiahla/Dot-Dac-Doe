@@ -10,7 +10,11 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends AppCompatActivity implements View.OnClickListener {
+
+    @Override
+    public void onClick(View view) {
+    }
 
     TextInputLayout textInputLayout;
     AutoCompleteTextView autoCompleteTextView;
@@ -25,13 +29,13 @@ public class Settings extends AppCompatActivity {
         autoCompleteTextView = findViewById(R.id.drop_items);
         textView = findViewById(R.id.itemSelected);
 
-        String [] items = {"Item1", "Item2", "Item3"};
-        ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(Settings.this, R.layout.dropdown_item, items);
+        String [] items = {"4x4", "5x5", "6x6"};
+        ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(Settings.this, R.layout.item_list, items);
         autoCompleteTextView.setAdapter(itemAdapter);
-        autoCompleteTextView.setOnClickListener(new AdapterView.OnItemClickListener() {
+        autoCompleteTextView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                textView.setText((String) parent.getItemAtPosition(position));
+                textView.setText((String)parent.getItemAtPosition(position));
             }
         });
 

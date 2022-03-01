@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
-khongorzul
             android:name=".Settings"
+            android:exported="true" />
+        <activity
             android:name=".iconPage"
             android:exported="true" />
         <activity
             android:name=".UserSelectActivity"
-master
             android:exported="true" />
         <activity
             android:name=".HomeActivity"

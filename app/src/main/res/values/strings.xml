@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Dot-Dac-Doe</string>
     <string name="title">DOT DAC DOE</string>
-<<<<<<< HEAD
     <string name="title_activity_tutorial_scrolling_page">tutorial_scrolling_page</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -93,7 +92,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-=======
     <string name="orientation">Orientation</string>
     <string name="player_1_name_place">Player 1</string>
     <string name="player_2_name_place">Player 2</string>
@@ -119,5 +117,4 @@
     <string name="player_1_color_picker_green">player_1_color_picker_green</string>
     <string name="player_2_color_picker_green">player_2_color_picker_green</string>
     <string name="player_1_color_picker_red">player_1_color_picker_red</string>
->>>>>>> df259b15d42ed26f17cd46a4c2e2f2f9524c1378
 </resources>

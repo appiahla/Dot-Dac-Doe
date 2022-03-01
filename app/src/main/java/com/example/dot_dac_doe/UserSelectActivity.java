@@ -66,7 +66,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                FIGURE THIS OUT
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.teal_700), PorterDuff.Mode.SCREEN);
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
             }
         });
     }

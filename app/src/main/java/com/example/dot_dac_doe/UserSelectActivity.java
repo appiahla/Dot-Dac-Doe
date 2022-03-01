@@ -65,8 +65,57 @@ public class UserSelectActivity extends AppCompatActivity {
         red1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                FIGURE THIS OUT
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+            }
+        });
+
+        ImageView blue1 = findViewById(R.id.pick_blue_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView orange1 = findViewById(R.id.pick_orange_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView purple1 = findViewById(R.id.pick_purple_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView yellow1 = findViewById(R.id.pick_yellow_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView pink1 = findViewById(R.id.pick_pink_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView green1 = findViewById(R.id.pick_green_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+            }
+        });
+        ImageView grey1 = findViewById(R.id.pick_grey_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
             }
         });
     }

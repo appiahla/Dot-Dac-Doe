@@ -1,8 +1,14 @@
 package com.example.dot_dac_doe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +58,15 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
                 startActivity(i);
+            }
+        });
+
+        ImageView red1 = findViewById(R.id.pick_red_1_user_select);
+        red1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                FIGURE THIS OUT
+                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.teal_700), PorterDuff.Mode.SCREEN);
             }
         });
     }

@@ -1,4 +1,12 @@
 <resources>
+  khongorzul
+   <string name="app_name">Dot-Dac-Doe</string>
+
+    <string-array name="grid_sizes">
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
+    </string-array>
     <string name="app_name">Dot-Dac-Doe</string>
     <string name="title">DOT DAC DOE</string>
     <string name="orientation">Orientation</string>
@@ -26,4 +34,5 @@
     <string name="player_1_color_picker_green">player_1_color_picker_green</string>
     <string name="player_2_color_picker_green">player_2_color_picker_green</string>
     <string name="player_1_color_picker_red">player_1_color_picker_red</string>
+master
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+            android:name=".Orientation"
+            android:exported="true" />
+        <activity
             android:name=".Settings"
             android:exported="true" />
         <activity
@@ -27,6 +30,7 @@
             android:name=".tutorial_page"
             android:exported="true" />
 
+        <activity
             android:name=".iconPage"
             android:exported="true" />
         <activity

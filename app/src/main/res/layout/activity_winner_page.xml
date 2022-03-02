@@ -89,11 +89,13 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="331dp"
-        android:layout_height="206dp"
+        android:layout_width="220dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="504dp"
         android:background="id/confetti1"
-        app:srcCompat="@drawable/winner_icon2"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/winner_icon2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

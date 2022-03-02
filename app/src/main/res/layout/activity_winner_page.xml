@@ -94,10 +94,8 @@
         android:id="@+id/confetti1"
         android:layout_width="256dp"
         android:layout_height="192dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="452dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/winner_icon2" />
+        app:srcCompat="@drawable/winner_icon2"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="452dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

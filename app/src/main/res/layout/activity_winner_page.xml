@@ -69,4 +69,12 @@
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="645dp" />
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/winner_paint_icon"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="286dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

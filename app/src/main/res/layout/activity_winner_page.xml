@@ -122,10 +122,22 @@
 
     <ImageView
         android:id="@+id/right_side_removed"
-        android:layout_width="101dp"
-        android:layout_height="551dp"
-        app:srcCompat="@drawable/right_side_confetti_removebg_preview"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="97dp" />
+        android:layout_width="98dp"
+        android:layout_height="682dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/left_side_removed"
+        android:layout_width="111dp"
+        android:layout_height="593dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,9 +74,11 @@
         android:id="@+id/bottom_confetti"
         android:layout_width="342dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/bottom_confetti"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="645dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_button"
+        app:srcCompat="@drawable/bottom_confetti" />
 
     <ImageView
         android:id="@+id/paint_icon"

@@ -224,6 +224,6 @@
         android:text="TextView"
         android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="331dp"
-        tools:layout_editor_absoluteY="17dp" />
+        tools:layout_editor_absoluteY="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

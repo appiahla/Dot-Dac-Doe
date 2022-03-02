@@ -12,9 +12,9 @@
         <activity
             android:name=".Orientation"
             android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".Settings"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".Settings"
+            android:exported="true" />
         <activity
             android:name=".winner_page"
             android:exported="true" />

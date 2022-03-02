@@ -98,12 +98,4 @@
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="425dp" />
 
-    <ImageView
-        android:id="@+id/confetti2"
-        android:layout_width="356dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/confetti2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="87dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,14 +34,23 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-//        ImageView help = (ImageView) findViewByID(R.id.imageView6);
-//        help.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(HomeActivity.this, MainActivity.class);
-//                startActivity(i);
-//            }
-//        });
+        ImageView btn3 = (ImageView) findViewById(R.id.imageView6);
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, tutorial_page.class));
+            }
+        });
+
+        ImageView btn4 = (ImageView) findViewById(R.id.imageView7);
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, Settings.class));
+            }
+        });
 
     }
 

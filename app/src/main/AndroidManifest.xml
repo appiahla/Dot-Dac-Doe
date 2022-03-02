@@ -31,15 +31,12 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".tutorial_page"
-            android:exported="false" />
-
-
             android:exported="true"
             android:label="@string/title_activity_tutorial_scrolling_page"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
-        <activity
-            android:name=".tutorial_page"
-            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".tutorial_page"-->
+<!--            android:exported="true" />-->
 
         <activity
 

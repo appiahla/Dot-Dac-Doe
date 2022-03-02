@@ -26,11 +26,11 @@
 
     <TextView
         android:id="@+id/player_who_won"
-        android:background="id/confetti1"
         android:layout_width="348dp"
         android:layout_height="128dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
+        android:background="id/confetti2"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Congrats, Player 1 !"
         android:textAlignment="center"
@@ -82,8 +82,8 @@
 
     <ImageView
         android:id="@+id/bottom_confetti"
-        android:layout_width="342dp"
-        android:layout_height="124dp"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,11 +99,11 @@
         tools:layout_editor_absoluteY="425dp" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="304dp"
-        android:layout_height="66dp"
+        android:id="@+id/confetti2"
+        android:layout_width="356dp"
+        android:layout_height="60dp"
         app:srcCompat="@drawable/confetti2"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="88dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="87dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

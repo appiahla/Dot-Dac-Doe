@@ -92,10 +92,10 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="311dp"
-        android:layout_height="377dp"
+        android:layout_width="298dp"
+        android:layout_height="213dp"
         app:srcCompat="@drawable/winner_icon2"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="267dp" />
+        tools:layout_editor_absoluteY="431dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

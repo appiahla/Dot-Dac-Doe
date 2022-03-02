@@ -26,20 +26,15 @@
 
     <TextView
         android:id="@+id/player_who_won"
-        android:layout_width="336dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="29dp"
+        android:layout_width="348dp"
+        android:layout_height="128dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congratulations, Player 1 !"
+        android:text="Congrats, Player 1 !"
         android:textAlignment="center"
         android:textColor="#F0000000"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/winner_header" />
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="119dp" />
 
     <Button
         android:id="@+id/play_again"

@@ -101,14 +101,14 @@
 
     <ImageView
         android:id="@+id/user_select_player2_circle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="54dp"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
         android:contentDescription="@string/player_2_icon_circle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player_2"
-        app:srcCompat="@drawable/player_circle"
+        app:srcCompat="@drawable/user_circle"
         tools:ignore="ImageContrastCheck" />
 
     <TextView
@@ -139,14 +139,14 @@
 
     <ImageView
         android:id="@+id/user_select_player1_circle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="129dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="22dp"
         android:contentDescription="@string/player_1_icon_circle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_select_player_1"
-        app:srcCompat="@drawable/player_circle"
+        app:srcCompat="@drawable/user_circle"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView

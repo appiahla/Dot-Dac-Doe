@@ -81,6 +81,7 @@
 
     <ImageView
         android:id="@+id/paint_icon"
+        android:background="id/confetti1"
         android:layout_width="210dp"
         android:layout_height="185dp"
         android:layout_marginStart="92dp"

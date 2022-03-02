@@ -27,6 +27,7 @@
         android:id="@+id/player_who_won"
         android:layout_width="123dp"
         android:layout_height="49dp"
+        android:fontFamily="@font/gloria_hallelujah"
         android:text="Congratulations, Player 1!"
         android:textColor="#F0000000"
         tools:layout_editor_absoluteX="144dp"

@@ -45,8 +45,8 @@
         android:text="Play Again?"
         android:textColor="#070707"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="375dp" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="462dp" />
 
     <Button
         android:id="@+id/home_button"
@@ -59,14 +59,14 @@
         android:textColorHighlight="#FFFFFF"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="486dp" />
+        tools:layout_editor_absoluteY="548dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="371dp"
-        android:layout_height="133dp"
+        android:id="@+id/bottom_confetti"
+        android:layout_width="342dp"
+        android:layout_height="124dp"
         app:srcCompat="@drawable/bottom_confetti"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="642dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="645dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

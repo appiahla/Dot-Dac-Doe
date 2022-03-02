@@ -40,8 +40,10 @@
         android:id="@+id/play_again"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         android:text="Play Again?"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="405dp" />
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="312dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

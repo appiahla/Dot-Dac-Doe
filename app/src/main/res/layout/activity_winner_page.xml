@@ -81,8 +81,10 @@
         android:id="@+id/paint_icon"
         android:layout_width="210dp"
         android:layout_height="185dp"
-        app:srcCompat="@drawable/winner_paint_icon"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_who_won"
+        app:srcCompat="@drawable/winner_paint_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

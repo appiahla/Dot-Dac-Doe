@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
-            android:name=".Settings"
+            android:name=".Orientation"
             android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".Settings"-->
+<!--            android:exported="true" />-->
         <activity
             android:name=".winner_page"
             android:exported="true" />
@@ -21,12 +24,17 @@
         <activity
             android:name=".tutorial_scrolling_page"
             android:exported="true"
-            android:label="@string/title_activity_tutorial_scrolling_page"
+            android:label="/@title_activity_tutorial_scrolling_page"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".tutorial_page"
-            android:exported="true" />
-
+            android:exported="true"
+            android:label="@string/title_activity_tutorial_scrolling_page"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+<!--        <activity-->
+<!--            android:name=".tutorial_page"-->
+<!--            android:exported="true" />-->
+        <activity
             android:name=".iconPage"
             android:exported="true" />
         <activity
@@ -40,7 +48,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

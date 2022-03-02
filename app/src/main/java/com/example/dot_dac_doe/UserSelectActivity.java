@@ -15,6 +15,7 @@ public class UserSelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_select);
 
+
 //       interaction for back btn between user-select and home activity
         ImageView back = findViewById(R.id.back_arrow);
         back.setOnClickListener(new View.OnClickListener() {
@@ -54,5 +55,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 }

@@ -88,11 +88,12 @@
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/confetti1"
+        android:layout_width="331dp"
+        android:layout_height="206dp"
+        android:background="id/confetti1"
         app:srcCompat="@drawable/winner_icon2"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="24dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="289dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

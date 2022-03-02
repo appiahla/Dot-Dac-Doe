@@ -26,6 +26,7 @@
 
     <TextView
         android:id="@+id/player_who_won"
+        android:background="id/confetti1"
         android:layout_width="348dp"
         android:layout_height="128dp"
         android:layout_marginStart="20dp"
@@ -44,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
+
+        android:background="id/confetti1"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textColor="#070707"
@@ -89,11 +91,10 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="220dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="504dp"
-        android:background="id/confetti1"
+        android:layout_width="256dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="452dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/winner_icon2" />

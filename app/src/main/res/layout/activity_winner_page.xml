@@ -30,7 +30,7 @@
         android:layout_height="128dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:background="id/confetti1"
+
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Congrats, Player 1 !"
         android:textAlignment="center"
@@ -45,7 +45,7 @@
         android:layout_height="185dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="4dp"
-        android:background="id/confetti1"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player_who_won"
         app:srcCompat="@drawable/winner_paint_icon" />
@@ -56,8 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="16dp"
-
-        android:background="id/confetti1"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textColor="#070707"

@@ -62,20 +62,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="119dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="282dp"
-        android:layout_marginBottom="8dp"
-        android:background="FFFFFFFF"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="<-"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/tutorial_header_DDD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/tutorial_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/part2_icon"
         app:layout_constraintVertical_bias="0.0" />
 
-    =======
+
     <ImageView
         android:id="@+id/back_arrow_image"
         android:layout_width="118dp"
@@ -64,7 +64,11 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_arrow_image" />
+        app:srcCompat="@drawable/back_arrow_image" /><![CDATA[
 
->>>>>>> kendall
+    >>>>> kendall
+=======
+
+>>>>>>> 9a16c8d4523905fd698dfbd4e3747dcc9410f11a
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

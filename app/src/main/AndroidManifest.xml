@@ -22,11 +22,6 @@
             android:name=".tutorial_page_part2"
             android:exported="true" />
         <activity
-            android:name=".tutorial_scrolling_page"
-            android:exported="true"
-            android:label="/@title_activity_tutorial_scrolling_page"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
-        <activity
             android:name=".tutorial_page"
             android:exported="true"
             android:label="@string/title_activity_tutorial_scrolling_page"

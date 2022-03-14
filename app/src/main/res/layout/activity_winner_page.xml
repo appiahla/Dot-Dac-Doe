@@ -30,7 +30,7 @@
         android:layout_height="128dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:background="id/confetti2"
+        android:background="id/confetti1"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Congrats, Player 1 !"
         android:textAlignment="center"

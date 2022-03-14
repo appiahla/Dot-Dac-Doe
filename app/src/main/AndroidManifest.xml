@@ -11,9 +11,14 @@
         android:theme="@style/Theme.DotDacDoe">
         <activity
             android:name=".Orientation"
+
+            android:exported="true" />
+<!--        <activity-->
+
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
+
             android:name=".Settings"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
@@ -25,11 +30,11 @@
             android:name=".tutorial_page_part2"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
-        <activity
+<!--         <activity -->
             android:name=".tutorial_scrolling_page"
             android:exported="true"
             android:label="/@title_activity_tutorial_scrolling_page"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" /> -->
         <activity
             android:name=".tutorial_page"
             android:exported="true"
@@ -38,14 +43,27 @@
 <!--        <activity-->
 <!--            android:name=".tutorial_page"-->
 <!--            android:exported="true" />-->
+
+
+<!--        <activity-->
+
+
         <activity
+
+
+        <activity
+
             android:name=".iconPage"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".UserSelectActivity"
+
+            android:exported="true" />
+
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+
         <activity
             android:name=".HomeActivity"
             android:exported="true"

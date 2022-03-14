@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
 
+
 import com.google.android.material.textfield.TextInputLayout;
 
 public class Settings extends AppCompatActivity implements View.OnClickListener {

@@ -26,20 +26,29 @@
 
     <TextView
         android:id="@+id/player_who_won"
-        android:layout_width="336dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="29dp"
+        android:layout_width="348dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="id/confetti2"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congratulations, Player 1 !"
+        android:text="Congrats, Player 1 !"
         android:textAlignment="center"
         android:textColor="#F0000000"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_header" />
+
+    <ImageView
+        android:id="@+id/paint_icon"
+        android:layout_width="210dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:background="id/confetti1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_who_won"
+        app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
         android:id="@+id/play_again"
@@ -47,7 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
+
+        android:background="id/confetti1"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textColor="#070707"
@@ -72,20 +82,62 @@
 
     <ImageView
         android:id="@+id/bottom_confetti"
-        android:layout_width="342dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_button"
         app:srcCompat="@drawable/bottom_confetti" />
 
     <ImageView
-        android:id="@+id/paint_icon"
-        android:layout_width="210dp"
-        android:layout_height="185dp"
-        app:srcCompat="@drawable/winner_paint_icon"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="267dp" />
+        android:id="@+id/confetti1"
+        android:layout_width="293dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paint_icon"
+        app:srcCompat="@drawable/winner_icon2" />
+
+    <ImageView
+        android:id="@+id/confetti2_removed"
+        android:layout_width="375dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/confetti2_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/confetti_top"
+        android:layout_width="362dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/confetti_top_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/right_side_removed"
+        android:layout_width="98dp"
+        android:layout_height="682dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/left_side_removed"
+        android:layout_width="111dp"
+        android:layout_height="593dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

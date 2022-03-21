@@ -15,6 +15,10 @@
             android:exported="true" />
 <!--        <activity-->
 
+            android:name=".Settings"
+            android:exported="true" />
+
+
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
@@ -22,6 +26,7 @@
             android:name=".Settings"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+
         <activity
             android:name=".winner_page"
             android:exported="true"
@@ -54,8 +59,14 @@
 
 
 
+<!--        <activity-->
+
+
+
+
 
         <activity
+
 
             android:name=".iconPage"
             android:exported="true"

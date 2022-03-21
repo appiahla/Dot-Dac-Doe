@@ -60,18 +60,10 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" /><![CDATA[
 
     =======
-    <ImageView
-        android:id="@+id/tutorial_back_arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_arrow" />
 
 >>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

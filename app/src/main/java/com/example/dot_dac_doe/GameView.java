@@ -20,12 +20,12 @@ public class GameView extends View {
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-
         paint = new Paint();
         paint.setColor(Color.BLUE);
+        paint.setStyle(Style.FILL);
         paint.setAntiAlias(true);
         paint.setStrokeWidth(5);
-        paint.setStyle(Paint.Style.STROKE);
+//        paint.setStyle(Paint.Style.STROKE);
     }
 
     @Override

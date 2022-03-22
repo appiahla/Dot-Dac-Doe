@@ -10,12 +10,14 @@
     <com.example.dot_dac_doe.GameView
         android:id="@+id/gameView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:layout_margin="5dp"
-        android:layout_marginEnd="376dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="400dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         custom:circleColor="#ff0099"
         custom:circleLabel="Hello"
         custom:labelColor="#ffff66">

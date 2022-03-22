@@ -9,67 +9,25 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 
+import android.graphics.Color;
+import android.view.View;
+
 public class GameActivity extends AppCompatActivity {
+
+    private GameView myView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+        myView = (GameView)findViewById(R.id.gameView);
     }
 
-    public static class GameGrid extends View {
-
-        Paint black = new Paint();
-
-        public GameGrid(Context context) {
-            super(context);
-
-            black.setColor(Color.BLACK);
-            black.setStrokeWidth(8);
-        }
-
-        @Override
-        public void onDraw(Canvas canvas) {
-
-            float startX;
-            float stopX;
-            float startY;
-            float stopY;
-
-            int width = getWidth();
-            int height = getHeight();
-
-            int gridSize = 7;
-            int gridSpacing = Math.min(width, height) / gridSize;
-            int boardSize = gridSize * gridSpacing;
-
-            int xOffset = (width - boardSize)/2;
-            int yOffset = (height - boardSize)/2;
-
-            //Vertical Grid-lines
-            for (int i = 0; i < gridSize; i++) {
-
-                startX = xOffset + i*gridSpacing;
-                startY = yOffset;
-
-                stopX = startX;
-                stopY = startY + boardSize;
-
-                canvas.drawLine(startX, startY, stopX, stopY, black);
-
-            }
-
-            //Horizontal Grid-lines
-            for (int i = 0; i < gridSize; i++) {
-
-                startX = xOffset;
-                startY = yOffset + i*gridSpacing;
-
-                stopX = startX + boardSize;
-                stopY = startY;
-
-                canvas.drawLine(startX, startY, stopX, stopY, black);
-            }
-        }
-    }
+//    public void btnPressed(View view){
+////update the View
+//        myView.setCircleColor(Color.GREEN);
+//        myView.setLabelColor(Color.MAGENTA);
+//        myView.setLabelText("Help");
+//    }
 }

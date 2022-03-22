@@ -126,7 +126,7 @@
     <string name="portrait_with_same_side_players">portrait with same side players</string>
     <string name="landscape_with_opposite_side_players">landscape with opposite side players</string>
     <string name="landscape_with_same_side_players">landscape with same side players</string>
-    <string name="app_name">Dots and Boxes</string>
+<!--    <string name="app_name">Dots and Boxes</string>-->
 
     <string name="action_new">NEW GAME</string>v
 </resources>

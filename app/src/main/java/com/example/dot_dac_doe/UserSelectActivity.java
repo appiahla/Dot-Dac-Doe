@@ -180,5 +180,15 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
+        //      interaction for orientation page
+        Button play = findViewById(R.id.play_button_user_select);
+        orientation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(UserSelectActivity.this, GameActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

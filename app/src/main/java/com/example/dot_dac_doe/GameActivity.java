@@ -118,7 +118,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.game, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

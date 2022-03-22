@@ -15,5 +15,8 @@
     <color name="pink">#fb18bb</color>
     <color name="green">#15e910</color>
     <color name="grey">#aca3a3</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 
 </resources>

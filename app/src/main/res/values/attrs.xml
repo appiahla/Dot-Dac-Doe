@@ -1,7 +1,0 @@
-<resources>
-    <declare-styleable name="GameView">
-        <attr name="circleColor" format="color" />
-        <attr name="circleLabel" format="string"></attr>
-        <attr name="labelColor" format="color"></attr>
-    </declare-styleable>
-</resources>

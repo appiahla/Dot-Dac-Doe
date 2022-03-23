@@ -24,14 +24,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.155" />
 
     <ImageView
         android:id="@+id/part2_icon"
         android:layout_width="242dp"
         android:layout_height="134dp"
         android:layout_marginStart="84dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginBottom="376dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/part2_squares_icon" />
@@ -50,10 +50,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/part2_icon"
-        app:layout_constraintVertical_bias="0.0" /><![CDATA[
+        app:layout_constraintVertical_bias="0.651" /><![CDATA[
 
 
 

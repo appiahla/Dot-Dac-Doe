@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_home.xml" value="0.18426678067550234" />
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_icon_page.xml" value="0.2873980054397099" />
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_main.xml" value="0.18426678067550234" />
@@ -27,6 +28,9 @@
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.23809676861207416" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.10431808465156049" />
 =======
+=======
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game.xml" value="0.23609885260370697" />
+>>>>>>> dbf94d8 (adding game view to landscape game play)
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />

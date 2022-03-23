@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
             android:name=".Orientation"
             android:exported="true" />
         <activity
             android:name=".Settings"
             android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".winner_page"
             android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".tutorial_page_part2"
             android:exported="true" />
@@ -31,23 +34,25 @@
         <activity
             android:name=".iconPage"
             android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".UserSelectActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

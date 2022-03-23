@@ -30,11 +30,11 @@ import java.util.Map;
 public class GameActivity extends AppCompatActivity implements PlayersStateView {
 
     protected GameView gameView;
-    protected TextView player1name, player2name, player1state, player2state, player1occupying,
+    protected TextView player1name, player2name, player1state, player2state, player1points,
             player2points;
     ImageView currentPlayerPointer;
     Player[] players;
-    Integer[] playersOccupying = new Integer[]{0, 0};
+    Integer[] playersPoints = new Integer[]{0, 0};
     Player currentPlayer;
 
     @Override
@@ -47,7 +47,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         player1name = (TextView) findViewById(R.id.player1name);
         player2name = (TextView) findViewById(R.id.player2name);
-        player1occupying = (TextView) findViewById(R.id.player1occupying);
+        player1points = (TextView) findViewById(R.id.player1points);
         player2points = (TextView) findViewById(R.id.player2points);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
 
@@ -73,8 +73,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 //                    player1state.setText("Waiting");
 //                    currentPlayerPointer.setImageResource(R.drawable.a2);
 //                }
-                player1occupying.setText("Boxes: " + playersOccupying[0]);
-                player2points.setText("Boxes: " + playersOccupying[1]);
+                player1points.setText("Boxes: " + playersPoints[0]);
+                player2points.setText("Boxes: " + playersPoints[1]);
             }
         });
     }
@@ -87,8 +87,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
     @Override
     public void setPlayerOccupyingBoxesCount(Map<Player, Integer> player_occupyingBoxesCount_map) {
-        playersOccupying[0] = (player_occupyingBoxesCount_map.get(players[0]));
-        playersOccupying[1] = (player_occupyingBoxesCount_map.get(players[1]));
+        playersPoints[0] = (player_occupyingBoxesCount_map.get(players[0]));
+        playersPoints[1] = (player_occupyingBoxesCount_map.get(players[1]));
         updateState();
     }
 

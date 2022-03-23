@@ -11,7 +11,7 @@
         android:theme="@style/Theme.DotDacDoe">
         <activity
             android:name=".GameActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Orientation"
             android:exported="true" />

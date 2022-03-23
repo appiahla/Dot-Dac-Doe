@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
-                android:text="Computer"
+                android:text="Player 2"
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp" />
 

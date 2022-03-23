@@ -42,7 +42,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         player2points = (TextView) findViewById(R.id.player2points_mult);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
 
-        players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
+        players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
         startGame(players);
     }
 
@@ -126,27 +126,27 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                                                 @Override
                                                 public void onClick(DialogInterface dialogInterface, int i) {
                                                     players = new Player[]{new RandomAIPlayer("Computer"),
-                                                            new HumanPlayer("Human")};
+                                                            new HumanPlayer("Player 1")};
                                                     startGame(players);
 
                                                     player1name.setText("Computer");
-                                                    player2name.setText("Human");
+                                                    player2name.setText("Player 1");
                                                 }
                                             })
                                             .setNegativeButton("Human", new DialogInterface.OnClickListener() {
                                                 @Override
                                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                                    players = new Player[]{new HumanPlayer("Human"),
+                                                    players = new Player[]{new HumanPlayer("Player 1"),
                                                             new RandomAIPlayer("Computer")};
                                                     startGame(players);
 
-                                                    player1name.setText("Human");
+                                                    player1name.setText("Player 1");
                                                     player2name.setText("Computer");
                                                 }
                                             }).show();
                                 }
                             })
-                            .setNeutralButton("Human", new DialogInterface.OnClickListener() {
+                            .setNeutralButton("Another Player", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};

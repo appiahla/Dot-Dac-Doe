@@ -192,6 +192,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         builder.setView(view);
         AlertDialog alert = builder.create();
         alert.getWindow().setBackgroundDrawableResource(R.color.transparent);
+        alert.setCanceledOnTouchOutside(false);
         alert.show();
     }
 

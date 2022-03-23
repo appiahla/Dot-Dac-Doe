@@ -24,6 +24,9 @@ public class iconPage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
     }
 
 

@@ -128,6 +128,13 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView LightningClick = findViewById(R.id.lightning);
+        LightningClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.lightning);
+            }
+        });
 
     }
 

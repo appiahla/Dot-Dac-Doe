@@ -136,6 +136,14 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView SmileClick = findViewById(R.id.smile);
+        SmileClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.smile);
+            }
+        });
+
     }
 
 

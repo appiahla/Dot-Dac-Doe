@@ -188,8 +188,10 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         //get any variables
         //TextView yourTextView = view.findViewById(R.id.your_textview_id);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
         builder.setView(view);
         AlertDialog alert = builder.create();
+        alert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         alert.show();
     }
 

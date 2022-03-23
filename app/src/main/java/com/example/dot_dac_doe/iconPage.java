@@ -48,6 +48,14 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView UmbrellaClick = findViewById(R.id.umbrella);
+        UmbrellaClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.umbrella);
+            }
+        });
+
     }
 
 

@@ -29,6 +29,16 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
+        //      interaction for game play
+        Button play = findViewById(R.id.play_button_user_select);
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(UserSelectActivity.this, MultiplayerGame.class);
+                startActivity(i);
+            }
+        });
+
 //        interaction for player one icon select
         ImageView player1 = findViewById(R.id.Circle1);
         player1.setOnClickListener(new View.OnClickListener() {

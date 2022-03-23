@@ -1,9 +1,7 @@
 package com.example.dot_dac_doe;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.drawable.DrawableCompat;
 
 import android.content.Intent;
 import android.graphics.PorterDuff;
@@ -21,16 +19,6 @@ public class UserSelectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_select);
 
 
-//       interaction for back btn between user-select and home activity
-        ImageView back = findViewById(R.id.back_arrow);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(UserSelectActivity.this, HomeActivity.class);
-                startActivity(i);
-            }
-        });
-
 //      interaction for orientation page
         Button orientation = findViewById(R.id.orientation_button_user_select);
         orientation.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +30,7 @@ public class UserSelectActivity extends AppCompatActivity {
         });
 
 //        interaction for player one icon select
-        ImageView player1 = findViewById(R.id.user_select_player1_circle);
+        ImageView player1 = findViewById(R.id.Circle1);
         player1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +42,7 @@ public class UserSelectActivity extends AppCompatActivity {
         });
 
 //        interaction for player two icon select
-        ImageView player2 = findViewById(R.id.user_select_player2_circle);
+        ImageView player2 = findViewById(R.id.Circle2);
         player2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

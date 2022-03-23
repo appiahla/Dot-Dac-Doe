@@ -85,7 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/egg"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:srcCompat="@drawable/row_1_column_3" />
+        app:srcCompat="@drawable/row_1_column_3"
+        android:tag="umbrella" />
 
     <ImageView
         android:id="@+id/egg"
@@ -96,7 +97,8 @@
         app:layout_constraintEnd_toStartOf="@+id/umbrella"
         app:layout_constraintStart_toEndOf="@+id/tree"
         app:layout_constraintTop_toBottomOf="@+id/Layout1"
-        app:srcCompat="@drawable/row_1_column_2" />
+        app:srcCompat="@drawable/row_1_column_2"
+        android:tag="egg" />
 
     <ImageView
         android:id="@+id/tree"
@@ -108,7 +110,8 @@
         app:layout_constraintEnd_toStartOf="@+id/egg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Layout1"
-        app:srcCompat="@drawable/row_1_column_1" />
+        app:srcCompat="@drawable/row_1_column_1"
+        android:tag="tree" />
 
     <ImageView
         android:id="@+id/fries"
@@ -119,7 +122,8 @@
         app:layout_constraintEnd_toStartOf="@+id/wave"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tree"
-        app:srcCompat="@drawable/row_2_column_1" />
+        app:srcCompat="@drawable/row_2_column_1"
+        android:tag="fries" />
 
     <ImageView
         android:id="@+id/wave"
@@ -129,7 +133,8 @@
         app:layout_constraintEnd_toStartOf="@+id/peach"
         app:layout_constraintStart_toEndOf="@+id/fries"
         app:layout_constraintTop_toBottomOf="@+id/egg"
-        app:srcCompat="@drawable/row_2_column_2" />
+        app:srcCompat="@drawable/row_2_column_2"
+        android:tag="wave" />
 
     <ImageView
         android:id="@+id/paint"
@@ -140,7 +145,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/goggles"
         app:layout_constraintTop_toBottomOf="@+id/cat"
-        app:srcCompat="@drawable/row_4_column_3" />
+        app:srcCompat="@drawable/row_4_column_3"
+        android:tag="paint" />
 
     <ImageView
         android:id="@+id/lightning"
@@ -153,7 +159,8 @@
         app:layout_constraintEnd_toStartOf="@+id/smile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flower"
-        app:srcCompat="@drawable/row_5_column_1" />
+        app:srcCompat="@drawable/row_5_column_1"
+        android:tag="lightning" />
 
     <ImageView
         android:id="@+id/smile"
@@ -164,7 +171,8 @@
         app:layout_constraintEnd_toStartOf="@+id/fish"
         app:layout_constraintStart_toEndOf="@+id/lightning"
         app:layout_constraintTop_toBottomOf="@+id/goggles"
-        app:srcCompat="@drawable/row_5_column_2" />
+        app:srcCompat="@drawable/row_5_column_2"
+        android:tag="smile" />
 
     <ImageView
         android:id="@+id/fish"
@@ -176,7 +184,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/smile"
         app:layout_constraintTop_toBottomOf="@+id/paint"
-        app:srcCompat="@drawable/row_5_column_3" />
+        app:srcCompat="@drawable/row_5_column_3"
+        android:tag="fish" />
 
     <ImageView
         android:id="@+id/planet"
@@ -187,7 +196,8 @@
         app:layout_constraintEnd_toStartOf="@+id/rain"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fries"
-        app:srcCompat="@drawable/row_3_column_1" />
+        app:srcCompat="@drawable/row_3_column_1"
+        android:tag="planet" />
 
     <ImageView
         android:id="@+id/rain"
@@ -197,7 +207,8 @@
         app:layout_constraintEnd_toStartOf="@+id/cat"
         app:layout_constraintStart_toEndOf="@+id/planet"
         app:layout_constraintTop_toBottomOf="@+id/wave"
-        app:srcCompat="@drawable/row_3_column_2" />
+        app:srcCompat="@drawable/row_3_column_2"
+        android:tag="rain" />
 
     <ImageView
         android:id="@+id/cat"
@@ -208,7 +219,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/rain"
         app:layout_constraintTop_toBottomOf="@+id/peach"
-        app:srcCompat="@drawable/row_3_column_3" />
+        app:srcCompat="@drawable/row_3_column_3"
+        android:tag="cat" />
 
     <ImageView
         android:id="@+id/flower"
@@ -220,7 +232,8 @@
         app:layout_constraintEnd_toStartOf="@+id/goggles"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/planet"
-        app:srcCompat="@drawable/row_4_column_1" />
+        app:srcCompat="@drawable/row_4_column_1"
+        android:tag="flower" />
 
     <ImageView
         android:id="@+id/goggles"
@@ -230,7 +243,8 @@
         app:layout_constraintEnd_toStartOf="@+id/paint"
         app:layout_constraintStart_toEndOf="@+id/flower"
         app:layout_constraintTop_toBottomOf="@+id/rain"
-        app:srcCompat="@drawable/row_4_column_2" />
+        app:srcCompat="@drawable/row_4_column_2"
+        android:tag="goggles" />
 
     <ImageView
         android:id="@+id/peach"
@@ -241,7 +255,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/wave"
         app:layout_constraintTop_toBottomOf="@+id/umbrella"
-        app:srcCompat="@drawable/row_2_column_3" />
+        app:srcCompat="@drawable/row_2_column_3"
+        android:tag="peach" />
 
     <RelativeLayout
         android:id="@+id/Layout1"
@@ -306,5 +321,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 <!--        app:srcCompat="@drawable/paint"-->
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/Selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

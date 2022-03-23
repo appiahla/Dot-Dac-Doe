@@ -16,7 +16,6 @@ public class iconPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_page);
-
         String whichPlayer = getIntent().getStringExtra("player");
         if(whichPlayer.equalsIgnoreCase("player1")){
             ImageView TreeClick = findViewById(R.id.tree);
@@ -137,6 +136,17 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.fish);
+                }
+            });
+
+            Button Selected = findViewById(R.id.Selected);
+            Selected.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String icon = String.valueOf(Icon1.getTag());
+                    Intent i = new Intent(iconPage.this, UserSelectActivity.class);
+                    i.putExtra("icon", icon);
+                    startActivity(i);
                 }
             });
         }

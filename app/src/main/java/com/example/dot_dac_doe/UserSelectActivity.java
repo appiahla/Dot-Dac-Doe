@@ -41,6 +41,13 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
+//        String icon1 = getIntent().getStringExtra("icon");
+//        ImageView Icon1 = findViewById(R.id.Icon1);
+//        if(icon1.equalsIgnoreCase("tree")) {
+//            Icon1.setImageResource(R.drawable.tree);
+//        }
+
+
 //        interaction for player two icon select
         ImageView player2 = findViewById(R.id.Circle2);
         player2.setOnClickListener(new View.OnClickListener() {

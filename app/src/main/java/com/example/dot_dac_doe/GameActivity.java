@@ -31,7 +31,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
     protected GameView gameView;
     protected TextView player1name, player2name, player1state, player2state, player1occupying,
-            player2occupying;
+            player2points;
     ImageView currentPlayerPointer;
     Player[] players;
     Integer[] playersOccupying = new Integer[]{0, 0};
@@ -47,10 +47,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         player1name = (TextView) findViewById(R.id.player1name);
         player2name = (TextView) findViewById(R.id.player2name);
-        player1state = (TextView) findViewById(R.id.player1state);
-        player2state = (TextView) findViewById(R.id.player2state);
         player1occupying = (TextView) findViewById(R.id.player1occupying);
-        player2occupying = (TextView) findViewById(R.id.player2occupying);
+        player2points = (TextView) findViewById(R.id.player2points);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
@@ -66,17 +64,17 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                if (currentPlayer == players[0]) {
-                    player1state.setText("Thinking");
-                    player2state.setText("Waiting");
-                    currentPlayerPointer.setImageResource(R.drawable.a1);
-                } else if (currentPlayer == players[1]) {
-                    player2state.setText("Thinking");
-                    player1state.setText("Waiting");
-                    currentPlayerPointer.setImageResource(R.drawable.a2);
-                }
-                player1occupying.setText("Occupying " + playersOccupying[0]);
-                player2occupying.setText("Occupying " + playersOccupying[1]);
+//                if (currentPlayer == players[0]) {
+//                    player1state.setText("Thinking");
+//                    player2state.setText("Waiting");
+//                    currentPlayerPointer.setImageResource(R.drawable.a1);
+//                } else if (currentPlayer == players[1]) {
+//                    player2state.setText("Thinking");
+//                    player1state.setText("Waiting");
+//                    currentPlayerPointer.setImageResource(R.drawable.a2);
+//                }
+                player1occupying.setText("Boxes: " + playersOccupying[0]);
+                player2points.setText("Boxes: " + playersOccupying[1]);
             }
         });
     }

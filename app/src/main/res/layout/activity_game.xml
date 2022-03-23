@@ -27,24 +27,9 @@
                 android:id="@+id/player1name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Human"
+                android:text="Player 1"
                 android:textColor="@color/colorPrimary" />
 
-            <TextView
-                android:id="@+id/player1state"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Waiting"
-                android:textColor="@color/colorPrimary" />
-
-            <TextView
-                android:id="@+id/player1occupying"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Occupying 0"
-                android:textColor="@color/colorPrimary" />
         </LinearLayout>
 
         <ImageView
@@ -54,12 +39,11 @@
             android:layout_weight="1"
             android:src="@drawable/a1" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:gravity="center_vertical">
 
             <TextView
                 android:id="@+id/player2name"
@@ -70,23 +54,14 @@
                 android:textColor="@color/colorAccent" />
 
             <TextView
-                android:id="@+id/player2state"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:gravity="end"
-                android:text="Waiting"
-                android:textColor="@color/colorAccent" />
-
-            <TextView
-                android:id="@+id/player2occupying"
+                android:id="@+id/player2points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="end"
                 android:text="Occupying 0"
                 android:textColor="@color/colorAccent" />
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 
     <com.example.dot_dac_doe.view.GameView
@@ -100,4 +75,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/player1occupying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Occupying 0"
+        android:textColor="@color/colorPrimary" />
 </LinearLayout>

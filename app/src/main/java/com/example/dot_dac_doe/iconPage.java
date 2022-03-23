@@ -64,6 +64,14 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView WaveClick = findViewById(R.id.wave);
+        WaveClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.wave);
+            }
+        });
+
     }
 
 

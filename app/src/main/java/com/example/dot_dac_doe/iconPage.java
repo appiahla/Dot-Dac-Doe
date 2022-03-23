@@ -88,6 +88,14 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView RainClick = findViewById(R.id.rain);
+        RainClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.rain);
+            }
+        });
+
     }
 
 

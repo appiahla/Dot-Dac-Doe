@@ -46,7 +46,9 @@ public class UserSelectActivity extends AppCompatActivity {
         player1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String player = "player1";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
+                i.putExtra("player", player);
                 startActivity(i);
             }
         });
@@ -56,7 +58,9 @@ public class UserSelectActivity extends AppCompatActivity {
         player2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String player = "player2";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
+                i.putExtra("player", player);
                 startActivity(i);
             }
         });

@@ -29,7 +29,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
-        //      interaction for orientation page
+        //      interaction for game play
         Button play = findViewById(R.id.play_button_user_select);
         play.setOnClickListener(new View.OnClickListener() {
             @Override

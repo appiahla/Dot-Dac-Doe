@@ -108,6 +108,7 @@
         android:id="@+id/multiplayer_pause"
         android:layout_width="63dp"
         android:layout_height="54dp"
+        android:onClick="pauseGame()"
         app:srcCompat="@drawable/pause_btn" />
 
     <!--    <TextView-->

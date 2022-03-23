@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".winner_page">
 
+    <Button
+        android:id="@+id/play_again"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Play Again?"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paint_icon"
+        app:strokeColor="#673AB7" />
+
+    <ImageView
+        android:id="@+id/bottom_confetti"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_button"
+        app:srcCompat="@drawable/bottom_confetti" />
+
     <TextView
         android:id="@+id/winner_header"
         android:layout_width="250dp"
@@ -51,20 +78,6 @@
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
-        android:id="@+id/play_again"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="16dp"
-
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Play Again?"
-        android:textColor="#070707"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paint_icon" />
-
-    <Button
         android:id="@+id/home_button"
         android:layout_width="122dp"
         android:layout_height="85dp"
@@ -80,21 +93,12 @@
         app:layout_constraintTop_toBottomOf="@+id/play_again" />
 
     <ImageView
-        android:id="@+id/bottom_confetti"
-        android:layout_width="326dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_button"
-        app:srcCompat="@drawable/bottom_confetti" />
-
-    <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="293dp"
-        android:layout_height="187dp"
+        android:layout_width="272dp"
+        android:layout_height="184dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="72dp"
+        android:background="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"
         app:srcCompat="@drawable/winner_icon2" />

@@ -59,7 +59,7 @@
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congrats, Player 1 !"
+        android:text="Congratulations!"
         android:textAlignment="center"
         android:textColor="#F0000000"
         android:textSize="36sp"

@@ -112,6 +112,14 @@ public class iconPage extends AppCompatActivity {
             }
         });
 
+        ImageView GogglesClick = findViewById(R.id.goggles);
+        GogglesClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Icon1.setImageResource(R.drawable.goggles);
+            }
+        });
+
     }
 
 

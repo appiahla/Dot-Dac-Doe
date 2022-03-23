@@ -23,7 +23,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     protected GameView gameView;
     protected TextView player1name, player2name, player1points,
             player2points;
-    ImageView currentPlayerPointer;
+    ImageView currentPlayerPointer, pause;
     Player[] players;
     Integer[] playersPoints = new Integer[]{0, 0};
     Player currentPlayer;
@@ -41,6 +41,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         player1points = (TextView) findViewById(R.id.player1points_mult);
         player2points = (TextView) findViewById(R.id.player2points_mult);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
+        pause = (ImageView) findViewById(R.id.multiplayer_pause);
 
         players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
         startGame(players);
@@ -161,5 +162,58 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void pauseGame() {
+//        int id = item.getItemId();
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                new AlertDialog.Builder(MultiplayerGame.this)
+                        .setTitle("Dots And Boxes")
+                        .setMessage("New game versus")
+                        .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                new AlertDialog.Builder(MultiplayerGame.this)
+                                        .setTitle("Who goes first?")
+                                        .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                players = new Player[]{new RandomAIPlayer("Computer"),
+                                                        new HumanPlayer("Player 1")};
+                                                startGame(players);
+
+                                                player1name.setText("Computer");
+                                                player2name.setText("Player 1");
+                                            }
+                                        })
+                                        .setNegativeButton("Human", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                players = new Player[]{new HumanPlayer("Player 1"),
+                                                        new RandomAIPlayer("Computer")};
+                                                startGame(players);
+
+                                                player1name.setText("Player 1");
+                                                player2name.setText("Computer");
+                                            }
+                                        }).show();
+                            }
+                        })
+                        .setNeutralButton("Another Player", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
+                                startGame(players);
+
+                                player1name.setText("Player 1");
+                                player2name.setText("Player 2");
+                            }
+                        }).show();
+            } //if condition for human/computer
+        });
+
+//        return super.onOptionsItemSelected(item);
     }
 }

@@ -180,72 +180,58 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     }
 
     public void pauseGame() {
-//        final Dialog dialog = new Dialog(this);
-//        dialog.setContentView(R.layout.activity_vertical_pause_menu);
-//        dialog.show();
-
         View view = getLayoutInflater().inflate(R.layout.activity_vertical_pause_menu, null);
         //get any variables
         //TextView yourTextView = view.findViewById(R.id.your_textview_id);
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setView(view);
+
         AlertDialog alert = builder.create();
         alert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         alert.setCanceledOnTouchOutside(false);
+
+        //      interaction for resuming
+        Button resume = (Button) view.findViewById(R.id.vertical_resume);
+        resume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                startActivity(i);
+            }
+        });
+
+        //      interaction for exiting the game
+        Button exit = (Button) view.findViewById(R.id.vertical_exit);
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                startActivity(i);
+            }
+        });
+
+        //      interaction for how to play
+        Button howto = (Button) view.findViewById(R.id.vertical_howto);
+        howto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                startActivity(i);
+            }
+        });
+
+        //      interaction for restarting the game
+        Button restart = (Button) view.findViewById(R.id.vertical_restart);
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                startActivity(i);
+            }
+        });
+
         alert.show();
     }
-
-//    public void pauseGame() {
-////        int id = item.getItemId();
-//
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                new AlertDialog.Builder(MultiplayerGame.this)
-//                        .setTitle("Dots And Boxes")
-//                        .setMessage("New game versus")
-//                        .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                new AlertDialog.Builder(MultiplayerGame.this)
-//                                        .setTitle("Who goes first?")
-//                                        .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-//                                            @Override
-//                                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                                players = new Player[]{new RandomAIPlayer("Computer"),
-//                                                        new HumanPlayer("Player 1")};
-//                                                startGame(players);
-//
-//                                                player1name.setText("Computer");
-//                                                player2name.setText("Player 1");
-//                                            }
-//                                        })
-//                                        .setNegativeButton("Human", new DialogInterface.OnClickListener() {
-//                                            @Override
-//                                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                                players = new Player[]{new HumanPlayer("Player 1"),
-//                                                        new RandomAIPlayer("Computer")};
-//                                                startGame(players);
-//
-//                                                player1name.setText("Player 1");
-//                                                player2name.setText("Computer");
-//                                            }
-//                                        }).show();
-//                            }
-//                        })
-//                        .setNeutralButton("Another Player", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
-//                                startGame(players);
-//
-//                                player1name.setText("Player 1");
-//                                player2name.setText("Player 2");
-//                            }
-//                        }).show();
-//            } //if condition for human/computer
-//        });
-//
-////        return super.onOptionsItemSelected(item);
-//    }
 }

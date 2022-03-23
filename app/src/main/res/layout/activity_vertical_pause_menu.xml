@@ -11,9 +11,15 @@
         android:id="@+id/vertical_sticky_note"
         android:layout_width="378dp"
         android:layout_height="567dp"
-        app:srcCompat="@drawable/vertical_pause_background"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="162dp" />
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="162dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vertical_pause_background" />
 
     <Button
         android:id="@+id/vertical_exit"

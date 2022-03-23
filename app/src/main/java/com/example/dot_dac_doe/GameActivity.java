@@ -171,7 +171,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
                                     player2name.setText("Player 2");
                                 }
                             }).show();
-                }
+                } //if condition for human/computer
             });
         }
 

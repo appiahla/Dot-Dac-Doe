@@ -51,8 +51,9 @@ public class GameView extends View implements Observer {
             }
         });
 
-        playerColors = new int[]{getResources().getColor(R.color.colorPrimary),
-                getResources().getColor(R.color.colorAccent)};
+//        player 1, then player 2 line colors
+        playerColors = new int[]{getResources().getColor(R.color.blue),
+                getResources().getColor(R.color.red)};
     }
 
     public void setPlayersState(PlayersStateView playersState) {

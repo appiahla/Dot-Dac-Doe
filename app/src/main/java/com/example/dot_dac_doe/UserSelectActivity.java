@@ -180,15 +180,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
-        //      interaction for game page
-        Button play = findViewById(R.id.play_button_user_select);
-        play.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(UserSelectActivity.this, GameActivity.class);
-                startActivity(i);
-            }
-        });
+
 
     }
 }

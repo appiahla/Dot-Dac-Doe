@@ -197,8 +197,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         resume.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
-                startActivity(i);
+                alert.dismiss();
             }
         });
 

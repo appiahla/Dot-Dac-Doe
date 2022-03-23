@@ -12,12 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
+        android:layout_marginTop="103dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 1"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Player2"
@@ -73,18 +74,6 @@
 
 <!--    </RelativeLayout>-->
 
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="62dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="333dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screen_shot_2022_02_27_at_5_35_57_pm" />
 
     <ImageView
         android:id="@+id/umbrella"

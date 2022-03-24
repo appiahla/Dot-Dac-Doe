@@ -6,6 +6,18 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/player2name2"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Player 2"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="726dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
         android:id="@+id/player1name2"
         android:layout_width="170dp"
         android:layout_height="47dp"
@@ -26,8 +38,8 @@
         android:text="Boxes: 0"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="702dp"
-        tools:layout_editor_absoluteY="160dp" />
+        tools:layout_editor_absoluteX="726dp"
+        tools:layout_editor_absoluteY="186dp" />
 
     <TextView
         android:id="@+id/player1points2"
@@ -67,7 +79,7 @@
         android:translationY="-25dp"
         app:srcCompat="@drawable/user_circle"
         tools:layout_editor_absoluteX="726dp"
-        tools:layout_editor_absoluteY="35dp" />
+        tools:layout_editor_absoluteY="79dp" />
 
     <ImageView
         android:id="@+id/singleplayer_pause2"

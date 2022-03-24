@@ -6,6 +6,15 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/player1_circle4"
+        android:layout_width="162dp"
+        android:layout_height="132dp"
+        android:translationY="-25dp"
+        app:srcCompat="@drawable/user_circle"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
         android:id="@+id/singleplayer_pause2"
         android:layout_width="63dp"
         android:layout_height="54dp"

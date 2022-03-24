@@ -204,6 +204,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             public void onClick(View view) {
                 exitAlert.dismiss();
                 Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }
         });
@@ -256,6 +257,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             public void onClick(View view) {
                 alert.dismiss();
                 Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }
         });

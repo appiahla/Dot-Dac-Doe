@@ -7,7 +7,7 @@
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_opposite.xml" value="0.176" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_mulitplayer_game_opposite.xml" value="0.176" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game.xml" value="0.2" />
-        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.176" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.25" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_main.xml" value="0.1" />
@@ -17,6 +17,8 @@
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings2.xml" value="0.13596491228070176" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings_drop_down.xml" value="0.1796875" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings_drop_down_menu.xml" value="0.2" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_tutorial_page.xml" value="0.2424112868747328" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_user_select.xml" value="0.2424112868747328" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_vertical_pause_menu.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_winner_page.xml" value="0.22873022659256093" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/dropdown_item.xml" value="0.1" />

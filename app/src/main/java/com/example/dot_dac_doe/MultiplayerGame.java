@@ -51,7 +51,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
         startGame(players);
 
-        //      interaction for orientation page
+        //      interaction for pause button
         ImageView pause = findViewById(R.id.multiplayer_pause);
         pause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,8 +59,6 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                 pauseGame();
             }
         });
-
-
     }
 
     private void startGame(Player[] players) {

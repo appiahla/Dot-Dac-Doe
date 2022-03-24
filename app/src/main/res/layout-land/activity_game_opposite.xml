@@ -74,6 +74,13 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp" />
 
+            <ImageView
+                android:id="@+id/computer_circle2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:translationY="-25dp"
+                app:srcCompat="@drawable/user_circle" />
+
         </RelativeLayout>
     </LinearLayout>
 

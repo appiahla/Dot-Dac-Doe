@@ -50,6 +50,14 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
+        <ImageView
+            android:id="@+id/playerNowPointer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/a1"
+            android:translationY="80dp" />
+
         <RelativeLayout
             android:layout_width="16dp"
             android:layout_height="wrap_content"

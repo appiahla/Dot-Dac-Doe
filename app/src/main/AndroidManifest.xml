@@ -10,16 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
-            android:name=".Vertical_pause_menu"
-
+            android:name=".exit_confirmation"
             android:exported="true"
             android:excludeFromRecents="true"/>
         <activity
-            android:name=".MultiplayerGame"
+            android:name=".Vertical_pause_menu"
+            android:excludeFromRecents="true"
             android:exported="true" />
         <activity
+            android:name=".MultiplayerGame"
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+        <activity
             android:name=".GameActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Orientation"
             android:exported="true"

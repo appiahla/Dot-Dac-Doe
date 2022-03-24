@@ -6,6 +6,18 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/player1name2"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
         android:id="@+id/player2points2"
         android:layout_width="173dp"
         android:layout_height="42dp"
@@ -19,16 +31,15 @@
 
     <TextView
         android:id="@+id/player1points2"
-        android:layout_width="229dp"
+        android:layout_width="160dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="664dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:text="Boxes: 0"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="183dp" />
 
     <ImageView
         android:id="@+id/playerNowPointer2"
@@ -46,8 +57,8 @@
         android:layout_height="132dp"
         android:translationY="-25dp"
         app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="62dp" />
 
     <ImageView
         android:id="@+id/player2_circle"

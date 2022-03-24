@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -180,17 +181,42 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     }
 
     public void pauseGame() {
+//        alert for pause menu
         View view = getLayoutInflater().inflate(R.layout.activity_vertical_pause_menu, null);
-        //get any variables
-        //TextView yourTextView = view.findViewById(R.id.your_textview_id);
-
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
         builder.setView(view);
-
         AlertDialog alert = builder.create();
         alert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         alert.setCanceledOnTouchOutside(false);
+
+
+//        alert for exit options
+        View exitView = getLayoutInflater().inflate(R.layout.activity_exit_confirmation, null);
+        AlertDialog.Builder exitBuilder = new AlertDialog.Builder(this);
+        exitBuilder.setView(exitView);
+        AlertDialog exitAlert = exitBuilder.create();
+        exitAlert.getWindow().setBackgroundDrawableResource(R.color.transparent);
+        exitAlert.setCanceledOnTouchOutside(false);
+
+        Button yes = (Button) exitView.findViewById(R.id.vertical_exit_yes);
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exitAlert.dismiss();
+                Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
+                startActivity(i);
+            }
+        });
+
+        Button no = (Button) exitView.findViewById(R.id.vertical_exit_no);
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exitAlert.dismiss();
+                alert.show();
+            }
+        });
+
 
         //      interaction for resuming
         Button resume = (Button) view.findViewById(R.id.vertical_resume);
@@ -201,13 +227,15 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             }
         });
 
+
         //      interaction for exiting the game
         Button exit = (Button) view.findViewById(R.id.vertical_exit);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
-                startActivity(i);
+                alert.dismiss();
+                exitAlert.show();
+
             }
         });
 
@@ -226,6 +254,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                alert.dismiss();
                 Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
                 startActivity(i);
             }

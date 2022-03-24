@@ -13,15 +13,5 @@ public class Vertical_pause_menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vertical_pause_menu);
-
-//        //      interaction for how to play
-//        Button howto = findViewById(R.id.vertical_howto);
-//        howto.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(Vertical_pause_menu.this, tutorial_page.class);
-//                startActivity(i);
-//            }
-//        });
     }
 }

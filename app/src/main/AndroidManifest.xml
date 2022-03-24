@@ -11,7 +11,8 @@
         android:theme="@style/Theme.DotDacDoe">
         <activity
             android:name=".exit_confirmation"
-            android:exported="false" />
+            android:exported="true"
+            android:excludeFromRecents="true"/>
         <activity
             android:name=".Vertical_pause_menu"
             android:excludeFromRecents="true"

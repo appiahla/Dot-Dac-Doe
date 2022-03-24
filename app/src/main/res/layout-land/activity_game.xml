@@ -6,6 +6,16 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/playerNowPointer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/a1"
+        android:translationY="80dp"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="-29dp" />
+
+    <ImageView
         android:id="@+id/player1_circle4"
         android:layout_width="162dp"
         android:layout_height="132dp"

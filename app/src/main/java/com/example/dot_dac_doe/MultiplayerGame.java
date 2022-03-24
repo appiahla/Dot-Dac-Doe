@@ -206,7 +206,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
                 startActivity(i);
             }
         });
@@ -226,7 +226,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+                Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
                 startActivity(i);
             }
         });

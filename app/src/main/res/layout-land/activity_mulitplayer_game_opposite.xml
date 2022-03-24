@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.dot_dac_doe.MultiplayerGame">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/player1name-mult3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Player 1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/player1_circle_mult3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:translationY="-25dp"
+                app:srcCompat="@drawable/user_circle" />
+
+            <TextView
+                android:id="@+id/player1points_mult3"
+                android:layout_width="154dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="170dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Boxes: 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/playerNowPointer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/a1"
+            android:translationY="80dp" />
+    </LinearLayout>
+
+    <com.example.dot_dac_doe.view.GameView
+        android:id="@+id/gameView_mult"
+        android:layout_width="715dp"
+        android:layout_height="166dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/multiplayer_pause"
+            android:layout_width="63dp"
+            android:layout_height="54dp"
+            android:onClick="pauseGame()"
+            app:srcCompat="@drawable/pause_btn" />
+
+        <RelativeLayout
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/player2name_mult3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Computer"
+                android:textColor="@color/colorAccent"
+                android:rotation= "180"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/player2_circle_mult2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:translationY="-25dp"
+                android:rotation= "180"
+                app:srcCompat="@drawable/user_circle" />
+
+            <TextView
+                android:id="@+id/player2points_mult3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Boxes: 0"
+                android:rotation= "180"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"  />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

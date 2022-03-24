@@ -118,68 +118,6 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         });
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.game, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_new) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    new AlertDialog.Builder(MultiplayerGame.this)
-                            .setTitle("Dots And Boxes")
-                            .setMessage("New game versus")
-                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    new AlertDialog.Builder(MultiplayerGame.this)
-                                            .setTitle("Who goes first?")
-                                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialogInterface, int i) {
-                                                    players = new Player[]{new RandomAIPlayer("Computer"),
-                                                            new HumanPlayer("Player 1")};
-                                                    startGame(players);
-
-                                                    player1name.setText("Computer");
-                                                    player2name.setText("Player 1");
-                                                }
-                                            })
-                                            .setNegativeButton("Human", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialogInterface, int i) {
-                                                    players = new Player[]{new HumanPlayer("Player 1"),
-                                                            new RandomAIPlayer("Computer")};
-                                                    startGame(players);
-
-                                                    player1name.setText("Player 1");
-                                                    player2name.setText("Computer");
-                                                }
-                                            }).show();
-                                }
-                            })
-                            .setNeutralButton("Another Player", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
-                                    startGame(players);
-
-                                    player1name.setText("Player 1");
-                                    player2name.setText("Player 2");
-                                }
-                            }).show();
-                } //if condition for human/computer
-            });
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     public void pauseGame() {
 //        alert for pause menu
         View view = getLayoutInflater().inflate(R.layout.activity_vertical_pause_menu, null);

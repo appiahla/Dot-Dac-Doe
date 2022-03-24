@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+            android:name=".exit_confirmation"
+            android:exported="false" />
+        <activity
             android:name=".Vertical_pause_menu"
-
-            android:exported="true"
-            android:excludeFromRecents="true"/>
+            android:excludeFromRecents="true"
+            android:exported="true" />
         <activity
             android:name=".MultiplayerGame"
             android:exported="true" />

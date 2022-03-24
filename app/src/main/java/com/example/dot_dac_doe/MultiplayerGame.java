@@ -118,11 +118,11 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.game, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.game, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

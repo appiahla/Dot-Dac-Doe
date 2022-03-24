@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context="com.example.dot_dac_doe.MultiplayerGame">
 
     <LinearLayout
@@ -71,7 +75,7 @@
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/computer_circle_mult2"
+                android:id="@+id/player2_circle_mult2"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:translationY="-25dp"
@@ -90,7 +94,7 @@
     </LinearLayout>
 
     <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView_mult2"
+        android:id="@+id/gameView_mult"
         android:layout_width="715dp"
         android:layout_height="166dp"
         android:layout_marginLeft="75dp"
@@ -98,7 +102,7 @@
         android:layout_weight="1" />
 
     <ImageView
-        android:id="@+id/multiplayer_pause2"
+        android:id="@+id/multiplayer_pause"
         android:layout_width="63dp"
         android:layout_height="54dp"
         android:onClick="pauseGame()"

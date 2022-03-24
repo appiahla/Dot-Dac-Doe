@@ -34,6 +34,13 @@
                 android:text="Player 1"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/player1_circle_mult2"
+                android:layout_width="147dp"
+                android:layout_height="139dp"
+                android:translationY="-25dp"
+                app:srcCompat="@drawable/user_circle" />
         </RelativeLayout>
 
         <RelativeLayout

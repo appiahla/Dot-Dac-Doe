@@ -7,6 +7,17 @@
     android:orientation="horizontal"
     tools:context="com.example.dot_dac_doe.MultiplayerGame">
 
+    <TextView
+        android:id="@+id/player2name_mult2"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Player 2"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="714dp" />
+
     <ImageView
         android:id="@+id/multiplayer_pause2"
         android:layout_width="63dp"

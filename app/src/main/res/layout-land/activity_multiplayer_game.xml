@@ -7,33 +7,6 @@
     android:orientation="horizontal"
     tools:context="com.example.dot_dac_doe.MultiplayerGame">
 
-    <ImageView
-        android:id="@+id/multiplayer_pause2"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
-        android:onClick="pauseGame()"
-        app:srcCompat="@drawable/pause_btn"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="341dp" />
-
-    <ImageView
-        android:id="@+id/playerNowPointer_mult2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/a1"
-        android:translationY="80dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="130dp" />
-
-    <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView_mult2"
-        android:layout_width="563dp"
-        android:layout_height="376dp"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="40dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,6 +45,16 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
+        <ImageView
+            android:id="@+id/playerNowPointer_mult2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/a1"
+            android:translationY="80dp"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="130dp" />
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +87,21 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp" />
         </RelativeLayout>
-
     </LinearLayout>
+
+    <com.example.dot_dac_doe.view.GameView
+        android:id="@+id/gameView_mult2"
+        android:layout_width="563dp"
+        android:layout_height="376dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ImageView
+        android:id="@+id/multiplayer_pause2"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:onClick="pauseGame()"
+        app:srcCompat="@drawable/pause_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

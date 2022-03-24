@@ -63,6 +63,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/player2name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Computer"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
         </RelativeLayout>
     </LinearLayout>
 

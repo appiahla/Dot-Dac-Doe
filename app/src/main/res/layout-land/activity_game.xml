@@ -15,6 +15,15 @@
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
+        android:id="@+id/player2_circle"
+        android:layout_width="162dp"
+        android:layout_height="132dp"
+        android:translationY="-25dp"
+        app:srcCompat="@drawable/user_circle"
+        tools:layout_editor_absoluteX="726dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <ImageView
         android:id="@+id/singleplayer_pause2"
         android:layout_width="63dp"
         android:layout_height="54dp"
@@ -24,9 +33,9 @@
 
     <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameViewland"
-        android:layout_width="601dp"
-        android:layout_height="359dp"
+        android:layout_width="559dp"
+        android:layout_height="301dp"
         android:layout_weight="1"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="85dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

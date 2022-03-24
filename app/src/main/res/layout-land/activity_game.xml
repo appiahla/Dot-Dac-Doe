@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/singleplayer_pause2"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/pause_btn"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="341dp" />
+
     <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView2"
+        android:id="@+id/gameViewland"
         android:layout_width="601dp"
         android:layout_height="359dp"
         android:layout_weight="1"

@@ -58,64 +58,55 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/a1"
-            android:translationY="80dp"
-            tools:layout_editor_absoluteX="431dp"
-            tools:layout_editor_absoluteY="-29dp" />
+            android:translationY="80dp" />
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_horizontal"
-            tools:layout_editor_absoluteX="445dp">
+            android:gravity="center_vertical">
 
             <TextView
                 android:id="@+id/player2name2"
-                android:layout_width="163dp"
-                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Computer"
                 android:textColor="@color/colorAccent"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="726dp"
-                tools:layout_editor_absoluteY="5dp" />
+                android:textSize="20sp"  />
+
             <ImageView
-                android:id="@+id/player2_circle"
-                android:layout_width="162dp"
-                android:layout_height="132dp"
+                android:id="@+id/computer_circle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:translationY="-25dp"
-                app:srcCompat="@drawable/user_circle"
-                tools:layout_editor_absoluteX="726dp"
-                tools:layout_editor_absoluteY="79dp" />
+                app:srcCompat="@drawable/user_circle" />
+
             <TextView
-                android:id="@+id/player2points2"
-                android:layout_width="173dp"
-                android:layout_height="42dp"
+                android:id="@+id/computer_points2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Boxes: 0"
                 android:textColor="@color/colorAccent"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="726dp"
-                tools:layout_editor_absoluteY="186dp" />
+                android:textSize="20sp"  />
         </RelativeLayout>
     </LinearLayout>
 
     <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameView"
-        android:layout_width="559dp"
-        android:layout_height="301dp"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="85dp" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"  />
 
     <ImageView
         android:id="@+id/singleplayer_pause2"
         android:layout_width="63dp"
         android:layout_height="54dp"
-        app:srcCompat="@drawable/pause_btn"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:srcCompat="@drawable/pause_btn" />
 
 </LinearLayout>

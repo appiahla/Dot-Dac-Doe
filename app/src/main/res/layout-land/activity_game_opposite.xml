@@ -31,6 +31,13 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp" />
 
+            <ImageView
+                android:id="@+id/player1_circle3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:translationY="-25dp"
+                app:srcCompat="@drawable/user_circle" />
+
 
         </RelativeLayout>
 

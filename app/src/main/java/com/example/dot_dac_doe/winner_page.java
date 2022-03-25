@@ -23,6 +23,7 @@ public class winner_page extends AppCompatActivity {
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
         setContentView(R.layout.activity_multiplayer_game);
+
         play_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,9 +38,21 @@ public class winner_page extends AppCompatActivity {
                 startActivity(a);
             }
         });
-    }
-            public void setWinner(final Player winner) {
+        Button restart = (Button) findViewById(R.id.vertical_restart);
+        restart.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(winner_page.this, MultiplayerGame.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+            }
+        });
+
+
+        }
+            public void setWinner(final Player winner) {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -59,8 +72,4 @@ public class winner_page extends AppCompatActivity {
                     }
                 });
             }
-
-
-
-
 }

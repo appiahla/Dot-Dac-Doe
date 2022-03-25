@@ -24,6 +24,13 @@ public class winner_page extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        home_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(winner_page.this, UserSelectActivity.class);
+                startActivity(a);
+            }
+        });
+            }
 
     }
-}

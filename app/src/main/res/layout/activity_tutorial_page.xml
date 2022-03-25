@@ -11,7 +11,7 @@
         android:layout_width="278dp"
         android:layout_height="91dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="33dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="HOW TO PLAY!"
@@ -19,7 +19,7 @@
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,14 +28,14 @@
         android:layout_width="327dp"
         android:layout_height="143dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The goal of the game is to create a square by joining four dots."
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tutorial_header_DDD" />
 
@@ -43,7 +43,7 @@
         android:id="@+id/tutorial_icon"
         android:layout_width="222dp"
         android:layout_height="154dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goalofgame"

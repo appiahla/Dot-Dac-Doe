@@ -16,13 +16,13 @@ public class Orientation extends AppCompatActivity {
         setContentView(R.layout.activity_orientation);
 
         // action for back btn between orientation and user-select
-        ImageView back = findViewById(R.id.orientation_back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Orientation.this, UserSelectActivity.class);
-                startActivity(i);
-            }
-        });
+////        ImageView back = findViewById(R.id.orientation_back);
+////        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(Orientation.this, UserSelectActivity.class);
+//                startActivity(i);
+//            }
+//        });
     }
 }

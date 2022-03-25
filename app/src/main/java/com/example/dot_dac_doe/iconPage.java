@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,11 +21,20 @@ public class iconPage extends AppCompatActivity {
 //        String whichPlayer = getIntent().getStringExtra("player");
         ImageView Icon1 = findViewById(R.id.Icon1);
         ImageView Icon2 = findViewById(R.id.Icon2);
+        ImageView Circle1 = findViewById(R.id.Circle1);
+        ImageView Circle2 = findViewById(R.id.Circle2);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String whichPlayer = intent.getStringExtra("player");
         if (extras != null) {
+            if (extras.containsKey("player1color")) {
+                String color1 = getIntent().getStringExtra("player1color");
+                if (color1.equalsIgnoreCase("red1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("red1");
+                }
+            }
             if (extras.containsKey("icon1")) {
                 String icon1 = getIntent().getStringExtra("icon1");
                 if (icon1.equalsIgnoreCase("tree")) {

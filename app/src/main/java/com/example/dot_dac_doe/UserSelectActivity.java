@@ -153,14 +153,18 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String player = "player1";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
-                if (String.valueOf(Icon1.getTag()).isEmpty()) { }
-                else {
+                if (!String.valueOf(Icon1.getTag()).isEmpty()) {
                     i.putExtra("icon1", String.valueOf(Icon1.getTag()));
                 }
-                if (String.valueOf(Icon2.getTag()).isEmpty()) { }
-                else {
+
+                if (!String.valueOf(Icon2.getTag()).isEmpty()) {
                     i.putExtra("icon2", String.valueOf(Icon2.getTag()));
                 }
+
+                if (!String.valueOf(player1.getTag()).isEmpty()) {
+                    i.putExtra("player1color", String.valueOf(player1.getTag()));
+                }
+
                 i.putExtra("player", player);
                 startActivity(i);
             }
@@ -202,6 +206,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                player1.setTag(red1.getTag());
             }
         });
 
@@ -210,6 +215,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                player1.setTag(blue1.getTag());
             }
         });
         ImageView orange1 = findViewById(R.id.pick_orange_1_user_select);
@@ -217,6 +223,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                player1.setTag(orange1.getTag());
             }
         });
         ImageView purple1 = findViewById(R.id.pick_purple_1_user_select);
@@ -224,6 +231,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                player1.setTag(purple1.getTag());
             }
         });
         ImageView yellow1 = findViewById(R.id.pick_yellow_1_user_select);
@@ -231,6 +239,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                player1.setTag(yellow1.getTag());
             }
         });
         ImageView pink1 = findViewById(R.id.pick_pink_1_user_select);
@@ -238,6 +247,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                player1.setTag(pink1.getTag());
             }
         });
         ImageView green1 = findViewById(R.id.pick_green_1_user_select);
@@ -245,6 +255,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                player1.setTag(green1.getTag());
             }
         });
         ImageView grey1 = findViewById(R.id.pick_grey_1_user_select);
@@ -252,6 +263,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                player1.setTag(grey1.getTag());
             }
         });
 
@@ -260,6 +272,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                player2.setTag(red2.getTag());
             }
         });
 
@@ -268,6 +281,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                player2.setTag(blue2.getTag());
             }
         });
         ImageView orange2 = findViewById(R.id.pick_orange_2_user_select);
@@ -275,6 +289,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                player2.setTag(orange2.getTag());
             }
         });
         ImageView purple2 = findViewById(R.id.pick_purple_2_user_select);
@@ -282,6 +297,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                player2.setTag(purple2.getTag());
             }
         });
         ImageView yellow2 = findViewById(R.id.pick_yellow_2_user_select);
@@ -289,6 +305,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                player2.setTag(yellow2.getTag());
             }
         });
         ImageView pink2 = findViewById(R.id.pick_pink_2_user_select);
@@ -296,6 +313,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                player2.setTag(pink2.getTag());
             }
         });
         ImageView green2 = findViewById(R.id.pick_green_2_user_select);
@@ -303,6 +321,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                player2.setTag(green2.getTag());
             }
         });
         ImageView grey2 = findViewById(R.id.pick_grey_2_user_select);
@@ -310,6 +329,7 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                player2.setTag(grey2.getTag());
             }
         });
 

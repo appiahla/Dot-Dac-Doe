@@ -6,6 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".winner_page">
 
+    <Button
+        android:id="@+id/play_again"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="384dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Play Again?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/bottom_confetti"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom_confetti" />
+
     <TextView
         android:id="@+id/winner_header"
         android:layout_width="250dp"
@@ -32,7 +60,7 @@
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congrats, Player 1 !"
+        android:text="Congratulations!"
         android:textAlignment="center"
         android:textColor="#F0000000"
         android:textSize="36sp"
@@ -51,50 +79,31 @@
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
-        android:id="@+id/play_again"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="16dp"
-
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Play Again?"
-        android:textColor="#070707"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paint_icon" />
-
-    <Button
         android:id="@+id/home_button"
-        android:layout_width="122dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="12dp"
-        android:background="#00FFFFFF"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="314dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="300dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="HOME"
-        android:textColor="#000000"
-        android:textColorHighlight="#FFFFFF"
-        android:textSize="24sp"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play_again" />
-
-    <ImageView
-        android:id="@+id/bottom_confetti"
-        android:layout_width="326dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_button"
-        app:srcCompat="@drawable/bottom_confetti" />
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp" />
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="293dp"
-        android:layout_height="187dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="260dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="156dp"
+        android:background="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"
         app:srcCompat="@drawable/winner_icon2" />
@@ -123,8 +132,8 @@
         android:id="@+id/right_side_removed"
         android:layout_width="98dp"
         android:layout_height="682dp"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />

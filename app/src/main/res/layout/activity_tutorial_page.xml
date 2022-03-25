@@ -67,7 +67,7 @@
         android:layout_width="94dp"
         android:layout_height="76dp"
         app:srcCompat="@drawable/fast_forward_icon_removebg_preview"
-        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="800dp" /><![CDATA[
 
     =======

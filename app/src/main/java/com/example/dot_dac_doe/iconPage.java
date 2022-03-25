@@ -165,6 +165,9 @@ public class iconPage extends AppCompatActivity {
                 public void onClick(View view) {
                     String icon = String.valueOf(Icon1.getTag());
                     Intent i = new Intent(iconPage.this, UserSelectActivity.class);
+                    if(String.valueOf(Icon1.getTag()) != null ) {
+                        i.putExtra("icon1", icon);
+                    }
                     i.putExtra("icon1", icon);
                     startActivity(i);
                 }

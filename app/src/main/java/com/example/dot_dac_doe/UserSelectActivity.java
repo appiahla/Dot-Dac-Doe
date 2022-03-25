@@ -96,11 +96,40 @@ public class UserSelectActivity extends AppCompatActivity {
                     Icon1.setImageResource(R.drawable.fish);
                 }
 
-            } else if (extras.containsKey("icon2")) {
+            }
+            if (extras.containsKey("icon2")) {
                 String icon2 = getIntent().getStringExtra("icon2");
                 ImageView Icon2 = findViewById(R.id.Icon2);
                 if(icon2.equalsIgnoreCase("tree")) {
                     Icon2.setImageResource(R.drawable.tree);
+                } else if(icon2.equalsIgnoreCase("egg")) {
+                    Icon2.setImageResource(R.drawable.egg);
+                } else if(icon2.equalsIgnoreCase("umbrella")) {
+                    Icon2.setImageResource(R.drawable.umbrella);
+                } else if(icon2.equalsIgnoreCase("fries")) {
+                    Icon2.setImageResource(R.drawable.fries);
+                } else if(icon2.equalsIgnoreCase("wave")) {
+                    Icon2.setImageResource(R.drawable.wave);
+                } else if(icon2.equalsIgnoreCase("peach")) {
+                    Icon2.setImageResource(R.drawable.peach);
+                } else if(icon2.equalsIgnoreCase("planet")) {
+                    Icon2.setImageResource(R.drawable.planet);
+                } else if(icon2.equalsIgnoreCase("rain")) {
+                    Icon2.setImageResource(R.drawable.rain);
+                } else if(icon2.equalsIgnoreCase("cat")) {
+                    Icon2.setImageResource(R.drawable.cat);
+                } else if(icon2.equalsIgnoreCase("flower")) {
+                    Icon2.setImageResource(R.drawable.flower);
+                } else if(icon2.equalsIgnoreCase("goggles")) {
+                    Icon2.setImageResource(R.drawable.goggles);
+                } else if(icon2.equalsIgnoreCase("paint")) {
+                    Icon2.setImageResource(R.drawable.paint);
+                } else if(icon2.equalsIgnoreCase("lightning")) {
+                    Icon2.setImageResource(R.drawable.lightning);
+                } else if(icon2.equalsIgnoreCase("smile")) {
+                    Icon2.setImageResource(R.drawable.smile);
+                } else if(icon2.equalsIgnoreCase("fish")) {
+                    Icon2.setImageResource(R.drawable.fish);
                 }
             }
         }

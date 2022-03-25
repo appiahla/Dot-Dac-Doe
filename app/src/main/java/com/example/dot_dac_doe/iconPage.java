@@ -161,9 +161,8 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String icon = String.valueOf(Icon1.getTag());
-                    Log.d("CREATION", icon);
                     Intent i = new Intent(iconPage.this, UserSelectActivity.class);
-                    i.putExtra("icon", icon);
+                    i.putExtra("icon1", icon);
                     startActivity(i);
                 }
             });
@@ -175,6 +174,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.tree);
+                    Icon2.setTag(TreeClick.getTag());
                 }
             });
 
@@ -183,6 +183,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.egg);
+                    Icon2.setTag(EggClick.getTag());
                 }
             });
 
@@ -191,6 +192,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.umbrella);
+                    Icon2.setTag(UmbrellaClick.getTag());
                 }
             });
 
@@ -199,6 +201,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.fries);
+                    Icon2.setTag(FriesClick.getTag());
                 }
             });
 
@@ -207,6 +210,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.wave);
+                    Icon2.setTag(WaveClick.getTag());
                 }
             });
 
@@ -215,6 +219,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.peach);
+                    Icon2.setTag(PeachClick.getTag());
                 }
             });
 
@@ -223,6 +228,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.planet);
+                    Icon2.setTag(PlanetClick.getTag());
                 }
             });
 
@@ -231,6 +237,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.rain);
+                    Icon2.setTag(RainClick.getTag());
                 }
             });
 
@@ -239,6 +246,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.cat);
+                    Icon2.setTag(CatClick.getTag());
                 }
             });
 
@@ -247,6 +255,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.flower);
+                    Icon2.setTag(FlowerClick.getTag());
                 }
             });
 
@@ -255,6 +264,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.goggles);
+                    Icon2.setTag(GogglesClick.getTag());
                 }
             });
 
@@ -263,6 +273,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.paint);
+                    Icon2.setTag(PaintClick.getTag());
                 }
             });
 
@@ -271,6 +282,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.lightning);
+                    Icon2.setTag(LightningClick.getTag());
                 }
             });
 
@@ -279,6 +291,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.smile);
+                    Icon2.setTag(SmileClick.getTag());
                 }
             });
 
@@ -287,129 +300,21 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon2.setImageResource(R.drawable.fish);
+                    Icon2.setTag(FishClick.getTag());
+                }
+            });
+
+            Button Selected = findViewById(R.id.Selected);
+            Selected.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String icon = String.valueOf(Icon2.getTag());
+                    Intent i = new Intent(iconPage.this, UserSelectActivity.class);
+                    i.putExtra("icon2", icon);
+                    startActivity(i);
                 }
             });
         }
-//        ImageView TreeClick = findViewById(R.id.tree);
-//        ImageView Icon1 = findViewById(R.id.Icon1);
-//        TreeClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.tree);
-//            }
-//        });
-//
-//        ImageView EggClick = findViewById(R.id.egg);
-//        EggClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.egg);
-//            }
-//        });
-//
-//        ImageView UmbrellaClick = findViewById(R.id.umbrella);
-//        UmbrellaClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.umbrella);
-//            }
-//        });
-//
-//        ImageView FriesClick = findViewById(R.id.fries);
-//        FriesClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.fries);
-//            }
-//        });
-//
-//        ImageView WaveClick = findViewById(R.id.wave);
-//        WaveClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.wave);
-//            }
-//        });
-//
-//        ImageView PeachClick = findViewById(R.id.peach);
-//        PeachClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.peach);
-//            }
-//        });
-//
-//        ImageView PlanetClick = findViewById(R.id.planet);
-//        PlanetClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.planet);
-//            }
-//        });
-//
-//        ImageView RainClick = findViewById(R.id.rain);
-//        RainClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.rain);
-//            }
-//        });
-//
-//        ImageView CatClick = findViewById(R.id.cat);
-//        CatClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.cat);
-//            }
-//        });
-//
-//        ImageView FlowerClick = findViewById(R.id.flower);
-//        FlowerClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.flower);
-//            }
-//        });
-//
-//        ImageView GogglesClick = findViewById(R.id.goggles);
-//        GogglesClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.goggles);
-//            }
-//        });
-//
-//        ImageView PaintClick = findViewById(R.id.paint);
-//        PaintClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.paint);
-//            }
-//        });
-//
-//        ImageView LightningClick = findViewById(R.id.lightning);
-//        LightningClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.lightning);
-//            }
-//        });
-//
-//        ImageView SmileClick = findViewById(R.id.smile);
-//        SmileClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.smile);
-//            }
-//        });
-//
-//        ImageView FishClick = findViewById(R.id.fish);
-//        FishClick.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Icon1.setImageResource(R.drawable.fish);
-//            }
-//        });
 
     }
 

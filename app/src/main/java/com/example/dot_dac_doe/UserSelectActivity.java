@@ -61,13 +61,18 @@ public class UserSelectActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if (extras != null) {
-//            String icon1 = getIntent().getStringExtra("icon");
-            Log.d("CREATION","this was reached");
-            String icon1 = getIntent().getStringExtra("icon");
-            ImageView Icon1 = findViewById(R.id.Icon1);
-            if(icon1.equalsIgnoreCase("tree")) {
-                Log.d("CREATION","this was also reached");
-                Icon1.setImageResource(R.drawable.tree);
+            if (extras.containsKey("icon1")) {
+                String icon1 = getIntent().getStringExtra("icon1");
+                ImageView Icon1 = findViewById(R.id.Icon1);
+                if(icon1.equalsIgnoreCase("tree")) {
+                    Icon1.setImageResource(R.drawable.tree);
+                }
+            } else if (extras.containsKey("icon2")) {
+                String icon2 = getIntent().getStringExtra("icon2");
+                ImageView Icon2 = findViewById(R.id.Icon2);
+                if(icon2.equalsIgnoreCase("tree")) {
+                    Icon2.setImageResource(R.drawable.tree);
+                }
             }
         }
 

@@ -18,6 +18,9 @@ public class UserSelectActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_select);
+        ImageView Icon1 = findViewById(R.id.Icon1);
+        ImageView Icon2 = findViewById(R.id.Icon2);
+
 
 
 //      interaction for orientation page
@@ -40,6 +43,109 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+            if (extras.containsKey("icon1")) {
+                String icon1 = getIntent().getStringExtra("icon1");
+                if(icon1.equalsIgnoreCase("tree")) {
+                    Icon1.setImageResource(R.drawable.tree);
+                    Icon1.setTag("tree");
+                } else if(icon1.equalsIgnoreCase("egg")) {
+                    Icon1.setImageResource(R.drawable.egg);
+                    Icon1.setTag("egg");
+                } else if(icon1.equalsIgnoreCase("umbrella")) {
+                    Icon1.setImageResource(R.drawable.umbrella);
+                    Icon1.setTag("umbrella");
+                } else if(icon1.equalsIgnoreCase("fries")) {
+                    Icon1.setImageResource(R.drawable.fries);
+                    Icon1.setTag("fries");
+                } else if(icon1.equalsIgnoreCase("wave")) {
+                    Icon1.setImageResource(R.drawable.wave);
+                    Icon1.setTag("wave");
+                } else if(icon1.equalsIgnoreCase("peach")) {
+                    Icon1.setImageResource(R.drawable.peach);
+                    Icon1.setTag("peach");
+                } else if(icon1.equalsIgnoreCase("planet")) {
+                    Icon1.setImageResource(R.drawable.planet);
+                    Icon1.setTag("planet");
+                } else if(icon1.equalsIgnoreCase("rain")) {
+                    Icon1.setImageResource(R.drawable.rain);
+                    Icon1.setTag("rain");
+                } else if(icon1.equalsIgnoreCase("cat")) {
+                    Icon1.setImageResource(R.drawable.cat);
+                    Icon1.setTag("cat");
+                } else if(icon1.equalsIgnoreCase("flower")) {
+                    Icon1.setImageResource(R.drawable.flower);
+                    Icon1.setTag("flower");
+                } else if(icon1.equalsIgnoreCase("goggles")) {
+                    Icon1.setImageResource(R.drawable.goggles);
+                    Icon1.setTag("goggles");
+                } else if(icon1.equalsIgnoreCase("paint")) {
+                    Icon1.setImageResource(R.drawable.paint);
+                    Icon1.setTag("paint");
+                } else if(icon1.equalsIgnoreCase("lightning")) {
+                    Icon1.setImageResource(R.drawable.lightning);
+                    Icon1.setTag("lightning");
+                } else if(icon1.equalsIgnoreCase("smile")) {
+                    Icon1.setImageResource(R.drawable.smile);
+                    Icon1.setTag("smile");
+                } else if(icon1.equalsIgnoreCase("fish")) {
+                    Icon1.setImageResource(R.drawable.fish);
+                    Icon1.setTag("fish");
+                }
+            }
+            if (extras.containsKey("icon2")) {
+                String icon2 = getIntent().getStringExtra("icon2");
+                if(icon2.equalsIgnoreCase("tree")) {
+                    Icon2.setImageResource(R.drawable.tree);
+                    Icon2.setTag("tree");
+                } else if(icon2.equalsIgnoreCase("egg")) {
+                    Icon2.setImageResource(R.drawable.egg);
+                    Icon2.setTag("egg");
+                } else if(icon2.equalsIgnoreCase("umbrella")) {
+                    Icon2.setImageResource(R.drawable.umbrella);
+                    Icon2.setTag("umbrella");
+                } else if(icon2.equalsIgnoreCase("fries")) {
+                    Icon2.setImageResource(R.drawable.fries);
+                    Icon2.setTag("fish");
+                } else if(icon2.equalsIgnoreCase("wave")) {
+                    Icon2.setImageResource(R.drawable.wave);
+                    Icon2.setTag("wave");
+                } else if(icon2.equalsIgnoreCase("peach")) {
+                    Icon2.setImageResource(R.drawable.peach);
+                    Icon2.setTag("peach");
+                } else if(icon2.equalsIgnoreCase("planet")) {
+                    Icon2.setImageResource(R.drawable.planet);
+                    Icon2.setTag("planet");
+                } else if(icon2.equalsIgnoreCase("rain")) {
+                    Icon2.setImageResource(R.drawable.rain);
+                    Icon2.setTag("rain");
+                } else if(icon2.equalsIgnoreCase("cat")) {
+                    Icon2.setImageResource(R.drawable.cat);
+                    Icon2.setTag("cat");
+                } else if(icon2.equalsIgnoreCase("flower")) {
+                    Icon2.setImageResource(R.drawable.flower);
+                    Icon2.setTag("flower");
+                } else if(icon2.equalsIgnoreCase("goggles")) {
+                    Icon2.setImageResource(R.drawable.goggles);
+                    Icon2.setTag("goggles");
+                } else if(icon2.equalsIgnoreCase("paint")) {
+                    Icon2.setImageResource(R.drawable.paint);
+                    Icon2.setTag("paint");
+                } else if(icon2.equalsIgnoreCase("lightning")) {
+                    Icon2.setImageResource(R.drawable.lightning);
+                    Icon2.setTag("lightning");
+                } else if(icon2.equalsIgnoreCase("smile")) {
+                    Icon2.setImageResource(R.drawable.smile);
+                    Icon2.setTag("smile");
+                } else if(icon2.equalsIgnoreCase("fish")) {
+                    Icon2.setImageResource(R.drawable.fish);
+                    Icon2.setTag("fish");
+                }
+            }
+        }
+
 //        interaction for player one icon select
         ImageView player1 = findViewById(R.id.Circle1);
         player1.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +153,14 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String player = "player1";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
+                if (String.valueOf(Icon1.getTag()).isEmpty()) { }
+                else {
+                    i.putExtra("icon1", String.valueOf(Icon1.getTag()));
+                }
+                if (String.valueOf(Icon2.getTag()).isEmpty()) { }
+                else {
+                    i.putExtra("icon2", String.valueOf(Icon2.getTag()));
+                }
                 i.putExtra("player", player);
                 startActivity(i);
             }
@@ -58,81 +172,6 @@ public class UserSelectActivity extends AppCompatActivity {
 //            Icon1.setImageResource(R.drawable.tree);
 //        }
 
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        if (extras != null) {
-            if (extras.containsKey("icon1")) {
-                String icon1 = getIntent().getStringExtra("icon1");
-                ImageView Icon1 = findViewById(R.id.Icon1);
-                if(icon1.equalsIgnoreCase("tree")) {
-                    Icon1.setImageResource(R.drawable.tree);
-                } else if(icon1.equalsIgnoreCase("egg")) {
-                    Icon1.setImageResource(R.drawable.egg);
-                } else if(icon1.equalsIgnoreCase("umbrella")) {
-                    Icon1.setImageResource(R.drawable.umbrella);
-                } else if(icon1.equalsIgnoreCase("fries")) {
-                    Icon1.setImageResource(R.drawable.fries);
-                } else if(icon1.equalsIgnoreCase("wave")) {
-                    Icon1.setImageResource(R.drawable.wave);
-                } else if(icon1.equalsIgnoreCase("peach")) {
-                    Icon1.setImageResource(R.drawable.peach);
-                } else if(icon1.equalsIgnoreCase("planet")) {
-                    Icon1.setImageResource(R.drawable.planet);
-                } else if(icon1.equalsIgnoreCase("rain")) {
-                    Icon1.setImageResource(R.drawable.rain);
-                } else if(icon1.equalsIgnoreCase("cat")) {
-                    Icon1.setImageResource(R.drawable.cat);
-                } else if(icon1.equalsIgnoreCase("flower")) {
-                    Icon1.setImageResource(R.drawable.flower);
-                } else if(icon1.equalsIgnoreCase("goggles")) {
-                    Icon1.setImageResource(R.drawable.goggles);
-                } else if(icon1.equalsIgnoreCase("paint")) {
-                    Icon1.setImageResource(R.drawable.paint);
-                } else if(icon1.equalsIgnoreCase("lightning")) {
-                    Icon1.setImageResource(R.drawable.lightning);
-                } else if(icon1.equalsIgnoreCase("smile")) {
-                    Icon1.setImageResource(R.drawable.smile);
-                } else if(icon1.equalsIgnoreCase("fish")) {
-                    Icon1.setImageResource(R.drawable.fish);
-                }
-
-            }
-            if (extras.containsKey("icon2")) {
-                String icon2 = getIntent().getStringExtra("icon2");
-                ImageView Icon2 = findViewById(R.id.Icon2);
-                if(icon2.equalsIgnoreCase("tree")) {
-                    Icon2.setImageResource(R.drawable.tree);
-                } else if(icon2.equalsIgnoreCase("egg")) {
-                    Icon2.setImageResource(R.drawable.egg);
-                } else if(icon2.equalsIgnoreCase("umbrella")) {
-                    Icon2.setImageResource(R.drawable.umbrella);
-                } else if(icon2.equalsIgnoreCase("fries")) {
-                    Icon2.setImageResource(R.drawable.fries);
-                } else if(icon2.equalsIgnoreCase("wave")) {
-                    Icon2.setImageResource(R.drawable.wave);
-                } else if(icon2.equalsIgnoreCase("peach")) {
-                    Icon2.setImageResource(R.drawable.peach);
-                } else if(icon2.equalsIgnoreCase("planet")) {
-                    Icon2.setImageResource(R.drawable.planet);
-                } else if(icon2.equalsIgnoreCase("rain")) {
-                    Icon2.setImageResource(R.drawable.rain);
-                } else if(icon2.equalsIgnoreCase("cat")) {
-                    Icon2.setImageResource(R.drawable.cat);
-                } else if(icon2.equalsIgnoreCase("flower")) {
-                    Icon2.setImageResource(R.drawable.flower);
-                } else if(icon2.equalsIgnoreCase("goggles")) {
-                    Icon2.setImageResource(R.drawable.goggles);
-                } else if(icon2.equalsIgnoreCase("paint")) {
-                    Icon2.setImageResource(R.drawable.paint);
-                } else if(icon2.equalsIgnoreCase("lightning")) {
-                    Icon2.setImageResource(R.drawable.lightning);
-                } else if(icon2.equalsIgnoreCase("smile")) {
-                    Icon2.setImageResource(R.drawable.smile);
-                } else if(icon2.equalsIgnoreCase("fish")) {
-                    Icon2.setImageResource(R.drawable.fish);
-                }
-            }
-        }
 
 
 //        interaction for player two icon select
@@ -142,6 +181,14 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String player = "player2";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
+                if (String.valueOf(Icon1.getTag()).isEmpty()) { }
+                else {
+                    i.putExtra("icon1", String.valueOf(Icon1.getTag()));
+                }
+                if (String.valueOf(Icon2.getTag()).isEmpty()) { }
+                else {
+                    i.putExtra("icon2", String.valueOf(Icon2.getTag()));
+                }
                 i.putExtra("player", player);
                 startActivity(i);
             }

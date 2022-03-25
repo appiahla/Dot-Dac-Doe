@@ -339,11 +339,14 @@ public class iconPage extends AppCompatActivity {
                 public void onClick(View view) {
                     String icon1 = String.valueOf(Icon1.getTag());
                     Intent i = new Intent(iconPage.this, UserSelectActivity.class);
-                    if(String.valueOf(Icon2.getTag()).isEmpty()) {
-                        //do nothing
-                    } else {
-                        String icon2 = String.valueOf(Icon2.getTag());
-                        i.putExtra("icon2", icon2);
+                    if(!String.valueOf(Icon2.getTag()).isEmpty()) {
+                        i.putExtra("icon2", String.valueOf(Icon2.getTag()));
+                    }
+                    if(!String.valueOf(Circle1.getTag()).isEmpty()) {
+                        i.putExtra("color1", String.valueOf(Circle1.getTag()));
+                    }
+                    if(!String.valueOf(Circle2.getTag()).isEmpty()) {
+                        i.putExtra("color2", String.valueOf(Circle2.getTag()));
                     }
                     i.putExtra("icon1", icon1);
                     startActivity(i);
@@ -492,11 +495,14 @@ public class iconPage extends AppCompatActivity {
                 public void onClick(View view) {
                     String icon2 = String.valueOf(Icon2.getTag());
                     Intent i = new Intent(iconPage.this, UserSelectActivity.class);
-                    if(String.valueOf(Icon1.getTag()).isEmpty() ) {
-                    // do nothing
-                    } else {
-                        String icon1 = String.valueOf(Icon1.getTag());
-                        i.putExtra("icon1", icon1);
+                    if(!String.valueOf(Icon1.getTag()).isEmpty() ) {
+                        i.putExtra("icon1", String.valueOf(Icon1.getTag()));
+                    }
+                    if(!String.valueOf(Circle1.getTag()).isEmpty()) {
+                        i.putExtra("color1", String.valueOf(Circle1.getTag()));
+                    }
+                    if(!String.valueOf(Circle2.getTag()).isEmpty()) {
+                        i.putExtra("color2", String.valueOf(Circle2.getTag()));
                     }
                     i.putExtra("icon2", icon2);
                     startActivity(i);

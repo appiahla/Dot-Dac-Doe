@@ -49,6 +49,76 @@ public class UserSelectActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if (extras != null) {
+            if (extras.containsKey("color1")) {
+                String color1 = getIntent().getStringExtra("color1");
+                if (color1.equalsIgnoreCase("red1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player1.setTag("red1");
+                }
+                if (color1.equalsIgnoreCase("blue1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player1.setTag("blue1");
+                }
+                if (color1.equalsIgnoreCase("orange1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player1.setTag("orange1");
+                }
+                if (color1.equalsIgnoreCase("purple1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player1.setTag("purple1");
+                }
+                if (color1.equalsIgnoreCase("yellow1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player1.setTag("yellow1");
+                }
+                if (color1.equalsIgnoreCase("pink1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player1.setTag("pink1");
+                }
+                if (color1.equalsIgnoreCase("green1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player1.setTag("green1");
+                }
+                if (color1.equalsIgnoreCase("grey1")) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player1.setTag("grey1");
+                }
+            }
+            if (extras.containsKey("color2")) {
+                String color2 = getIntent().getStringExtra("color2");
+                if (color2.equalsIgnoreCase("red2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player2.setTag("red2");
+                }
+                if (color2.equalsIgnoreCase("blue2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player2.setTag("blue2");
+                }
+                if (color2.equalsIgnoreCase("orange2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player2.setTag("orange2");
+                }
+                if (color2.equalsIgnoreCase("purple2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player2.setTag("purple2");
+                }
+                if (color2.equalsIgnoreCase("yellow2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player2.setTag("yellow2");
+                }
+                if (color2.equalsIgnoreCase("pink2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player2.setTag("pink2");
+                }
+                if (color2.equalsIgnoreCase("green2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player2.setTag("green2");
+                }
+                if (color2.equalsIgnoreCase("grey2")) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player2.setTag("grey2");
+                }
+            }
             if (extras.containsKey("icon1")) {
                 String icon1 = getIntent().getStringExtra("icon1");
                 if(icon1.equalsIgnoreCase("tree")) {
@@ -111,7 +181,7 @@ public class UserSelectActivity extends AppCompatActivity {
                     Icon2.setTag("umbrella");
                 } else if(icon2.equalsIgnoreCase("fries")) {
                     Icon2.setImageResource(R.drawable.fries);
-                    Icon2.setTag("fish");
+                    Icon2.setTag("fries");
                 } else if(icon2.equalsIgnoreCase("wave")) {
                     Icon2.setImageResource(R.drawable.wave);
                     Icon2.setTag("wave");

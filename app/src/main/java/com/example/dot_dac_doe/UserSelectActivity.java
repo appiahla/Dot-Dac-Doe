@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -56,6 +57,19 @@ public class UserSelectActivity extends AppCompatActivity {
 //        if(icon1.equalsIgnoreCase("tree")) {
 //            Icon1.setImageResource(R.drawable.tree);
 //        }
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        if (extras != null) {
+//            String icon1 = getIntent().getStringExtra("icon");
+            Log.d("CREATION","this was reached");
+            String icon1 = getIntent().getStringExtra("icon");
+            ImageView Icon1 = findViewById(R.id.Icon1);
+            if(icon1.equalsIgnoreCase("tree")) {
+                Log.d("CREATION","this was also reached");
+                Icon1.setImageResource(R.drawable.tree);
+            }
+        }
 
 
 //        interaction for player two icon select

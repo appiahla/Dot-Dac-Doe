@@ -5,6 +5,7 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -18,12 +19,14 @@ public class iconPage extends AppCompatActivity {
         setContentView(R.layout.activity_icon_page);
         String whichPlayer = getIntent().getStringExtra("player");
         if(whichPlayer.equalsIgnoreCase("player1")){
+
             ImageView TreeClick = findViewById(R.id.tree);
             ImageView Icon1 = findViewById(R.id.Icon1);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.tree);
+                    Icon1.setTag(TreeClick.getTag());
                 }
             });
 
@@ -32,6 +35,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.egg);
+                    Icon1.setTag(EggClick.getTag());
                 }
             });
 
@@ -40,6 +44,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.umbrella);
+                    Icon1.setTag(UmbrellaClick.getTag());
                 }
             });
 
@@ -48,6 +53,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.fries);
+                    Icon1.setTag(FriesClick.getTag());
                 }
             });
 
@@ -56,6 +62,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.wave);
+                    Icon1.setTag(WaveClick.getTag());
                 }
             });
 
@@ -64,6 +71,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.peach);
+                    Icon1.setTag(PeachClick.getTag());
                 }
             });
 
@@ -72,6 +80,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.planet);
+                    Icon1.setTag(PlanetClick.getTag());
                 }
             });
 
@@ -80,6 +89,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.rain);
+                    Icon1.setTag(RainClick.getTag());
                 }
             });
 
@@ -88,6 +98,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.cat);
+                    Icon1.setTag(CatClick.getTag());
                 }
             });
 
@@ -96,6 +107,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.flower);
+                    Icon1.setTag(FlowerClick.getTag());
                 }
             });
 
@@ -104,6 +116,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.goggles);
+                    Icon1.setTag(GogglesClick.getTag());
                 }
             });
 
@@ -112,6 +125,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.paint);
+                    Icon1.setTag(PaintClick.getTag());
                 }
             });
 
@@ -120,6 +134,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.lightning);
+                    Icon1.setTag(LightningClick.getTag());
                 }
             });
 
@@ -128,6 +143,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.smile);
+                    Icon1.setTag(SmileClick.getTag());
                 }
             });
 
@@ -136,6 +152,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Icon1.setImageResource(R.drawable.fish);
+                    Icon1.setTag(FishClick.getTag());
                 }
             });
 
@@ -144,6 +161,7 @@ public class iconPage extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     String icon = String.valueOf(Icon1.getTag());
+                    Log.d("CREATION", icon);
                     Intent i = new Intent(iconPage.this, UserSelectActivity.class);
                     i.putExtra("icon", icon);
                     startActivity(i);

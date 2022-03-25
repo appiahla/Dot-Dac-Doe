@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\lapia\.android\avd\S21_Ultra_API_30.avd" />
+            <value value="C:\Users\lapia\.android\avd\S21_Ultra_API_31.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-03-14T14:55:08.447633900Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-03-22T23:30:42.650548600Z" />
   </component>
 </project>

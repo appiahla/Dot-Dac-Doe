@@ -27,7 +27,7 @@
         android:layout_marginEnd="26dp"
         android:contentDescription="@string/player_2_color_picker_red"
         app:layout_constraintEnd_toStartOf="@+id/pick_blue_2_user_select"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_circle"
+        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_layout"
         app:srcCompat="@drawable/red_color_pick" />
 
     <ImageView
@@ -73,7 +73,7 @@
         android:layout_marginEnd="46dp"
         android:contentDescription="@string/player_2_color_picker_blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_circle"
+        app:layout_constraintTop_toBottomOf="@+id/user_select_player2_layout"
         app:srcCompat="@drawable/blue_color_pick" />
 
     <ImageView
@@ -99,17 +99,36 @@
         app:layout_constraintTop_toBottomOf="@+id/pick_blue_2_user_select"
         app:srcCompat="@drawable/purple_color_pick" />
 
-    <ImageView
-        android:id="@+id/user_select_player2_circle"
+    <RelativeLayout
+        android:id="@+id/user_select_player2_layout"
         android:layout_width="134dp"
         android:layout_height="131dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="52dp"
         android:contentDescription="@string/player_2_icon_circle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player_2"
-        app:srcCompat="@drawable/user_circle"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/user_select_player_2" >
+
+        <ImageView
+            android:id="@+id/Circle2"
+            android:layout_width="135dp"
+            android:layout_height="129dp"
+            android:contentDescription="@string/player_1_icon_circle"
+            app:srcCompat="@drawable/user_circle"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/Icon2"
+            android:layout_width="91dp"
+            android:layout_height="87dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/Circle2"
+            app:layout_constraintEnd_toStartOf="@+id/Circle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/user_select_player_1"
@@ -137,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/user_select_player1_circle"
         android:layout_width="135dp"
         android:layout_height="129dp"
@@ -145,9 +164,29 @@
         android:layout_marginTop="22dp"
         android:contentDescription="@string/player_1_icon_circle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_select_player_1"
-        app:srcCompat="@drawable/user_circle"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/user_select_player_1" >
+
+        <ImageView
+            android:id="@+id/Circle1"
+            android:layout_width="135dp"
+            android:layout_height="129dp"
+            android:contentDescription="@string/player_1_icon_circle"
+            app:srcCompat="@drawable/user_circle"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <ImageView
+            android:id="@+id/Icon1"
+            android:layout_width="91dp"
+            android:layout_height="87dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/Circle1"
+            app:layout_constraintEnd_toStartOf="@+id/Circle1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/pick_red_1_user_select"
@@ -240,17 +279,6 @@
         app:layout_constraintTop_toBottomOf="@+id/pick_pink_1_user_select"
         app:srcCompat="@drawable/grey_color_pick"
         tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/back_arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/user_select_back_arrow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_arrow" />
 
     <Button
         android:id="@+id/orientation_button_user_select"

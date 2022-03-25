@@ -3,19 +3,14 @@ package com.example.dot_dac_doe;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dot_dac_doe.AI.RandomAIPlayer;
 import com.example.dot_dac_doe.model.HumanPlayer;
 import com.example.dot_dac_doe.model.Player;
 import com.example.dot_dac_doe.view.GameView;
@@ -127,7 +122,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
 
 //        alert for exit options
-        View exitView = getLayoutInflater().inflate(R.layout.activity_exit_confirmation, null);
+        View exitView = getLayoutInflater().inflate(R.layout.activity_vertical_exit_confirmation, null);
         AlertDialog.Builder exitBuilder = new AlertDialog.Builder(this);
         exitBuilder.setView(exitView);
         AlertDialog exitAlert = exitBuilder.create();

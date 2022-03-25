@@ -9,6 +9,6 @@ public class exit_confirmation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exit_confirmation);
+        setContentView(R.layout.activity_vertical_exit_confirmation);
     }
 }

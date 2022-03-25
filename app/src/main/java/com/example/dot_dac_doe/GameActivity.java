@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -125,7 +123,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
 
 //        alert for exit options
-        View exitView = getLayoutInflater().inflate(R.layout.activity_exit_confirmation, null);
+        View exitView = getLayoutInflater().inflate(R.layout.activity_vertical_exit_confirmation, null);
         AlertDialog.Builder exitBuilder = new AlertDialog.Builder(this);
         exitBuilder.setView(exitView);
         AlertDialog exitAlert = exitBuilder.create();

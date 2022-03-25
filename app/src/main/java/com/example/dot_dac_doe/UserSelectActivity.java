@@ -20,6 +20,9 @@ public class UserSelectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_select);
         ImageView Icon1 = findViewById(R.id.Icon1);
         ImageView Icon2 = findViewById(R.id.Icon2);
+        ImageView player1 = findViewById(R.id.Circle1);
+        ImageView player2 = findViewById(R.id.Circle2);
+
 
 
 
@@ -147,7 +150,6 @@ public class UserSelectActivity extends AppCompatActivity {
         }
 
 //        interaction for player one icon select
-        ImageView player1 = findViewById(R.id.Circle1);
         player1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -156,13 +158,14 @@ public class UserSelectActivity extends AppCompatActivity {
                 if (!String.valueOf(Icon1.getTag()).isEmpty()) {
                     i.putExtra("icon1", String.valueOf(Icon1.getTag()));
                 }
-
                 if (!String.valueOf(Icon2.getTag()).isEmpty()) {
                     i.putExtra("icon2", String.valueOf(Icon2.getTag()));
                 }
-
                 if (!String.valueOf(player1.getTag()).isEmpty()) {
                     i.putExtra("player1color", String.valueOf(player1.getTag()));
+                }
+                if (!String.valueOf(player2.getTag()).isEmpty()) {
+                    i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
                 i.putExtra("player", player);
@@ -179,20 +182,24 @@ public class UserSelectActivity extends AppCompatActivity {
 
 
 //        interaction for player two icon select
-        ImageView player2 = findViewById(R.id.Circle2);
         player2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String player = "player2";
                 Intent i = new Intent(UserSelectActivity.this, iconPage.class);
-                if (String.valueOf(Icon1.getTag()).isEmpty()) { }
-                else {
+                if (!String.valueOf(Icon1.getTag()).isEmpty()) {
                     i.putExtra("icon1", String.valueOf(Icon1.getTag()));
                 }
-                if (String.valueOf(Icon2.getTag()).isEmpty()) { }
-                else {
+                if (!String.valueOf(Icon2.getTag()).isEmpty()) {
                     i.putExtra("icon2", String.valueOf(Icon2.getTag()));
                 }
+                if (!String.valueOf(player1.getTag()).isEmpty()) {
+                    i.putExtra("player1color", String.valueOf(player1.getTag()));
+                }
+                if (!String.valueOf(player2.getTag()).isEmpty()) {
+                    i.putExtra("player2color", String.valueOf(player2.getTag()));
+                }
+
                 i.putExtra("player", player);
                 startActivity(i);
             }

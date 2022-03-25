@@ -34,6 +34,69 @@ public class iconPage extends AppCompatActivity {
                     Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     Circle1.setTag("red1");
                 }
+                if (color1.equalsIgnoreCase("blue1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("blue1");
+                }
+                if (color1.equalsIgnoreCase("orange1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("orange1");
+                }
+                if (color1.equalsIgnoreCase("purple1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("purple1");
+                }
+                if (color1.equalsIgnoreCase("yellow1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("yellow1");
+                }
+                if (color1.equalsIgnoreCase("pink1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("pink1");
+                }
+                if (color1.equalsIgnoreCase("green1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("green1");
+                }
+                if (color1.equalsIgnoreCase("grey1")) {
+                    Circle1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    Circle1.setTag("grey1");
+                }
+            }
+            if (extras.containsKey("player2color")) {
+                String color2 = getIntent().getStringExtra("player2color");
+                if (color2.equalsIgnoreCase("red2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("red2");
+                }
+                if (color2.equalsIgnoreCase("blue2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("blue2");
+                }
+                if (color2.equalsIgnoreCase("orange2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("orange2");
+                }
+                if (color2.equalsIgnoreCase("purple2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("purple2");
+                }
+                if (color2.equalsIgnoreCase("yellow2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("yellow2");
+                }
+                if (color2.equalsIgnoreCase("pink2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("pink2");
+                }
+                if (color2.equalsIgnoreCase("green2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("green2");
+                }
+                if (color2.equalsIgnoreCase("grey2")) {
+                    Circle2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    Circle2.setTag("grey2");
+                }
             }
             if (extras.containsKey("icon1")) {
                 String icon1 = getIntent().getStringExtra("icon1");

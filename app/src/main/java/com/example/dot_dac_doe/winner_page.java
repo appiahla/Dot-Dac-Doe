@@ -16,6 +16,7 @@ public class winner_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_winner_page);
         Button play_again = findViewById(R.id.play_again);
+        Button home_button = findViewById(R.id.home_button);
         play_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,5 +24,6 @@ public class winner_page extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 }

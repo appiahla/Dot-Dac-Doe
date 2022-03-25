@@ -29,7 +29,7 @@
         android:layout_width="326dp"
         android:layout_height="95dp"
         android:layout_marginStart="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bottom_confetti" />
@@ -102,7 +102,7 @@
         android:layout_width="260dp"
         android:layout_height="156dp"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="156dp"
         android:background="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"

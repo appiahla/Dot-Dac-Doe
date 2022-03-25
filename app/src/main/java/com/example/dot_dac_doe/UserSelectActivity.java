@@ -66,7 +66,36 @@ public class UserSelectActivity extends AppCompatActivity {
                 ImageView Icon1 = findViewById(R.id.Icon1);
                 if(icon1.equalsIgnoreCase("tree")) {
                     Icon1.setImageResource(R.drawable.tree);
+                } else if(icon1.equalsIgnoreCase("egg")) {
+                    Icon1.setImageResource(R.drawable.egg);
+                } else if(icon1.equalsIgnoreCase("umbrella")) {
+                    Icon1.setImageResource(R.drawable.umbrella);
+                } else if(icon1.equalsIgnoreCase("fries")) {
+                    Icon1.setImageResource(R.drawable.fries);
+                } else if(icon1.equalsIgnoreCase("wave")) {
+                    Icon1.setImageResource(R.drawable.wave);
+                } else if(icon1.equalsIgnoreCase("peach")) {
+                    Icon1.setImageResource(R.drawable.peach);
+                } else if(icon1.equalsIgnoreCase("planet")) {
+                    Icon1.setImageResource(R.drawable.planet);
+                } else if(icon1.equalsIgnoreCase("rain")) {
+                    Icon1.setImageResource(R.drawable.rain);
+                } else if(icon1.equalsIgnoreCase("cat")) {
+                    Icon1.setImageResource(R.drawable.cat);
+                } else if(icon1.equalsIgnoreCase("flower")) {
+                    Icon1.setImageResource(R.drawable.flower);
+                } else if(icon1.equalsIgnoreCase("goggles")) {
+                    Icon1.setImageResource(R.drawable.goggles);
+                } else if(icon1.equalsIgnoreCase("paint")) {
+                    Icon1.setImageResource(R.drawable.paint);
+                } else if(icon1.equalsIgnoreCase("lightning")) {
+                    Icon1.setImageResource(R.drawable.lightning);
+                } else if(icon1.equalsIgnoreCase("smile")) {
+                    Icon1.setImageResource(R.drawable.smile);
+                } else if(icon1.equalsIgnoreCase("fish")) {
+                    Icon1.setImageResource(R.drawable.fish);
                 }
+
             } else if (extras.containsKey("icon2")) {
                 String icon2 = getIntent().getStringExtra("icon2");
                 ImageView Icon2 = findViewById(R.id.Icon2);

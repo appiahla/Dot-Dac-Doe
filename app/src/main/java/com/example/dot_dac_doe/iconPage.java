@@ -512,5 +512,4 @@ public class iconPage extends AppCompatActivity {
 
     }
 
-
 }

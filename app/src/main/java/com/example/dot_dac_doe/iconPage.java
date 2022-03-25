@@ -18,10 +18,13 @@ public class iconPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_icon_page);
         String whichPlayer = getIntent().getStringExtra("player");
+        ImageView Icon1 = findViewById(R.id.Icon1);
+        ImageView Icon2 = findViewById(R.id.Icon2);
+
+
         if(whichPlayer.equalsIgnoreCase("player1")){
 
             ImageView TreeClick = findViewById(R.id.tree);
-            ImageView Icon1 = findViewById(R.id.Icon1);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -169,7 +172,6 @@ public class iconPage extends AppCompatActivity {
         }
         if(whichPlayer.equalsIgnoreCase("player2")){
             ImageView TreeClick = findViewById(R.id.tree);
-            ImageView Icon2 = findViewById(R.id.Icon2);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

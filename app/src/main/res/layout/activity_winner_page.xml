@@ -11,19 +11,18 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="309dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="384dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
-        app:strokeWidth="1dp"
-        tools:layout_editor_absoluteY="445dp" />
+        app:strokeWidth="1dp" />
 
     <ImageView
         android:id="@+id/bottom_confetti"
@@ -83,18 +82,19 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="314dp"
         android:layout_height="65dp"
+        android:layout_marginBottom="300dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Home"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/black"
-        app:strokeWidth="1dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:strokeWidth="1dp" />
 
     <ImageView
         android:id="@+id/confetti1"

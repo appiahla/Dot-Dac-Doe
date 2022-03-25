@@ -60,21 +60,16 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" /><![CDATA[
 
-    <ImageView
-        android:id="@+id/skip_tutorial"
-        android:layout_width="94dp"
-        android:layout_height="76dp"
-        app:srcCompat="@drawable/fast_forward_icon_removebg_preview"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="800dp" /><![CDATA[
+
 
 
 
     =======
 
 >>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
+
 
 ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

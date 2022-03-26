@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
-            android:name=".exit_confirmation"
+            android:name=".horizontal_exit_confirmation"
+            android:excludeFromRecents="true"
+            android:exported="true"/>
+        <activity
+            android:name=".Horizontal_pause_menu"
+            android:excludeFromRecents="true"
+            android:exported="true" />
+        <activity
+            android:name=".vertical_exit_confirmation"
             android:excludeFromRecents="true"
             android:exported="true" />
         <activity

@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class exit_confirmation extends AppCompatActivity {
+public class Horizontal_pause_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vertical_exit_confirmation);
+        setContentView(R.layout.hori_pause_menu);
     }
 }

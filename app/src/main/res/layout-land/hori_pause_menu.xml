@@ -103,13 +103,14 @@
         android:id="@+id/horizontal_pause_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
         android:layout_marginTop="90dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The game is paused."
         android:textColor="#252525"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_sticky_note"
-        tools:layout_editor_absoluteX="329dp" />
+        app:layout_constraintStart_toStartOf="@+id/horizontal_sticky_note"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_sticky_note" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

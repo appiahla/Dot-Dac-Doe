@@ -10,6 +10,6 @@ public class Horizontal_pause_menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hori_pause_menu);
+        setContentView(R.layout.activity_hori_pause_menu);
     }
 }

@@ -12,19 +12,25 @@
         <activity
             android:name=".horizontal_exit_confirmation"
             android:excludeFromRecents="true"
-            android:exported="true"/>
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Horizontal_pause_menu"
             android:excludeFromRecents="true"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".vertical_exit_confirmation"
             android:excludeFromRecents="true"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Vertical_pause_menu"
             android:excludeFromRecents="true"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".MultiplayerGame"
             android:exported="true"

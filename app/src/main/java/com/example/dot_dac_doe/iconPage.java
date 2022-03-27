@@ -197,13 +197,17 @@ public class iconPage extends AppCompatActivity {
                 }
             }
         }
+//        String tag1 = getIntent().getStringExtra()
         if(whichPlayer.equalsIgnoreCase("player1")){
+
             ImageView TreeClick = findViewById(R.id.tree);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.tree);
-                    Icon1.setTag(TreeClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("tree")) {
+                        Icon1.setImageResource(R.drawable.tree);
+                        Icon1.setTag(TreeClick.getTag());
+                    }
                 }
             });
 
@@ -211,8 +215,10 @@ public class iconPage extends AppCompatActivity {
             EggClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.egg);
-                    Icon1.setTag(EggClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("egg")) {
+                        Icon1.setImageResource(R.drawable.egg);
+                        Icon1.setTag(EggClick.getTag());
+                    }
                 }
             });
 
@@ -220,8 +226,11 @@ public class iconPage extends AppCompatActivity {
             UmbrellaClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.umbrella);
-                    Icon1.setTag(UmbrellaClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("umbrella" +
+                            "")) {
+                        Icon1.setImageResource(R.drawable.umbrella);
+                        Icon1.setTag(UmbrellaClick.getTag());
+                    }
                 }
             });
 
@@ -229,8 +238,10 @@ public class iconPage extends AppCompatActivity {
             FriesClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.fries);
-                    Icon1.setTag(FriesClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("fries")) {
+                        Icon1.setImageResource(R.drawable.fries);
+                        Icon1.setTag(FriesClick.getTag());
+                    }
                 }
             });
 
@@ -238,8 +249,10 @@ public class iconPage extends AppCompatActivity {
             WaveClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.wave);
-                    Icon1.setTag(WaveClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("wave")) {
+                        Icon1.setImageResource(R.drawable.wave);
+                        Icon1.setTag(WaveClick.getTag());
+                    }
                 }
             });
 
@@ -247,8 +260,10 @@ public class iconPage extends AppCompatActivity {
             PeachClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.peach);
-                    Icon1.setTag(PeachClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("peach")) {
+                        Icon1.setImageResource(R.drawable.peach);
+                        Icon1.setTag(PeachClick.getTag());
+                    }
                 }
             });
 
@@ -256,8 +271,10 @@ public class iconPage extends AppCompatActivity {
             PlanetClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.planet);
-                    Icon1.setTag(PlanetClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("planet")) {
+                        Icon1.setImageResource(R.drawable.planet);
+                        Icon1.setTag(PlanetClick.getTag());
+                    }
                 }
             });
 
@@ -265,8 +282,10 @@ public class iconPage extends AppCompatActivity {
             RainClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.rain);
-                    Icon1.setTag(RainClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("rain")) {
+                        Icon1.setImageResource(R.drawable.rain);
+                        Icon1.setTag(RainClick.getTag());
+                    }
                 }
             });
 
@@ -274,8 +293,10 @@ public class iconPage extends AppCompatActivity {
             CatClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.cat);
-                    Icon1.setTag(CatClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("cat")) {
+                        Icon1.setImageResource(R.drawable.cat);
+                        Icon1.setTag(CatClick.getTag());
+                    }
                 }
             });
 
@@ -283,8 +304,10 @@ public class iconPage extends AppCompatActivity {
             FlowerClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.flower);
-                    Icon1.setTag(FlowerClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("flower")) {
+                        Icon1.setImageResource(R.drawable.flower);
+                        Icon1.setTag(FlowerClick.getTag());
+                    }
                 }
             });
 
@@ -292,8 +315,10 @@ public class iconPage extends AppCompatActivity {
             GogglesClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.goggles);
-                    Icon1.setTag(GogglesClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("goggles")) {
+                        Icon1.setImageResource(R.drawable.goggles);
+                        Icon1.setTag(GogglesClick.getTag());
+                    }
                 }
             });
 
@@ -301,8 +326,10 @@ public class iconPage extends AppCompatActivity {
             PaintClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.paint);
-                    Icon1.setTag(PaintClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("paint")) {
+                        Icon1.setImageResource(R.drawable.paint);
+                        Icon1.setTag(PaintClick.getTag());
+                    }
                 }
             });
 
@@ -310,8 +337,10 @@ public class iconPage extends AppCompatActivity {
             LightningClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.lightning);
-                    Icon1.setTag(LightningClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("lightning")) {
+                        Icon1.setImageResource(R.drawable.lightning);
+                        Icon1.setTag(LightningClick.getTag());
+                    }
                 }
             });
 
@@ -319,8 +348,10 @@ public class iconPage extends AppCompatActivity {
             SmileClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.smile);
-                    Icon1.setTag(SmileClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("smile")) {
+                        Icon1.setImageResource(R.drawable.smile);
+                        Icon1.setTag(SmileClick.getTag());
+                    }
                 }
             });
 
@@ -328,8 +359,10 @@ public class iconPage extends AppCompatActivity {
             FishClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon1.setImageResource(R.drawable.fish);
-                    Icon1.setTag(FishClick.getTag());
+                    if (String.valueOf(Icon2.getTag()).isEmpty() || !String.valueOf(Icon2.getTag()).equals("fish")) {
+                        Icon1.setImageResource(R.drawable.fish);
+                        Icon1.setTag(FishClick.getTag());
+                    }
                 }
             });
 
@@ -358,8 +391,10 @@ public class iconPage extends AppCompatActivity {
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.tree);
-                    Icon2.setTag(TreeClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("tree")) {
+                        Icon2.setImageResource(R.drawable.tree);
+                        Icon2.setTag(TreeClick.getTag());
+                    }
                 }
             });
 
@@ -367,8 +402,10 @@ public class iconPage extends AppCompatActivity {
             EggClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.egg);
-                    Icon2.setTag(EggClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("egg")) {
+                        Icon2.setImageResource(R.drawable.egg);
+                        Icon2.setTag(EggClick.getTag());
+                    }
                 }
             });
 
@@ -376,8 +413,10 @@ public class iconPage extends AppCompatActivity {
             UmbrellaClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.umbrella);
-                    Icon2.setTag(UmbrellaClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("umbrella")) {
+                        Icon2.setImageResource(R.drawable.umbrella);
+                        Icon2.setTag(UmbrellaClick.getTag());
+                    }
                 }
             });
 
@@ -385,8 +424,10 @@ public class iconPage extends AppCompatActivity {
             FriesClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.fries);
-                    Icon2.setTag(FriesClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("fries")) {
+                        Icon2.setImageResource(R.drawable.fries);
+                        Icon2.setTag(FriesClick.getTag());
+                    }
                 }
             });
 
@@ -394,8 +435,10 @@ public class iconPage extends AppCompatActivity {
             WaveClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.wave);
-                    Icon2.setTag(WaveClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("wave")) {
+                        Icon2.setImageResource(R.drawable.wave);
+                        Icon2.setTag(WaveClick.getTag());
+                    }
                 }
             });
 
@@ -403,8 +446,10 @@ public class iconPage extends AppCompatActivity {
             PeachClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.peach);
-                    Icon2.setTag(PeachClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("peach")) {
+                        Icon2.setImageResource(R.drawable.peach);
+                        Icon2.setTag(PeachClick.getTag());
+                    }
                 }
             });
 
@@ -412,8 +457,10 @@ public class iconPage extends AppCompatActivity {
             PlanetClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.planet);
-                    Icon2.setTag(PlanetClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("planet")) {
+                        Icon2.setImageResource(R.drawable.planet);
+                        Icon2.setTag(PlanetClick.getTag());
+                    }
                 }
             });
 
@@ -421,8 +468,10 @@ public class iconPage extends AppCompatActivity {
             RainClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.rain);
-                    Icon2.setTag(RainClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("rain")) {
+                        Icon2.setImageResource(R.drawable.rain);
+                        Icon2.setTag(RainClick.getTag());
+                    }
                 }
             });
 
@@ -430,8 +479,10 @@ public class iconPage extends AppCompatActivity {
             CatClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.cat);
-                    Icon2.setTag(CatClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("cat")) {
+                        Icon2.setImageResource(R.drawable.cat);
+                        Icon2.setTag(CatClick.getTag());
+                    }
                 }
             });
 
@@ -439,8 +490,10 @@ public class iconPage extends AppCompatActivity {
             FlowerClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.flower);
-                    Icon2.setTag(FlowerClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("flower")) {
+                        Icon2.setImageResource(R.drawable.flower);
+                        Icon2.setTag(FlowerClick.getTag());
+                    }
                 }
             });
 
@@ -448,8 +501,10 @@ public class iconPage extends AppCompatActivity {
             GogglesClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.goggles);
-                    Icon2.setTag(GogglesClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("goggles")) {
+                        Icon2.setImageResource(R.drawable.goggles);
+                        Icon2.setTag(GogglesClick.getTag());
+                    }
                 }
             });
 
@@ -457,8 +512,10 @@ public class iconPage extends AppCompatActivity {
             PaintClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.paint);
-                    Icon2.setTag(PaintClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("paint")) {
+                        Icon2.setImageResource(R.drawable.paint);
+                        Icon2.setTag(PaintClick.getTag());
+                    }
                 }
             });
 
@@ -466,8 +523,10 @@ public class iconPage extends AppCompatActivity {
             LightningClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.lightning);
-                    Icon2.setTag(LightningClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("lightning")) {
+                        Icon2.setImageResource(R.drawable.lightning);
+                        Icon2.setTag(LightningClick.getTag());
+                    }
                 }
             });
 
@@ -475,8 +534,10 @@ public class iconPage extends AppCompatActivity {
             SmileClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.smile);
-                    Icon2.setTag(SmileClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("smile")) {
+                        Icon2.setImageResource(R.drawable.smile);
+                        Icon2.setTag(SmileClick.getTag());
+                    }
                 }
             });
 
@@ -484,8 +545,10 @@ public class iconPage extends AppCompatActivity {
             FishClick.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Icon2.setImageResource(R.drawable.fish);
-                    Icon2.setTag(FishClick.getTag());
+                    if (String.valueOf(Icon1.getTag()).isEmpty() || !String.valueOf(Icon1.getTag()).equals("fish")) {
+                        Icon2.setImageResource(R.drawable.fish);
+                        Icon2.setTag(FishClick.getTag());
+                    }
                 }
             });
 

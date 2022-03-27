@@ -44,16 +44,6 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
-        //      interaction for game play
-        Button play = findViewById(R.id.play_button_user_select);
-        play.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(UserSelectActivity.this, MultiplayerGame.class);
-                startActivity(i);
-            }
-        });
-
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if (extras != null) {

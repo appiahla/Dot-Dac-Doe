@@ -6,8 +6,12 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -17,14 +21,14 @@ public class UserSelectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+        getWindow().setEnterTransition(new Explode());
         setContentView(R.layout.activity_user_select);
+
         ImageView Icon1 = findViewById(R.id.Icon1);
         ImageView Icon2 = findViewById(R.id.Icon2);
         ImageView player1 = findViewById(R.id.Circle1);
         ImageView player2 = findViewById(R.id.Circle2);
-
-
-
 
 //      interaction for orientation page
         Button orientation = findViewById(R.id.orientation_button_user_select);

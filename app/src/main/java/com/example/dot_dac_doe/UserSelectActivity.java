@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 
 public class UserSelectActivity extends AppCompatActivity {
+    Boolean[] sameColors = {false, false, false, false, false, false, false, false};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class UserSelectActivity extends AppCompatActivity {
         ImageView Icon2 = findViewById(R.id.Icon2);
         ImageView player1 = findViewById(R.id.Circle1);
         ImageView player2 = findViewById(R.id.Circle2);
+
+
 
 //      interaction for orientation page
         Button orientation = findViewById(R.id.orientation_button_user_select);
@@ -286,8 +289,12 @@ public class UserSelectActivity extends AppCompatActivity {
         red1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-                player1.setTag(red1.getTag());
+                if (!sameColors[0]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player1.setTag(red1.getTag());
+                    sameColors[0] = true;
+                    unTrue(0);
+                }
             }
         });
 
@@ -295,56 +302,84 @@ public class UserSelectActivity extends AppCompatActivity {
         blue1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
-                player1.setTag(blue1.getTag());
+                if (!sameColors[1]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player1.setTag(blue1.getTag());
+                    sameColors[1] = true;
+                    unTrue(1);
+                }
             }
         });
         ImageView orange1 = findViewById(R.id.pick_orange_1_user_select);
         orange1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
-                player1.setTag(orange1.getTag());
+                if (!sameColors[2]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player1.setTag(orange1.getTag());
+                    sameColors[2] = true;
+                    unTrue(2);
+                }
             }
         });
         ImageView purple1 = findViewById(R.id.pick_purple_1_user_select);
         purple1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
-                player1.setTag(purple1.getTag());
+                if (!sameColors[3]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player1.setTag(purple1.getTag());
+                    sameColors[3] = true;
+                    unTrue(3);
+                }
             }
         });
         ImageView yellow1 = findViewById(R.id.pick_yellow_1_user_select);
         yellow1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
-                player1.setTag(yellow1.getTag());
+                if (!sameColors[4]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player1.setTag(yellow1.getTag());
+                    sameColors[4] = true;
+                    unTrue(4);
+                }
             }
         });
         ImageView pink1 = findViewById(R.id.pick_pink_1_user_select);
         pink1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
-                player1.setTag(pink1.getTag());
+                if (!sameColors[5]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player1.setTag(pink1.getTag());
+                    sameColors[5] = true;
+                    unTrue(5);
+                }
             }
         });
         ImageView green1 = findViewById(R.id.pick_green_1_user_select);
         green1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
-                player1.setTag(green1.getTag());
+                if (!sameColors[6]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player1.setTag(green1.getTag());
+                    sameColors[6] = true;
+                    unTrue(6);
+                }
             }
         });
         ImageView grey1 = findViewById(R.id.pick_grey_1_user_select);
         grey1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
-                player1.setTag(grey1.getTag());
+                if (!sameColors[7]) {
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player1.setTag(grey1.getTag());
+                    sameColors[7] = true;
+                    unTrue(7);
+                }
             }
         });
 
@@ -352,8 +387,12 @@ public class UserSelectActivity extends AppCompatActivity {
         red2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-                player2.setTag(red2.getTag());
+                if (!sameColors[0]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player2.setTag(red2.getTag());
+                    sameColors[0] = true;
+                    unTrue(0);
+                }
             }
         });
 
@@ -361,60 +400,95 @@ public class UserSelectActivity extends AppCompatActivity {
         blue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
-                player2.setTag(blue2.getTag());
+                if (!sameColors[1]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player2.setTag(blue2.getTag());
+                    sameColors[1] = true;
+                    unTrue(1);
+                }
             }
         });
         ImageView orange2 = findViewById(R.id.pick_orange_2_user_select);
         orange2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
-                player2.setTag(orange2.getTag());
+                if (!sameColors[2]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player2.setTag(orange2.getTag());
+                    sameColors[2] = true;
+                    unTrue(2);
+                }
             }
         });
         ImageView purple2 = findViewById(R.id.pick_purple_2_user_select);
         purple2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
-                player2.setTag(purple2.getTag());
+                if (!sameColors[3]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player2.setTag(purple2.getTag());
+                    sameColors[3] = true;
+                    unTrue(3);
+                }
             }
         });
         ImageView yellow2 = findViewById(R.id.pick_yellow_2_user_select);
         yellow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
-                player2.setTag(yellow2.getTag());
+                if (!sameColors[4]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player2.setTag(yellow2.getTag());
+                    sameColors[4] = true;
+                    unTrue(4);
+                }
             }
         });
         ImageView pink2 = findViewById(R.id.pick_pink_2_user_select);
         pink2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
-                player2.setTag(pink2.getTag());
+                if (!sameColors[5]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player2.setTag(pink2.getTag());
+                    sameColors[5] = true;
+                    unTrue(5);
+                }
             }
         });
         ImageView green2 = findViewById(R.id.pick_green_2_user_select);
         green2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
-                player2.setTag(green2.getTag());
+                if (!sameColors[6]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player2.setTag(green2.getTag());
+                    sameColors[6] = true;
+                    unTrue(6);
+                }
             }
         });
         ImageView grey2 = findViewById(R.id.pick_grey_2_user_select);
         grey2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
-                player2.setTag(grey2.getTag());
+                if (!sameColors[7]) {
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player2.setTag(grey2.getTag());
+                    sameColors[7] = true;
+                    unTrue(7);
+                }
             }
         });
+    }
 
-
-
+    private void unTrue(int index) {
+        for (int i = 0; i < sameColors.length; i++) {
+            if (i == index) {
+                continue;
+            } else {
+                sameColors[i] = false;
+            }
+        }
     }
 }

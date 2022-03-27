@@ -1,4 +1,4 @@
-package com.example.dot_dac_doe.model;
+package com.example.dot_dac_doe.Models;
 
 
 public abstract class Player {
@@ -19,16 +19,16 @@ public abstract class Player {
 
     public abstract Line move();
 
+    public String getName() {
+        return name;
+    }
+
     public Graph getGame() {
         return game;
     }
 
     public void addToGame(Graph game) {
         this.game = game;
-    }
-
-    public String getName() {
-        return name;
     }
 }
 

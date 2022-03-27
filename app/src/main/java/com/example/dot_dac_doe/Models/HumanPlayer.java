@@ -1,4 +1,4 @@
-package com.example.dot_dac_doe.model;
+package com.example.dot_dac_doe.Models;
 
 public class HumanPlayer extends Player {
     private final Line[] inputBuffer = new Line[1];

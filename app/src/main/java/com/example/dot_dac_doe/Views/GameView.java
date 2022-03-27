@@ -1,4 +1,4 @@
-package com.example.dot_dac_doe.view;
+package com.example.dot_dac_doe.Views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,11 +10,11 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.example.dot_dac_doe.R;
-import com.example.dot_dac_doe.model.Direction;
-import com.example.dot_dac_doe.model.Graph;
-import com.example.dot_dac_doe.model.HumanPlayer;
-import com.example.dot_dac_doe.model.Line;
-import com.example.dot_dac_doe.model.Player;
+import com.example.dot_dac_doe.Models.Direction;
+import com.example.dot_dac_doe.Models.Graph;
+import com.example.dot_dac_doe.Models.HumanPlayer;
+import com.example.dot_dac_doe.Models.Line;
+import com.example.dot_dac_doe.Models.Player;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +46,7 @@ public class GameView extends View implements Observer {
         this.setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                receiveInput(event);
+                getInput(event);
                 return false;
             }
         });
@@ -91,7 +91,7 @@ public class GameView extends View implements Observer {
         for (int i = 0; i < game.getHeight() + 1; i++) {
             for (int j = 0; j < game.getWidth(); j++) {
                 Line horizontal = new Line(Direction.HORIZONTAL, i, j);
-                if (horizontal.equals(game.getLatestLine())) {
+                if (horizontal.equals(game.getNewestLine())) {
                     paint.setColor(0xFFFF7700);
                 } else if (game.isLineOccupied(horizontal)) {
                     if (game.getLineOccupier(horizontal) == 1)
@@ -101,12 +101,13 @@ public class GameView extends View implements Observer {
                 } else {
                     paint.setColor(0xFFFFFFFF);
                 }
+                float rectSide = start + add5 * i + add1
+                        - add2;
                 canvas.drawRect(start + add5 * j + add1, start + add5 * i
-                        + add2, start + add5 * (j + 1), start + add5 * i + add1
-                        - add2, paint);
+                        + add2, start + add5 * (j + 1), rectSide, paint);
 
                 Line vertical = new Line(Direction.VERTICAL, j, i);
-                if (vertical.equals(game.getLatestLine())) {
+                if (vertical.equals(game.getNewestLine())) {
                     paint.setColor(0xFFFF7700);
                 } else if (game.isLineOccupied(vertical)) {
                     if (game.getLineOccupier(vertical) == 1)
@@ -117,7 +118,7 @@ public class GameView extends View implements Observer {
                     paint.setColor(0xFFFFFFFF);
                 }
                 canvas.drawRect(start + add5 * i + add2, start + add5 * j
-                        + add1, start + add5 * i + add1 - add2, start + add5
+                        + add1, rectSide, start + add5
                         * (j + 1), paint);
             }
         }
@@ -145,7 +146,7 @@ public class GameView extends View implements Observer {
         invalidate();
     }
 
-    private void receiveInput(MotionEvent event) {
+    private void getInput(MotionEvent event) {
         if (event.getAction() != MotionEvent.ACTION_DOWN)
             return;
 
@@ -160,17 +161,20 @@ public class GameView extends View implements Observer {
         int d = -1, a = -1, b = -1;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
-                if ((start + add5 * j + add1 - add3) <= touchX
+                float grid1 = start + add5 * j + add1 - add3;
+                float grid2 = start + add5 * i + add2 - add3;
+                float grid3 = start + add5 * i + add1 - add2 + add3;
+                if (grid1 <= touchX
                         && touchX <= (start + add5 * (j + 1) + add3)
-                        && touchY >= start + add5 * i + add2 - add3
-                        && touchY <= start + add5 * i + add1 - add2 + add3) {
+                        && touchY >= grid2
+                        && touchY <= grid3) {
                     d = 0;
                     a = i;
                     b = j;
                 }
-                if (start + add5 * i + add2 - add3 <= touchX
-                        && touchX <= start + add5 * i + add1 - add2 + add3
-                        && touchY >= start + add5 * j + add1 - add3
+                if (grid2 <= touchX
+                        && touchX <= grid3
+                        && touchY >= grid1
                         && touchY <= start + add5 * (j + 1) + add3) {
                     d = 1;
                     a = j;
@@ -179,7 +183,7 @@ public class GameView extends View implements Observer {
             }
         }
 
-        if ((a != -1) && (b != -1)) {
+        if (a != -1) {
             Direction direction;
             if (d == 0)
                 direction = Direction.HORIZONTAL;
@@ -199,9 +203,9 @@ public class GameView extends View implements Observer {
         playersState.setCurrentPlayer(game.currentPlayer());
         Map<Player, Integer> player_occupyingBoxCount_map = new HashMap<>();
         for (Player player : game.getPlayers()) {
-            player_occupyingBoxCount_map.put(player, game.getPlayerOccupyingBoxCount(player));
+            player_occupyingBoxCount_map.put(player, game.getPlayerPoints(player));
         }
-        playersState.setPlayerOccupyingBoxesCount(player_occupyingBoxCount_map);
+        playersState.setPlayerPoints(player_occupyingBoxCount_map);
 
         Player winner = game.getWinner();
         if (winner != null) {

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 
@@ -16,11 +17,11 @@ public class Orientation extends AppCompatActivity {
         setContentView(R.layout.activity_orientation);
 
         // action for back btn between orientation and user-select
-        ImageView back = findViewById(R.id.orientation_back);
-        back.setOnClickListener(new View.OnClickListener() {
+        ImageView same_side_vert = findViewById(R.id.ss_vertical);
+        same_side_vert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Orientation.this, UserSelectActivity.class);
+                Intent i = new Intent(Orientation.this, MultiplayerGame.class);
                 startActivity(i);
             }
         });

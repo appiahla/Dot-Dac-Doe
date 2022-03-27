@@ -73,7 +73,7 @@
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar">
             <intent-filter>

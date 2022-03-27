@@ -11,10 +11,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dot_dac_doe.model.HumanPlayer;
-import com.example.dot_dac_doe.model.Player;
-import com.example.dot_dac_doe.view.GameView;
-import com.example.dot_dac_doe.view.PlayersStateView;
+import com.example.dot_dac_doe.Models.HumanPlayer;
+import com.example.dot_dac_doe.Models.Player;
+import com.example.dot_dac_doe.Views.GameView;
+import com.example.dot_dac_doe.Views.PlayersStateView;
 
 import java.util.Map;
 
@@ -83,9 +83,9 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     }
 
     @Override
-    public void setPlayerOccupyingBoxesCount(Map<Player, Integer> player_occupyingBoxesCount_map) {
-        playersPoints[0] = (player_occupyingBoxesCount_map.get(players[0]));
-        playersPoints[1] = (player_occupyingBoxesCount_map.get(players[1]));
+    public void setPlayerPoints(Map<Player, Integer> player_points_map) {
+        playersPoints[0] = (player_points_map.get(players[0]));
+        playersPoints[1] = (player_points_map.get(players[1]));
         updateState();
     }
 

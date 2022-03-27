@@ -1,4 +1,4 @@
-package com.example.dot_dac_doe.model;
+package com.example.dot_dac_doe.Models;
 
 import java.util.Observable;
 
@@ -7,19 +7,19 @@ public class Graph extends Observable {
     private int currentPlayerIndex;
     private int width;
     private int height;
-    private Player[][] occupied;
-    private int[][] horizontalLines;
-    private int[][] verticalLines;
-    private Line latestLine;
+    private Player[][] points;
+    private int[][] horiLines;
+    private int[][] vertLines;
+    private Line newestLine;
 
     public Graph(int width, int height, Player[] players) {
         this.width = width;
         this.height = height;
         this.players = players;
 
-        occupied = new Player[height][width];
-        horizontalLines = new int[height + 1][width];
-        verticalLines = new int[height][width + 1];
+        points = new Player[height][width];
+        horiLines = new int[height + 1][width];
+        vertLines = new int[height][width + 1];
 
         addPlayersToGame(players);
         currentPlayerIndex = 0;
@@ -37,22 +37,50 @@ public class Graph extends Observable {
         return height;
     }
 
-    public Line getLatestLine() {
-        return latestLine;
-    }
-
     private void addPlayersToGame(Player[] players) {
         for (Player player : players) {
             player.addToGame(this);
         }
     }
 
+    public boolean isLineOccupied(Line line) {
+        switch (line.direction()) {
+            case HORIZONTAL:
+                return (horiLines[line.row()][line.column()] == 1
+                        || horiLines[line.row()][line.column()] == 2);
+            case VERTICAL:
+                return (vertLines[line.row()][line.column()] == 1
+                        || vertLines[line.row()][line.column()] == 2);
+        }
+        throw new IllegalArgumentException(line.direction().toString());
+    }
+
     public void start() {
-        while (!isGameFinished()) {
+        while (!isGameWon()) {
             addMove(currentPlayer().move());
             setChanged();
             notifyObservers();
         }
+    }
+
+    public Player getWinner() {
+        if (!isGameWon()) {
+            return null;
+        }
+
+        int[] playersPoints = new int[players.length];
+        for (int i = 0; i < players.length; i++) {
+            playersPoints[i] = getPlayerPoints(players[i]);
+        }
+
+        if (playersPoints[0] > playersPoints[1])
+            return players[0];
+        else
+            return players[1];
+    }
+
+    public Player currentPlayer() {
+        return players[currentPlayerIndex];
     }
 
     public void addMove(Line move) {
@@ -61,47 +89,35 @@ public class Graph extends Observable {
         }
         boolean newBoxOccupied = tryToOccupyBox(move);
         setLineOccupied(move);
-        latestLine = move;
+        newestLine = move;
 
         if (!newBoxOccupied)
             toNextPlayer();
-    }
-
-    public Player currentPlayer() {
-        return players[currentPlayerIndex];
     }
 
     public boolean isLineOccupied(Direction direction, int row, int column) {
         return isLineOccupied(new Line(direction, row, column));
     }
 
-    public boolean isLineOccupied(Line line) {
-        switch (line.direction()) {
-            case HORIZONTAL:
-                return (horizontalLines[line.row()][line.column()] == 1
-                        || horizontalLines[line.row()][line.column()] == 2);
-            case VERTICAL:
-                return (verticalLines[line.row()][line.column()] == 1
-                        || verticalLines[line.row()][line.column()] == 2);
-        }
-        throw new IllegalArgumentException(line.direction().toString());
+    public Line getNewestLine() {
+        return newestLine;
     }
 
     public int getLineOccupier(Line line) {
         switch (line.direction()) {
             case HORIZONTAL:
-                return horizontalLines[line.row()][line.column()];
+                return horiLines[line.row()][line.column()];
             case VERTICAL:
-                return verticalLines[line.row()][line.column()];
+                return vertLines[line.row()][line.column()];
         }
         throw new IllegalArgumentException(line.direction().toString());
     }
 
     public Player getBoxOccupier(int row, int column) {
-        return occupied[row][column];
+        return points[row][column];
     }
 
-    public int getPlayerOccupyingBoxCount(Player player) {
+    public int getPlayerPoints(Player player) {
         int count = 0;
         for (int i = 0; i < getHeight(); i++) {
             for (int j = 0; j < getWidth(); j++) {
@@ -123,16 +139,16 @@ public class Graph extends Observable {
     private void setLineOccupied(Line line) {
         switch (line.direction()) {
             case HORIZONTAL:
-                horizontalLines[line.row()][line.column()] = currentPlayerIndex + 1;
+                horiLines[line.row()][line.column()] = currentPlayerIndex + 1;
                 break;
             case VERTICAL:
-                verticalLines[line.row()][line.column()] = currentPlayerIndex + 1;
+                vertLines[line.row()][line.column()] = currentPlayerIndex + 1;
                 break;
         }
     }
 
     private void setBoxOccupied(int row, int column, Player player) {
-        occupied[row][column] = player;
+        points[row][column] = player;
     }
 
     private boolean tryToOccupyUpperBox(Line move) {
@@ -191,7 +207,7 @@ public class Graph extends Observable {
         currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
     }
 
-    protected boolean isGameFinished() {
+    protected boolean isGameWon() {
         for (int i = 0; i < getHeight(); i++) {
             for (int j = 0; j < getWidth(); j++) {
                 if (getBoxOccupier(i, j) == null)
@@ -201,19 +217,5 @@ public class Graph extends Observable {
         return true;
     }
 
-    public Player getWinner() {
-        if (!isGameFinished()) {
-            return null;
-        }
 
-        int[] playersOccupyingBoxCount = new int[players.length];
-        for (int i = 0; i < players.length; i++) {
-            playersOccupyingBoxCount[i] = getPlayerOccupyingBoxCount(players[i]);
-        }
-
-        if (playersOccupyingBoxCount[0] > playersOccupyingBoxCount[1])
-            return players[0];
-        else
-            return players[1];
-    }
 }

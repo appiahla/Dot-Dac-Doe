@@ -1,13 +1,13 @@
-package com.example.dot_dac_doe.AI;
+package com.example.dot_dac_doe.Players;
 
-public class Box {
+public class PlayerBox {
     boolean left;
     boolean top;
     boolean right;
     boolean bottom;
     boolean occupied;
 
-    Box(boolean l, boolean t, boolean r, boolean b) {
+    PlayerBox(boolean l, boolean t, boolean r, boolean b) {
         this.left = l;
         this.top = t;
         this.right = r;

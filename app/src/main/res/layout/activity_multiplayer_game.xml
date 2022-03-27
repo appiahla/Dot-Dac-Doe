@@ -97,7 +97,7 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult"
         android:layout_width="match_parent"
         android:layout_height="0dp"

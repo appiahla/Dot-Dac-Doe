@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/player_who_won"
+        android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
         android:layout_marginStart="20dp"

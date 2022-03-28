@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.dot_dac_doe.model.Player;
 
@@ -23,7 +24,11 @@ public class winner_page extends AppCompatActivity {
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
         setContentView(R.layout.activity_multiplayer_game);
+        TextView winnerLabel = (TextView) findViewById(R.id.winner_header);
+        TextView play = (TextView) findViewById(R.id.winner_header);
         String winner = getIntent().getStringExtra("WINNER");
+
+
 
 
         play_again.setOnClickListener(new View.OnClickListener() {

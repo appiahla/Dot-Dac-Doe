@@ -31,7 +31,6 @@ public class GameActivityOppositeVertical extends AppCompatActivity implements P
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_opposite_vertical);
-        //setContentView(R.layout.activity_game_opposite);
 
         gameView = (GameView) findViewById(R.id.gameView4);
         gameView.setPlayersState(this);
@@ -41,6 +40,7 @@ public class GameActivityOppositeVertical extends AppCompatActivity implements P
         player1points = (TextView) findViewById(R.id.player1points4);
         player2points = (TextView) findViewById(R.id.player2points4);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer4);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer4_1);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
         startGame(players);

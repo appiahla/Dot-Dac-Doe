@@ -24,6 +24,10 @@
             android:name=".GameActivity"
             android:exported="true" />
         <activity
+            android:name=".GameActivitySame"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".GameActivityOpposite"
             android:exported="true"
             android:screenOrientation="landscape"/>

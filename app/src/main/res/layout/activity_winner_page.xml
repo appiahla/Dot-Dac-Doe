@@ -75,7 +75,7 @@
         android:layout_marginTop="36dp"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_who_won"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -147,5 +147,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="182dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

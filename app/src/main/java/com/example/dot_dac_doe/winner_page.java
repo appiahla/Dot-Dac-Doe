@@ -3,8 +3,10 @@ package com.example.dot_dac_doe;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,8 +27,15 @@ public class winner_page extends AppCompatActivity {
         Button home_button = findViewById(R.id.home_button);
         setContentView(R.layout.activity_multiplayer_game);
         TextView winnerLabel = (TextView) findViewById(R.id.winner_header);
-        TextView play = (TextView) findViewById(R.id.winner_header);
+        TextView congrats = (TextView) findViewById(R.id.congrats);
         String winner = getIntent().getStringExtra("WINNER");
+        //int score = getIntent().getIntExtra("SCORE", 0);
+        int player1Score = getIntent().getIntExtra("WINNER", 0);
+        int player2Score = getIntent().getIntExtra("WINNER", 0);
+        SharedPreferences gameSettings = getSharedPreferences("DATA", Context.MODE_PRIVATE);
+
+
+
 
 
 

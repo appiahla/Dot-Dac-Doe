@@ -22,7 +22,24 @@ public class Orientation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Orientation.this, MultiplayerGame.class);
-                startActivity(i);
+                Intent intent = getIntent();
+                Bundle extras = intent.getExtras();
+                if (extras != null) {
+                    if (extras.containsKey("icon1")){
+                        i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+                    }
+                    if (extras.containsKey("icon2")){
+                        i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+                    }
+                    if (extras.containsKey("color1")){
+                        i.putExtra("color1", getIntent().getStringExtra("color1"));
+                    }
+                    if (extras.containsKey("color2")){
+                        i.putExtra("color2", getIntent().getStringExtra("color2"));
+                    }
+                }
+
+                    startActivity(i);
             }
         });
     }

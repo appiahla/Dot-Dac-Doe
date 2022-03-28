@@ -46,10 +46,10 @@
             android:name=".MultiplayerGameSame"
             android:exported="true"
             android:screenOrientation="landscape"/>
-<!--        <activity-->
-<!--            android:name=".MultiplayerGameOpposite"-->
-<!--            android:exported="true"
-                android:screenOrientation="landscape"/>-->
+        <activity
+            android:name=".MultiplayerGameOpposite"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".MultiplayerGameOppositeVertical"
             android:exported="true" />

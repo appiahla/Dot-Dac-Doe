@@ -35,8 +35,6 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 //    ImageView Icon1 = findViewById(R.id.Icon1);
 //    ImageView Icon2 = findViewById(R.id.Icon2);
 
-//    ImageView player1;
-//    ImageView player2;
     int colorOne;
     int colorTwo;
 

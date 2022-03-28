@@ -5,11 +5,12 @@
       <map>
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_opposite.xml" value="0.4" />
-        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_same.xml" value="0.1" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_same.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_mulitplayer_game_opposite.xml" value="0.4" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_mulitplayer_game_same.xml" value="0.1" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game.xml" value="0.2" />
-        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game_same.xml" value="0.21844660194174756" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game_opposite.xml" value="0.21844660194174756" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game_same.xml" value="0.4" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/actvity_game_same.xml" value="0.2118270079435128" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game_opposite_vertical.xml" value="0.2" />
@@ -17,7 +18,7 @@
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.2" />
-        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game_opposite_vertical.xml" value="0.1" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game_opposite_vertical.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_orientation.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings2.xml" value="0.13596491228070176" />

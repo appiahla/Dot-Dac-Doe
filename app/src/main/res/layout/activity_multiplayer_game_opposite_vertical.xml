@@ -37,7 +37,7 @@
     <!--        tools:layout_editor_absoluteY="640dp" />-->
 
     <ImageView
-        android:id="@+id/player1_circle_mult4"
+        android:id="@+id/player2_circle_mult4"
         android:layout_width="128dp"
         android:layout_height="146dp"
         android:layout_marginEnd="2dp"
@@ -80,7 +80,7 @@
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:rotation="180"
-        android:text="Computer"
+        android:text="Player 2"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +101,7 @@
         tools:layout_editor_absoluteY="666dp" />
 
     <ImageView
-        android:id="@+id/computer_circle_mult4"
+        android:id="@+id/player1_circle_mult4"
         android:layout_width="128dp"
         android:layout_height="164dp"
         android:layout_marginStart="2dp"

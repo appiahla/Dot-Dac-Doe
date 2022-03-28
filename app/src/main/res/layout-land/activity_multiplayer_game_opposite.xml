@@ -37,7 +37,7 @@
 
 
     <ImageView
-        android:id="@+id/player1_circle_mult3"
+        android:id="@+id/player2_circle_mult3"
         android:layout_width="128dp"
         android:layout_height="164dp"
         android:layout_alignParentStart="true"
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/player2_circle_mult3"
+        android:id="@+id/player1_circle_mult3"
         android:layout_width="128dp"
         android:layout_height="164dp"
         android:layout_alignParentStart="true"

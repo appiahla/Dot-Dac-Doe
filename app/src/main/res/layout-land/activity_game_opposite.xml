@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.GameActivity">
+    tools:context="com.example.dot_dac_doe.GameActivityOpposite">
 
     <TextView
         android:id="@+id/player1name3"
@@ -74,7 +74,7 @@
         tools:layout_editor_absoluteY="247dp" />
 
     <TextView
-        android:id="@+id/player2_points3"
+        android:id="@+id/player2points3"
         android:layout_width="128dp"
         android:layout_height="41dp"
         android:fontFamily="@font/gloria_hallelujah"
@@ -97,7 +97,7 @@
         app:srcCompat="@drawable/pause_btn" />
 
     <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView"
+        android:id="@+id/gameView3"
         android:layout_width="465dp"
         android:layout_height="380dp"
         android:layout_marginEnd="200dp"

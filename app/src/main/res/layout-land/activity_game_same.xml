@@ -45,8 +45,8 @@
 
     <ImageView
         android:id="@+id/player1_circle2"
-        android:layout_width="134dp"
-        android:layout_height="120dp"
+        android:layout_width="128dp"
+        android:layout_height="164dp"
         android:translationY="-25dp"
         app:srcCompat="@drawable/user_circle"
         tools:layout_editor_absoluteX="14dp"
@@ -77,12 +77,12 @@
 
     <ImageView
         android:id="@+id/computer_circle2"
-        android:layout_width="126dp"
-        android:layout_height="120dp"
+        android:layout_width="128dp"
+        android:layout_height="164dp"
         android:translationY="-25dp"
         app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteX="765dp"
-        tools:layout_editor_absoluteY="58dp" />
+        tools:layout_editor_absoluteX="732dp"
+        tools:layout_editor_absoluteY="61dp" />
 
     <TextView
         android:id="@+id/player2_points2"

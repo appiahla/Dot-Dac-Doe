@@ -39,7 +39,7 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
         player2name = (TextView) findViewById(R.id.player2name_mult3);
         player1points = (TextView) findViewById(R.id.player1points_mult3);
         player2points = (TextView) findViewById(R.id.player2points_mult3);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer3);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult3);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
         startGame(players);

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
@@ -18,37 +20,9 @@
         android:gravity="center"
         android:text="Player 1"
         android:textColor="@color/colorPrimary"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:id="@+id/player1_circle_mult4"
-        android:layout_width="128dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="50dp"
-        android:translationY="-25dp"
-        app:srcCompat="@drawable/user_circle" />
-
-    <TextView
-        android:id="@+id/player1points_mult4"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Boxes: 0"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:id="@+id/playerNowPointer_mult4"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="160dp"
-        android:layout_weight="1"
-        android:src="@drawable/a1"
-        android:translationY="80dp" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--    <ImageView-->
     <!--        android:id="@+id/playerNowPointer_mult4.1"-->
@@ -62,6 +36,41 @@
     <!--        app:layout_constraintStart_toStartOf="parent"-->
     <!--        tools:layout_editor_absoluteY="640dp" />-->
 
+    <ImageView
+        android:id="@+id/player1_circle_mult4"
+        android:layout_width="128dp"
+        android:layout_height="146dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:translationY="-25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_circle" />
+
+    <TextView
+        android:id="@+id/player1points_mult4"
+        android:layout_width="128dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Boxes: 0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/playerNowPointer_mult4"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="160dp"
+        android:layout_weight="1"
+        android:src="@drawable/a1"
+        android:translationY="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-18dp" />
+
     <TextView
         android:id="@+id/player2name_mult4"
         android:layout_width="128dp"
@@ -73,7 +82,9 @@
         android:rotation="180"
         android:text="Computer"
         android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/player2points_mult4"
@@ -85,24 +96,29 @@
         android:rotation="180"
         android:text="Boxes: 0"
         android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="666dp" />
 
     <ImageView
         android:id="@+id/computer_circle_mult4"
         android:layout_width="128dp"
         android:layout_height="164dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
         android:rotation="180"
         android:translationY="-25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user_circle" />
 
     <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameView_mult4"
         android:layout_width="380dp"
         android:layout_height="465dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="198dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="199dp" />
 
     <ImageView
         android:id="@+id/multiplayer_pause4"
@@ -110,6 +126,8 @@
         android:layout_height="54dp"
         android:layout_marginStart="2dp"
         android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pause_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

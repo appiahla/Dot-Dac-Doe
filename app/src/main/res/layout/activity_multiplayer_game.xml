@@ -40,6 +40,18 @@
                     android:translationY="-25dp"
                     app:srcCompat="@drawable/user_circle" />
 
+                <ImageView
+                    android:id="@+id/Icon1"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
+                    app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/player1points_mult"
                     android:layout_width="match_parent"
@@ -83,6 +95,17 @@
                     android:layout_height="wrap_content"
                     android:translationY="-25dp"
                     app:srcCompat="@drawable/user_circle" />
+                <ImageView
+                    android:id="@+id/Icon2"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/computer_circle_mult"
+                    app:layout_constraintEnd_toStartOf="@+id/computer_circle_mult"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/player2points_mult"

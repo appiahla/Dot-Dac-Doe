@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
-    <targetSelectedWithDropDown>
+    <runningDeviceTargetSelectedWithDropDown>
       <Target>
-        <type value="QUICK_BOOT_TARGET" />
+        <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\lapia\.android\avd\S21_Ultra_API_31.avd" />
+            <value value="C:\Users\kmunk\.android\avd\S21_Ultra_API_30.avd" />
           </Key>
         </deviceKey>
       </Target>
+<<<<<<< HEAD
     </targetSelectedWithDropDown>
     <timeTargetWasSelectedWithDropDown value="2022-03-25T15:14:44.310217400Z" />
+=======
+    </runningDeviceTargetSelectedWithDropDown>
+    <timeTargetWasSelectedWithDropDown value="2022-03-23T23:40:50.340725900Z" />
+>>>>>>> e4ea689 (created landscape game play)
   </component>
 </project>

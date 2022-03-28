@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dot_dac_doe">
 
+    <supports-screens
+
+        />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,7 +32,10 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Vertical_pause_menu"
+<<<<<<< HEAD
             android:excludeFromRecents="true"
+=======
+>>>>>>> e4ea689 (created landscape game play)
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity

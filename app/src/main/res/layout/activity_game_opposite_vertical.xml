@@ -55,8 +55,8 @@
         android:rotation="180"
         android:src="@drawable/a1"
         android:translationY="80dp"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="717dp" />
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="658dp" />
 
     <TextView
         android:id="@+id/player2name4"
@@ -90,5 +90,24 @@
         android:textSize="20sp"
         tools:layout_editor_absoluteX="272dp"
         tools:layout_editor_absoluteY="843dp" />
+
+    <com.example.dot_dac_doe.view.GameView
+        android:id="@+id/gameView"
+        android:layout_width="354dp"
+        android:layout_height="379dp"
+        android:layout_marginStart="28dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <ImageView
+        android:id="@+id/singleplayer_pause4"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pause_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

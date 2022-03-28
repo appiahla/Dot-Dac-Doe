@@ -65,8 +65,38 @@ public class GameView extends View implements Observer {
     }
 
     public void startGame(Player[] players) {
-        if (!String.valueOf(players[0].getTag()).isEmpty()) {
+        if (!players[0].getTag().isEmpty()) {
 //            i.putExtra("player1color", String.valueOf(player1.getTag()));
+            if(players[0].getTag() == "red1") {
+                color1 = getResources().getColor(R.color.red);
+            }
+            else if(players[0].getTag() == "blue1") {
+                color1 = getResources().getColor(R.color.blue);
+            }
+            else if(players[0].getTag() == "orange1") {
+                color1 = getResources().getColor(R.color.orange);
+            }
+            else if(players[0].getTag() == "purple1") {
+                color1 = getResources().getColor(R.color.purple);
+            }
+            else if(players[0].getTag() == "yellow1") {
+                color1 = getResources().getColor(R.color.yellow);
+            }
+            else if(players[0].getTag() == "pink1") {
+                color1 = getResources().getColor(R.color.pink);
+            }
+            else if(players[0].getTag() == "green1") {
+                color1 = getResources().getColor(R.color.green);
+            }
+            else if(players[0].getTag() == "grey1") {
+                color1 = getResources().getColor(R.color.grey);
+            }
+        }
+        if (!players[1].getTag().isEmpty()) {
+//            i.putExtra("player1color", String.valueOf(player1.getTag()));
+            if(players[1].getTag() == "orange2") {
+                color2 = getResources().getColor(R.color.orange);
+            }
         }
 //        players[0]
         playerColors = new int[]{color1,

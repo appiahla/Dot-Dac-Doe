@@ -71,12 +71,13 @@
         android:translationY="-25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteY="247dp" />
+        tools:layout_editor_absoluteY="228dp" />
 
     <TextView
         android:id="@+id/player2points3"
         android:layout_width="128dp"
         android:layout_height="41dp"
+        android:layout_marginEnd="2dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:rotation="180"
@@ -84,7 +85,7 @@
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="212dp" />
+        tools:layout_editor_absoluteY="187dp" />
 
     <ImageView
         android:id="@+id/singleplayer_pause3"

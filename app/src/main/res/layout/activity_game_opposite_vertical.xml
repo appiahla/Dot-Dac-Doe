@@ -60,17 +60,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="-19dp" />
 
-    <ImageView
-        android:id="@+id/playerNowPointer4.1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_weight="1"
-        android:rotation="180"
-        android:src="@drawable/a1"
-        android:translationY="80dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="640dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/playerNowPointer4.1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="160dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:rotation="180"-->
+<!--        android:src="@drawable/a1"-->
+<!--        android:translationY="80dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="640dp" />-->
 
     <TextView
         android:id="@+id/player2name4"

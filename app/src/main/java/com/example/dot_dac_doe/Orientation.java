@@ -15,15 +15,14 @@ public class Orientation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orientation);
-
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
         // action for back btn between orientation and user-select
         ImageView same_side_vert = findViewById(R.id.ss_vertical);
         same_side_vert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Orientation.this, MultiplayerGame.class);
-                Intent intent = getIntent();
-                Bundle extras = intent.getExtras();
                 if (extras != null) {
                     if (extras.containsKey("icon1")){
                         i.putExtra("icon1", getIntent().getStringExtra("icon1"));
@@ -39,7 +38,7 @@ public class Orientation extends AppCompatActivity {
                     }
                 }
 
-                    startActivity(i);
+                startActivity(i);
             }
         });
     }

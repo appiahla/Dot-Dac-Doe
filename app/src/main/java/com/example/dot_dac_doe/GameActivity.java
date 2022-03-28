@@ -34,21 +34,21 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        gameView = (GameView) findViewById(R.id.gameView);
+        gameView = (GameView) findViewById(R.id.gameView_mult);
         gameView.setPlayersState(this);
 
-        player1name = (TextView) findViewById(R.id.player1name);
-        player2name = (TextView) findViewById(R.id.player2name);
-        player1points = (TextView) findViewById(R.id.player1points);
-        player2points = (TextView) findViewById(R.id.player2points);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
-        pause = (ImageView) findViewById(R.id.singleplayer_pause);
+        player1name = (TextView) findViewById(R.id.player1name_mult);
+        player2name = (TextView) findViewById(R.id.player2name_mult);
+        player1points = (TextView) findViewById(R.id.player1points_mult);
+        player2points = (TextView) findViewById(R.id.player2points_mult);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
+        pause = (ImageView) findViewById(R.id.multiplayer_pause);
 
         players = new Player[]{new HumanPlayer("Player 1"), new Computer("Computer")};
         startGame(players);
 
         //      interaction for pause button
-        ImageView pause = findViewById(R.id.singleplayer_pause);
+        ImageView pause = findViewById(R.id.multiplayer_pause);
         pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

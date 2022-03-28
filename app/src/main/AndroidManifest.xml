@@ -43,6 +43,17 @@
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
+            android:name=".MultiplayerGameSame"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+<!--        <activity-->
+<!--            android:name=".MultiplayerGameOpposite"-->
+<!--            android:exported="true"
+                android:screenOrientation="landscape"/>-->
+        <activity
+            android:name=".MultiplayerGameOppositeVertical"
+            android:exported="true" />
+        <activity
             android:name=".GameActivity"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />

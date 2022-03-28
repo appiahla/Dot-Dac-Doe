@@ -5,6 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/player2name2"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Computer"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="717dp" />
+
     <ImageView
         android:id="@+id/playerNowPointer2"
         android:layout_width="78dp"

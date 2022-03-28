@@ -103,7 +103,19 @@
         android:layout_weight="1"
         android:src="@drawable/a1"
         android:translationY="80dp"
+        android:rotation="90"
         tools:layout_editor_absoluteX="21dp"
         tools:layout_editor_absoluteY="116dp" />
+
+    <ImageView
+        android:id="@+id/playerNowPointer4"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:layout_weight="1"
+        android:rotation="270"
+        android:src="@drawable/a1"
+        android:translationY="80dp"
+        tools:layout_editor_absoluteX="766dp"
+        tools:layout_editor_absoluteY="40dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

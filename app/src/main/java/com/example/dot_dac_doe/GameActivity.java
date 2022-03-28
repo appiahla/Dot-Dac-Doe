@@ -100,4 +100,6 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
             }
         });
     }
+
+
 }

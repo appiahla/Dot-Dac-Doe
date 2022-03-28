@@ -23,12 +23,17 @@ public class winner_page extends AppCompatActivity {
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
         setContentView(R.layout.activity_multiplayer_game);
+        int winner = getIntent().getIntExtra("WINNER", 0);
+
 
         play_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(winner_page.this, UserSelectActivity.class);
                 startActivity(i);
+                Intent intent = new Intent(getApplicationContext(),winner_page.class);
+                intent.putExtra("WINNER", winner);
+                startActivity(intent);
             }
         });
         home_button.setOnClickListener(new View.OnClickListener() {
@@ -72,4 +77,5 @@ public class winner_page extends AppCompatActivity {
                     }
                 });
             }
+
 }

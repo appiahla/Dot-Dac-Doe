@@ -6,6 +6,27 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/player2_points2"
+        android:layout_width="184dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:gravity="center"
+        android:text="Boxes: 0"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="717dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <ImageView
+        android:id="@+id/computer_circle2"
+        android:layout_width="126dp"
+        android:layout_height="120dp"
+        android:translationY="-25dp"
+        app:srcCompat="@drawable/user_circle"
+        tools:layout_editor_absoluteX="765dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
         android:id="@+id/player2name2"
         android:layout_width="174dp"
         android:layout_height="38dp"

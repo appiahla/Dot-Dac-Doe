@@ -6,6 +6,18 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/playerNowPointer2"
+        android:layout_width="78dp"
+        android:layout_height="67dp"
+        android:layout_weight="1"
+        android:src="@drawable/a1"
+        android:translationY="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-31dp" />
+
+    <ImageView
         android:id="@+id/player1_circle2"
         android:layout_width="134dp"
         android:layout_height="120dp"
@@ -49,9 +61,6 @@
         android:layout_width="554dp"
         android:layout_height="234dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="133dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

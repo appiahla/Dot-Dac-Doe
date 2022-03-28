@@ -34,6 +34,12 @@ public class winner_page extends AppCompatActivity {
         int player2Score = getIntent().getIntExtra("WINNER", 0);
         SharedPreferences gameSettings = getSharedPreferences("DATA", Context.MODE_PRIVATE);
 
+        if (player1Score > player2Score){
+            winnerLabel.setText("CONGRATULATIONS PLAYER 1! "+ player1Score);
+
+        }else{
+            winnerLabel.setText("CONGRATULATIONS PLAYER 2! " + player2Score);
+        }
 
 
 

@@ -39,7 +39,7 @@ public class MultiplayerGameSame extends AppCompatActivity implements PlayersSta
         player2name = (TextView) findViewById(R.id.player2name_mult2);
         player1points = (TextView) findViewById(R.id.player1points_mult2);
         player2points = (TextView) findViewById(R.id.player2points_mult2);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer2);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult2);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
         startGame(players);

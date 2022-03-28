@@ -11,7 +11,8 @@
         android:theme="@style/Theme.DotDacDoe">
         <activity
             android:name=".ComputerGameActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".horizontal_exit_confirmation"
             android:excludeFromRecents="true"

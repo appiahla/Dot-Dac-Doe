@@ -32,11 +32,15 @@ public class GameView extends View implements Observer {
     protected static final float add5 = (float) 159 / 824;
     protected static final float add6 = (float) 9 / 824;
 
-    protected final int[] playerColors;
+//    protected final int[] playerColors;
+    protected int[] playerColors;
     protected Graph game;
     protected Line move;
     protected Paint paint;
     protected PlayersStateView playersState;
+
+    int color1 = getResources().getColor(R.color.blue);
+    int color2 = getResources().getColor(R.color.red);
 
     public GameView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -52,8 +56,8 @@ public class GameView extends View implements Observer {
         });
 
 //        player 1, then player 2 line colors
-        playerColors = new int[]{getResources().getColor(R.color.blue),
-                getResources().getColor(R.color.red)};
+        playerColors = new int[]{color1,
+                color2};
     }
 
     public void setPlayersState(PlayersStateView playersState) {
@@ -61,6 +65,61 @@ public class GameView extends View implements Observer {
     }
 
     public void startGame(Player[] players) {
+        if (!players[0].getTag().isEmpty()) {
+            if(players[0].getTag() == "red1") {
+                color1 = getResources().getColor(R.color.red);
+            }
+            else if(players[0].getTag() == "blue1") {
+                color1 = getResources().getColor(R.color.blue);
+            }
+            else if(players[0].getTag() == "orange1") {
+                color1 = getResources().getColor(R.color.orange);
+            }
+            else if(players[0].getTag() == "purple1") {
+                color1 = getResources().getColor(R.color.purple);
+            }
+            else if(players[0].getTag() == "yellow1") {
+                color1 = getResources().getColor(R.color.yellow);
+            }
+            else if(players[0].getTag() == "pink1") {
+                color1 = getResources().getColor(R.color.pink);
+            }
+            else if(players[0].getTag() == "green1") {
+                color1 = getResources().getColor(R.color.green);
+            }
+            else if(players[0].getTag() == "grey1") {
+                color1 = getResources().getColor(R.color.grey);
+            }
+        }
+        if (!players[1].getTag().isEmpty()) {
+            if(players[1].getTag() == "red2") {
+                color2 = getResources().getColor(R.color.red);
+            }
+            else if(players[1].getTag() == "blue2") {
+                color2 = getResources().getColor(R.color.blue);
+            }
+            else if(players[1].getTag() == "orange2") {
+                color2 = getResources().getColor(R.color.orange);
+            }
+            else if(players[1].getTag() == "purple2") {
+                color2 = getResources().getColor(R.color.purple);
+            }
+            else if(players[1].getTag() == "yellow2") {
+                color2 = getResources().getColor(R.color.yellow);
+            }
+            else if(players[1].getTag() == "pink2") {
+                color2 = getResources().getColor(R.color.pink);
+            }
+            else if(players[1].getTag() == "green2") {
+                color2 = getResources().getColor(R.color.green);
+            }
+            else if(players[1].getTag() == "grey2") {
+                color2 = getResources().getColor(R.color.grey);
+            }
+        }
+//        players[0]
+        playerColors = new int[]{color1,
+                color2};
         game = new Graph(5, 5, players);
         game.addObserver(this);
         new Thread() {

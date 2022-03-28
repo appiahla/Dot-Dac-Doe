@@ -23,7 +23,7 @@ public class winner_page extends AppCompatActivity {
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
         setContentView(R.layout.activity_multiplayer_game);
-        int winner = getIntent().getIntExtra("WINNER", 0);
+        String winner = getIntent().getStringExtra("WINNER");
 
 
         play_again.setOnClickListener(new View.OnClickListener() {

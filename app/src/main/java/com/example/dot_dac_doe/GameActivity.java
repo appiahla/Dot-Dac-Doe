@@ -43,8 +43,16 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         player2points = (TextView) findViewById(R.id.player2points_mult);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
         pause = (ImageView) findViewById(R.id.multiplayer_pause);
+        currentPlayerPointer.setColorFilter(getResources().getColor(R.color.red));
 
         players = new Player[]{new HumanPlayer("Player 1"), new Computer("Computer")};
+//        players[0]
+//        if (!String.valueOf(player1.getTag()).isEmpty()) {
+            players[0].setTag("red1");
+//        }
+//        if (!String.valueOf(player2.getTag()).isEmpty()) {
+            players[1].setTag("blue2");
+//        }
         startGame(players);
 
         //      interaction for pause button
@@ -68,8 +76,10 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
             public void run() {
                 if (currentPlayer == players[0]) {
                     currentPlayerPointer.setImageResource(R.drawable.a1);
+                    currentPlayerPointer.setColorFilter(getResources().getColor(R.color.red));
                 } else if (currentPlayer == players[1]) {
                     currentPlayerPointer.setImageResource(R.drawable.a2);
+                    currentPlayerPointer.setColorFilter(getResources().getColor(R.color.blue));
                 }
                 player1points.setText("Boxes: " + playersPoints[0]);
                 player2points.setText("Boxes: " + playersPoints[1]);

@@ -32,11 +32,15 @@ public class GameView extends View implements Observer {
     protected static final float add5 = (float) 159 / 824;
     protected static final float add6 = (float) 9 / 824;
 
-    protected final int[] playerColors;
+//    protected final int[] playerColors;
+    protected int[] playerColors;
     protected Graph game;
     protected Line move;
     protected Paint paint;
     protected PlayersStateView playersState;
+
+    int color1 = getResources().getColor(R.color.blue);
+    int color2 = getResources().getColor(R.color.red);
 
     public GameView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -52,8 +56,8 @@ public class GameView extends View implements Observer {
         });
 
 //        player 1, then player 2 line colors
-        playerColors = new int[]{getResources().getColor(R.color.blue),
-                getResources().getColor(R.color.red)};
+        playerColors = new int[]{color1,
+                color2};
     }
 
     public void setPlayersState(PlayersStateView playersState) {
@@ -61,6 +65,12 @@ public class GameView extends View implements Observer {
     }
 
     public void startGame(Player[] players) {
+        if (!String.valueOf(players[0].getTag()).isEmpty()) {
+//            i.putExtra("player1color", String.valueOf(player1.getTag()));
+        }
+//        players[0]
+        playerColors = new int[]{color1,
+                color2};
         game = new Graph(5, 5, players);
         game.addObserver(this);
         new Thread() {

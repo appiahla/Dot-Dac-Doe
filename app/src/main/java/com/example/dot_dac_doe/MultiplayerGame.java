@@ -197,6 +197,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
 
         players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
+//        players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
         startGame(players);
 
         //      interaction for pause button

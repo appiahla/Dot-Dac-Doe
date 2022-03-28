@@ -89,7 +89,7 @@
         tools:layout_editor_absoluteY="356dp" />
 
     <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView2"
+        android:id="@+id/gameView"
         android:layout_width="554dp"
         android:layout_height="234dp"
         android:layout_weight="1"

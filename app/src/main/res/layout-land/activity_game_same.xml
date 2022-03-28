@@ -7,7 +7,8 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingTop="16dp"
+    tools:context="com.example.dot_dac_doe.GameActivitySame">
 
     <ImageView
         android:id="@+id/playerNowPointer2"
@@ -96,7 +97,7 @@
         app:srcCompat="@drawable/user_circle" />
 
     <TextView
-        android:id="@+id/player2_points2"
+        android:id="@+id/player2points2"
         android:layout_width="128dp"
         android:layout_height="41dp"
         android:layout_marginEnd="2dp"
@@ -119,7 +120,7 @@
         app:srcCompat="@drawable/pause_btn" />
 
     <com.example.dot_dac_doe.view.GameView
-        android:id="@+id/gameView"
+        android:id="@+id/gameView2"
         android:layout_width="465dp"
         android:layout_height="380dp"
         android:layout_marginEnd="204dp"

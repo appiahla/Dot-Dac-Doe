@@ -21,8 +21,7 @@ import java.util.Map;
 public class GameActivity extends AppCompatActivity implements PlayersStateView {
 
     protected GameView gameView;
-    protected TextView player1name, player2name, player1points,
-            player2points;
+    protected TextView player1name, player2name, player1points, player2points;
     ImageView currentPlayerPointer;
     Player[] players;
     Integer[] playersPoints = new Integer[]{0, 0};

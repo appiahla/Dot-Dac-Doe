@@ -108,7 +108,7 @@
         tools:layout_editor_absoluteY="116dp" />
 
     <ImageView
-        android:id="@+id/playerNowPointer4"
+        android:id="@+id/playerNowPointer3.1"
         android:layout_width="78dp"
         android:layout_height="67dp"
         android:layout_weight="1"

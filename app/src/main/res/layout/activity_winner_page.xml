@@ -33,10 +33,10 @@
         android:layout_marginEnd="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintVertical_bias="0.979"
         app:srcCompat="@drawable/bottom_confetti" />
 
     <TextView
@@ -108,16 +108,16 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="224dp"
-        android:layout_height="119dp"
+        android:layout_width="237dp"
+        android:layout_height="134dp"
         android:layout_marginTop="204dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_confetti"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/winner_icon2" />
 
     <ImageView
@@ -128,7 +128,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283"
+        app:layout_constraintVertical_bias="0.257"
         app:srcCompat="@drawable/confetti2_removebg_preview" />
 
     <ImageView
@@ -139,18 +139,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118"
+        app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@drawable/confetti_top_removebg_preview" />
 
     <ImageView
         android:id="@+id/right_side_removed"
         android:layout_width="98dp"
         android:layout_height="682dp"
-        android:layout_marginStart="296dp"
+        android:layout_marginStart="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
+        app:layout_constraintVertical_bias="0.779"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
 
     <ImageView
@@ -162,7 +162,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284"
+        app:layout_constraintVertical_bias="0.59"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

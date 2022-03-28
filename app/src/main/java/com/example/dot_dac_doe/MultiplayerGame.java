@@ -30,17 +30,22 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     Integer[] playersPoints = new Integer[]{0, 0};
     Player currentPlayer;
 
+
 //   will need to add these later
 //    ImageView Icon1 = findViewById(R.id.Icon1);
 //    ImageView Icon2 = findViewById(R.id.Icon2);
 
 //    ImageView player1;
 //    ImageView player2;
+    int colorOne;
+    int colorTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplayer_game);
+        colorOne = getResources().getColor(R.color.black);
+        colorTwo = getResources().getColor(R.color.black);
 
         ImageView player1 = findViewById(R.id.player1_circle_mult);
         ImageView player2 = findViewById(R.id.computer_circle_mult);
@@ -61,6 +66,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             if (extras.containsKey("color1")) {
                 String color1 = getIntent().getStringExtra("color1");
                 if (color1.equalsIgnoreCase("red1")) {
+                    colorOne = getResources().getColor(R.color.red);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     player1.setTag("red1");
                     player1name.setTextColor(getResources().getColor(R.color.red));
@@ -69,6 +75,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("red1");
                 }
                 if (color1.equalsIgnoreCase("blue1")) {
+                    colorOne = getResources().getColor(R.color.blue);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
                     player1.setTag("blue1");
                     player1name.setTextColor(getResources().getColor(R.color.blue));
@@ -77,6 +84,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("blue1");
                 }
                 if (color1.equalsIgnoreCase("orange1")) {
+                    colorOne = getResources().getColor(R.color.orange);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
                     player1.setTag("orange1");
                     player1name.setTextColor(getResources().getColor(R.color.orange));
@@ -85,6 +93,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("orange1");
                 }
                 if (color1.equalsIgnoreCase("purple1")) {
+                    colorOne = getResources().getColor(R.color.purple);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
                     player1.setTag("purple1");
                     player1name.setTextColor(getResources().getColor(R.color.purple));
@@ -93,6 +102,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("purple1");
                 }
                 if (color1.equalsIgnoreCase("yellow1")) {
+                    colorOne = getResources().getColor(R.color.yellow);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
                     player1.setTag("yellow1");
                     player1name.setTextColor(getResources().getColor(R.color.yellow));
@@ -101,6 +111,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("yellow1");
                 }
                 if (color1.equalsIgnoreCase("pink1")) {
+                    colorOne = getResources().getColor(R.color.pink);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
                     player1.setTag("pink1");
                     player1name.setTextColor(getResources().getColor(R.color.pink));
@@ -109,6 +120,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("pink1");
                 }
                 if (color1.equalsIgnoreCase("green1")) {
+                    colorOne = getResources().getColor(R.color.green);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
                     player1.setTag("green1");
                     player1name.setTextColor(getResources().getColor(R.color.green));
@@ -117,6 +129,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player1points.setTag("green1");
                 }
                 if (color1.equalsIgnoreCase("grey1")) {
+                    colorOne = getResources().getColor(R.color.grey);
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
                     player1.setTag("grey1");
                     player1name.setTextColor(getResources().getColor(R.color.grey));
@@ -128,6 +141,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             if (extras.containsKey("color2")) {
                 String color2 = getIntent().getStringExtra("color2");
                 if (color2.equalsIgnoreCase("red2")) {
+                    colorTwo = getResources().getColor(R.color.red);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     player2.setTag("red2");
                     player2name.setTextColor(getResources().getColor(R.color.red));
@@ -136,6 +150,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("red2");
                 }
                 if (color2.equalsIgnoreCase("blue2")) {
+                    colorTwo = getResources().getColor(R.color.blue);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
                     player2.setTag("blue2");
                     player2name.setTextColor(getResources().getColor(R.color.blue));
@@ -144,6 +159,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("blue2");
                 }
                 if (color2.equalsIgnoreCase("orange2")) {
+                    colorTwo = getResources().getColor(R.color.orange);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
                     player2.setTag("orange2");
                     player2name.setTextColor(getResources().getColor(R.color.orange));
@@ -152,6 +168,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("orange2");
                 }
                 if (color2.equalsIgnoreCase("purple2")) {
+                    colorTwo = getResources().getColor(R.color.purple);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
                     player2.setTag("purple2");
                     player2name.setTextColor(getResources().getColor(R.color.purple));
@@ -160,6 +177,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("purple2");
                 }
                 if (color2.equalsIgnoreCase("yellow2")) {
+                    colorTwo = getResources().getColor(R.color.yellow);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
                     player2.setTag("yellow2");
                     player2name.setTextColor(getResources().getColor(R.color.yellow));
@@ -168,6 +186,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("yellow2");
                 }
                 if (color2.equalsIgnoreCase("pink2")) {
+                    colorTwo = getResources().getColor(R.color.pink);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
                     player2.setTag("pink2");
                     player2name.setTextColor(getResources().getColor(R.color.pink));
@@ -176,6 +195,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("pink2");
                 }
                 if (color2.equalsIgnoreCase("green2")) {
+                    colorTwo = getResources().getColor(R.color.green);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
                     player2.setTag("green2");
                     player2name.setTextColor(getResources().getColor(R.color.green));
@@ -184,6 +204,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
                     player2points.setTag("green2");
                 }
                 if (color2.equalsIgnoreCase("grey2")) {
+                    colorTwo = getResources().getColor(R.color.grey);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
                     player2.setTag("grey2");
                     player2name.setTextColor(getResources().getColor(R.color.grey));
@@ -194,7 +215,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             }
         }
 
-
+        currentPlayerPointer.setColorFilter(colorOne);
 
         players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2"),};
 
@@ -228,8 +249,11 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             public void run() {
                 if (currentPlayer == players[0]) {
                     currentPlayerPointer.setImageResource(R.drawable.a1);
+                    currentPlayerPointer.setColorFilter(colorOne);
+//                    currentPlayerPointer.setColorFilter(ContextCompat.getColor(colorOne), PorterDuff.Mode.SCREEN);
                 } else if (currentPlayer == players[1]) {
                     currentPlayerPointer.setImageResource(R.drawable.a2);
+                    currentPlayerPointer.setColorFilter(colorTwo);
                 }
                 player1points.setText("Boxes: " + playersPoints[0]);
                 player2points.setText("Boxes: " + playersPoints[1]);

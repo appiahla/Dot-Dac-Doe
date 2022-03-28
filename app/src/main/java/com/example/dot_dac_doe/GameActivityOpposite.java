@@ -40,6 +40,7 @@ public class GameActivityOpposite extends AppCompatActivity implements PlayersSt
         player1points = (TextView) findViewById(R.id.player1points3);
         player2points = (TextView) findViewById(R.id.player2points3);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer3);
+        //currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer3_1);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
         startGame(players);

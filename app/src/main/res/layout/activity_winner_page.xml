@@ -11,7 +11,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="309dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="384dp"
+        android:layout_marginBottom="332dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textAlignment="center"
@@ -72,7 +72,7 @@
         android:layout_width="210dp"
         android:layout_height="185dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="36dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/player_who_won"
@@ -132,8 +132,8 @@
         android:id="@+id/right_side_removed"
         android:layout_width="98dp"
         android:layout_height="682dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />

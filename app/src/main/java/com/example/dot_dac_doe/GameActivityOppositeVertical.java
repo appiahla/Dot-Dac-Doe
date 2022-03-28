@@ -21,8 +21,7 @@ import java.util.Map;
 public class GameActivityOppositeVertical extends AppCompatActivity implements PlayersStateView {
 
     protected GameView gameView;
-    protected TextView player1name, player2name, player1points,
-            player2points;
+    protected TextView player1name, player2name, player1points, player2points;
     ImageView currentPlayerPointer;
     Player[] players;
     Integer[] playersPoints = new Integer[]{0, 0};
@@ -31,17 +30,17 @@ public class GameActivityOppositeVertical extends AppCompatActivity implements P
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_game_opposite_vertical);
         //setContentView(R.layout.activity_game_opposite);
 
-        gameView = (GameView) findViewById(R.id.gameView);
+        gameView = (GameView) findViewById(R.id.gameView4);
         gameView.setPlayersState(this);
 
-        player1name = (TextView) findViewById(R.id.player1name);
-        player2name = (TextView) findViewById(R.id.player2name);
-        player1points = (TextView) findViewById(R.id.player1points);
-        player2points = (TextView) findViewById(R.id.player2points);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
+        player1name = (TextView) findViewById(R.id.player1name4);
+        player2name = (TextView) findViewById(R.id.player2name4);
+        player1points = (TextView) findViewById(R.id.player1points4);
+        player2points = (TextView) findViewById(R.id.player2points4);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer4);
 
         players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
         startGame(players);
@@ -85,7 +84,7 @@ public class GameActivityOppositeVertical extends AppCompatActivity implements P
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new AlertDialog.Builder(GameActivity.this)
+                new AlertDialog.Builder(GameActivityOppositeVertical.this)
                         .setTitle("Dots And Boxes")
                         .setMessage(winner.getName() + " Wins!")
                         .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
@@ -116,12 +115,12 @@ public class GameActivityOppositeVertical extends AppCompatActivity implements P
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    new AlertDialog.Builder(GameActivity.this)
+                    new AlertDialog.Builder(GameActivityOppositeVertical.this)
                             .setTitle("Dots And Boxes")
                             .setMessage("New game versus")
                             .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    new AlertDialog.Builder(GameActivity.this)
+                                    new AlertDialog.Builder(GameActivityOppositeVertical.this)
                                             .setTitle("Who goes first?")
                                             .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
                                                 @Override

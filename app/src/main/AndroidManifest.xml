@@ -47,6 +47,10 @@
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
+            android:name=".GameActivityOppositeVertical"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
             android:name=".Orientation"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
@@ -85,7 +89,6 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

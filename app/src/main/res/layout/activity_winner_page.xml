@@ -39,7 +39,6 @@
         android:layout_width="250dp"
         android:layout_height="96dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="129dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="WINNER!"
@@ -47,16 +46,17 @@
         android:textColor="#000000"
         android:textSize="48sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
@@ -64,18 +64,22 @@
         android:textAlignment="center"
         android:textColor="#F0000000"
         android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/winner_header" />
+        app:layout_constraintTop_toBottomOf="@+id/winner_header"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/paint_icon"
         android:layout_width="210dp"
         android:layout_height="185dp"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="36dp"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/congrats"
+        app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -147,13 +151,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="72dp"
-        android:layout_height="29dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="182dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

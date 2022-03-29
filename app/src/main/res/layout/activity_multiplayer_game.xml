@@ -50,7 +50,8 @@
                     app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
                     app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cat" />
 
                 <TextView
                     android:id="@+id/player1points_mult"
@@ -105,7 +106,8 @@
                     app:layout_constraintBottom_toTopOf="@+id/computer_circle_mult"
                     app:layout_constraintEnd_toStartOf="@+id/computer_circle_mult"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/fish" />
 
                 <TextView
                     android:id="@+id/player2points_mult"

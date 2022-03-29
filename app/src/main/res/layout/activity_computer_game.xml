@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context=".ComputerGameActivity">
+
+    <Button
+        android:id="@+id/orientation_button_user_select2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="play"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:backgroundTint="@android:color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_green_1_user_select2"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/pick_red_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="27dp"
+        android:contentDescription="@string/player_1_color_picker_red"
+        android:tag="red1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:srcCompat="@drawable/red_color_pick" />
+
+    <ImageView
+        android:id="@+id/pick_orange_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/player_1_color_picker_orange"
+        android:tag="orange1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_red_1_user_select2"
+        app:srcCompat="@drawable/orange_color_pick"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pick_yellow_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/player_1_color_picker_yellow"
+        android:tag="yellow1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_orange_1_user_select2"
+        app:srcCompat="@drawable/yellow_color_pick"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pick_green_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/player_1_color_picker_green"
+        android:tag="green1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_yellow_1_user_select2"
+        app:srcCompat="@drawable/green_color_pick"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pick_blue_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="105dp"
+        android:contentDescription="@string/player_1_color_picker_blue"
+        android:tag="blue1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:srcCompat="@drawable/blue_color_pick" />
+
+    <ImageView
+        android:id="@+id/pick_purple_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="105dp"
+        android:contentDescription="@string/player_1_color_picker_purple"
+        android:tag="purple1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_blue_1_user_select2"
+        app:srcCompat="@drawable/purple_color_pick" />
+
+    <ImageView
+        android:id="@+id/pick_pink_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="105dp"
+        android:contentDescription="@string/player_1_color_picker_pink"
+        android:tag="pink1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_purple_1_user_select2"
+        app:srcCompat="@drawable/pink_color_pick" />
+
+    <ImageView
+        android:id="@+id/pick_grey_1_user_select2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="105dp"
+        android:contentDescription="@string/player_1_color_picker_grey"
+        android:tag="grey1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_pink_1_user_select2"
+        app:srcCompat="@drawable/grey_color_pick"
+        tools:ignore="ImageContrastCheck" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="234dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computer_player_title">
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="235dp"
+            android:layout_height="229dp"
+            android:contentDescription="@string/player_1_icon_circle"
+            app:srcCompat="@drawable/user_circle"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="191dp"
+            android:layout_height="187dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/computer_player_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 1"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

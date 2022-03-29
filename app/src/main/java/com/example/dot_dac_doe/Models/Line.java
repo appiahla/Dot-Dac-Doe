@@ -1,4 +1,4 @@
-package com.example.dot_dac_doe.model;
+package com.example.dot_dac_doe.Models;
 
 
 public class Line {
@@ -16,14 +16,6 @@ public class Line {
         return direction;
     }
 
-    public int row() {
-        return row;
-    }
-
-    public int column() {
-        return column;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,5 +29,13 @@ public class Line {
     @Override
     public String toString() {
         return "direction:" + direction().toString() + "row:" + row + "column" + column;
+    }
+
+    public int row() {
+        return row;
+    }
+
+    public int column() {
+        return column;
     }
 }

@@ -1,9 +1,10 @@
-package com.example.dot_dac_doe.model;
+package com.example.dot_dac_doe.Models;
 
 
 public abstract class Player {
     protected final String name;
     protected Graph game;
+    private String tag;
 
     public Player(String name) {
         this.name = name;
@@ -19,6 +20,10 @@ public abstract class Player {
 
     public abstract Line move();
 
+    public String getName() {
+        return name;
+    }
+
     public Graph getGame() {
         return game;
     }
@@ -27,8 +32,12 @@ public abstract class Player {
         this.game = game;
     }
 
-    public String getName() {
-        return name;
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }
 

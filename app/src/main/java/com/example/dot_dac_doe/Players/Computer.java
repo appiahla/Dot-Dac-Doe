@@ -1,20 +1,20 @@
-package com.example.dot_dac_doe.AI;
+package com.example.dot_dac_doe.Players;
 
 
-import com.example.dot_dac_doe.model.Direction;
-import com.example.dot_dac_doe.model.Line;
-import com.example.dot_dac_doe.model.Player;
+import com.example.dot_dac_doe.Models.Direction;
+import com.example.dot_dac_doe.Models.Line;
+import com.example.dot_dac_doe.Models.Player;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RandomAIPlayer extends Player {
+public class Computer extends Player {
 
     protected final ArrayList<Line> safeLines;
     protected final ArrayList<Line> goodLines;
     protected final ArrayList<Line> badLines;
 
-    public RandomAIPlayer(String name) {
+    public Computer(String name) {
         super(name);
 
         safeLines = new ArrayList<>();
@@ -106,8 +106,8 @@ public class RandomAIPlayer extends Player {
         }
     }
 
-    protected Box getBox(int row, int column) {
-        return new Box(isVerticalLineOccupied(row, column), isHorizontalLineOccupied(row, column),
+    protected PlayerBox getBox(int row, int column) {
+        return new PlayerBox(isVerticalLineOccupied(row, column), isHorizontalLineOccupied(row, column),
                 isVerticalLineOccupied(row, column + 1), isHorizontalLineOccupied(row + 1, column));
     }
 

@@ -4,6 +4,7 @@ package com.example.dot_dac_doe.Models;
 public abstract class Player {
     protected final String name;
     protected Graph game;
+    private String tag;
 
     public Player(String name) {
         this.name = name;
@@ -29,6 +30,14 @@ public abstract class Player {
 
     public void addToGame(Graph game) {
         this.game = game;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }
 

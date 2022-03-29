@@ -40,6 +40,18 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(UserSelectActivity.this, Orientation.class);
+                if(!String.valueOf(Icon1.getTag()).isEmpty()) {
+                    i.putExtra("icon1", String.valueOf(Icon1.getTag()));
+                }
+                if(!String.valueOf(Icon2.getTag()).isEmpty()) {
+                    i.putExtra("icon2", String.valueOf(Icon2.getTag()));
+                }
+                if(!String.valueOf(player1.getTag()).isEmpty()) {
+                    i.putExtra("color1", String.valueOf(player1.getTag()));
+                }
+                if(!String.valueOf(player2.getTag()).isEmpty()) {
+                    i.putExtra("color2", String.valueOf(player2.getTag()));
+                }
                 startActivity(i);
             }
         });

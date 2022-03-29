@@ -13,20 +13,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
         <activity
+<<<<<<< HEAD
             android:name=".Vertical_pause_menu"
             android:exported="true"
             android:excludeFromRecents="true"/>
         <activity
             android:name=".MultiplayerGame"
             android:exported="true" />
+=======
+            android:name=".ComputerIconActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+        <activity
+            android:name=".ComputerGameActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+        <activity
+            android:name=".horizontal_exit_confirmation"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+>>>>>>> 78104b936723384b2801383354fb15cc56ee516b
         <activity
             android:name=".MultiplayerGameSame"
             android:exported="true"
+<<<<<<< HEAD
             android:screenOrientation="landscape"/>
+=======
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+>>>>>>> 78104b936723384b2801383354fb15cc56ee516b
         <activity
             android:name=".MultiplayerGameOpposite"
             android:exported="true"
+<<<<<<< HEAD
             android:screenOrientation="landscape"/>
+=======
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+>>>>>>> 78104b936723384b2801383354fb15cc56ee516b
         <activity
             android:name=".MultiplayerGameOppositeVertical"
             android:exported="true" />
@@ -36,7 +61,11 @@
         <activity
             android:name=".GameActivitySame"
             android:exported="true"
+<<<<<<< HEAD
             android:screenOrientation="landscape"/>
+=======
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+>>>>>>> 78104b936723384b2801383354fb15cc56ee516b
         <activity
             android:name=".GameActivityOpposite"
             android:exported="true"

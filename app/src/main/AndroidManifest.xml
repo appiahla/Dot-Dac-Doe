@@ -46,10 +46,12 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
             android:name=".MultiplayerGameOppositeVertical"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".GameActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".GameActivitySame"
             android:exported="true"
@@ -58,11 +60,13 @@
         <activity
             android:name=".GameActivityOpposite"
             android:exported="true"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".GameActivityOppositeVertical"
             android:exported="true"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Orientation"
             android:exported="true"

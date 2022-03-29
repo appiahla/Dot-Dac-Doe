@@ -24,7 +24,7 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/player1name_mult"
+                android:id="@+id/player1name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gloria_hallelujah"
@@ -34,14 +34,14 @@
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/player1_circle_mult"
+                android:id="@+id/player1_circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:translationY="-25dp"
                 app:srcCompat="@drawable/user_circle" />
 
             <TextView
-                android:id="@+id/player1points_mult"
+                android:id="@+id/player1points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="170dp"
@@ -54,7 +54,7 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/playerNowPointer_mult"
+            android:id="@+id/playerNowPointer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -68,7 +68,7 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/player2name_mult"
+                android:id="@+id/player2name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/gloria_hallelujah"
@@ -78,14 +78,14 @@
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/computer_circle_mult"
+                android:id="@+id/computer_circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:translationY="-25dp"
                 app:srcCompat="@drawable/user_circle" />
 
             <TextView
-                android:id="@+id/player2points_mult"
+                android:id="@+id/player2points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="170dp"
@@ -98,11 +98,12 @@
     </LinearLayout>
 
     <com.example.dot_dac_doe.Views.GameView
-        android:id="@+id/gameView_mult"
+        android:id="@+id/gameView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="64dp"
         android:layout_weight="1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -114,14 +115,14 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/multiplayer_pause"
+                android:id="@+id/singlePlayer_pause"
                 android:layout_width="63dp"
                 android:layout_height="54dp"
                 android:translationX="0dp"
                 app:srcCompat="@drawable/pause_btn" />
 
             <ImageView
-                android:id="@+id/undo_mult"
+                android:id="@+id/singlePlayer_undo"
                 android:layout_width="63dp"
                 android:layout_height="54dp"
                 android:layout_marginEnd="316dp"

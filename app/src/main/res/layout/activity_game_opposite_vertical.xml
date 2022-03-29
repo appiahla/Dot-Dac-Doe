@@ -117,7 +117,7 @@
         app:srcCompat="@drawable/user_circle"
         tools:layout_editor_absoluteY="709dp" />
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView4"
         android:layout_width="380dp"
         android:layout_height="465dp"

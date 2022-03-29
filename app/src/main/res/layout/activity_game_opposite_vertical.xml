@@ -140,11 +140,13 @@
         app:srcCompat="@drawable/pause_btn" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/undo_btn"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="4dp" />
+        android:id="@+id/singleplayer_undo4"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/undo_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -144,7 +144,7 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/user_circle" />
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult4"
         android:layout_width="380dp"
         android:layout_height="465dp"

@@ -10,11 +10,11 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dot_dac_doe.AI.RandomAIPlayer;
-import com.example.dot_dac_doe.model.HumanPlayer;
-import com.example.dot_dac_doe.model.Player;
-import com.example.dot_dac_doe.view.GameView;
-import com.example.dot_dac_doe.view.PlayersStateView;
+import com.example.dot_dac_doe.Players.Computer;
+import com.example.dot_dac_doe.Models.HumanPlayer;
+import com.example.dot_dac_doe.Models.Player;
+import com.example.dot_dac_doe.Views.GameView;
+import com.example.dot_dac_doe.Views.PlayersStateView;
 
 import java.util.Map;
 
@@ -41,7 +41,7 @@ public class MultiplayerGameSame extends AppCompatActivity implements PlayersSta
         player2points = (TextView) findViewById(R.id.player2points_mult2);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult2);
 
-        players = new Player[]{new HumanPlayer("Human"), new RandomAIPlayer("Computer")};
+        players = new Player[]{new HumanPlayer("Human"), new Computer("Computer")};
         startGame(players);
     }
 
@@ -72,7 +72,7 @@ public class MultiplayerGameSame extends AppCompatActivity implements PlayersSta
     }
 
     @Override
-    public void setPlayerOccupyingBoxesCount(Map<Player, Integer> player_occupyingBoxesCount_map) {
+    public void setPlayerPoints(Map<Player, Integer> player_occupyingBoxesCount_map) {
         playersPoints[0] = (player_occupyingBoxesCount_map.get(players[0]));
         playersPoints[1] = (player_occupyingBoxesCount_map.get(players[1]));
         updateState();
@@ -100,65 +100,65 @@ public class MultiplayerGameSame extends AppCompatActivity implements PlayersSta
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.game, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_new) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    new AlertDialog.Builder(MultiplayerGameSame.this)
-                            .setTitle("Dots And Boxes")
-                            .setMessage("New game versus")
-                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    new AlertDialog.Builder(MultiplayerGameSame.this)
-                                            .setTitle("Who goes first?")
-                                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialogInterface, int i) {
-                                                    players = new Player[]{new RandomAIPlayer("Computer"),
-                                                            new HumanPlayer("Human")};
-                                                    startGame(players);
-
-                                                    player1name.setText("Computer");
-                                                    player2name.setText("Human");
-                                                }
-                                            })
-                                            .setNegativeButton("Human", new DialogInterface.OnClickListener() {
-                                                @Override
-                                                public void onClick(DialogInterface dialogInterface, int i) {
-                                                    players = new Player[]{new HumanPlayer("Human"),
-                                                            new RandomAIPlayer("Computer")};
-                                                    startGame(players);
-
-                                                    player1name.setText("Human");
-                                                    player2name.setText("Computer");
-                                                }
-                                            }).show();
-                                }
-                            })
-                            .setNeutralButton("Human", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
-                                    players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
-                                    startGame(players);
-
-                                    player1name.setText("Player 1");
-                                    player2name.setText("Player 2");
-                                }
-                            }).show();
-                } //if condition for human/computer
-            });
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.game, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        int id = item.getItemId();
+//
+//        if (id == R.id.action_new) {
+//            runOnUiThread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    new AlertDialog.Builder(MultiplayerGameSame.this)
+//                            .setTitle("Dots And Boxes")
+//                            .setMessage("New game versus")
+//                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    new AlertDialog.Builder(MultiplayerGameSame.this)
+//                                            .setTitle("Who goes first?")
+//                                            .setPositiveButton("Computer", new DialogInterface.OnClickListener() {
+//                                                @Override
+//                                                public void onClick(DialogInterface dialogInterface, int i) {
+//                                                    players = new Player[]{new Computer("Computer"),
+//                                                            new HumanPlayer("Human")};
+//                                                    startGame(players);
+//
+//                                                    player1name.setText("Computer");
+//                                                    player2name.setText("Human");
+//                                                }
+//                                            })
+//                                            .setNegativeButton("Human", new DialogInterface.OnClickListener() {
+//                                                @Override
+//                                                public void onClick(DialogInterface dialogInterface, int i) {
+//                                                    players = new Player[]{new HumanPlayer("Human"),
+//                                                            new Computer("Computer")};
+//                                                    startGame(players);
+//
+//                                                    player1name.setText("Human");
+//                                                    player2name.setText("Computer");
+//                                                }
+//                                            }).show();
+//                                }
+//                            })
+//                            .setNeutralButton("Human", new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialogInterface, int i) {
+//                                    players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
+//                                    startGame(players);
+//
+//                                    player1name.setText("Player 1");
+//                                    player2name.setText("Player 2");
+//                                }
+//                            }).show();
+//                } //if condition for human/computer
+//            });
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

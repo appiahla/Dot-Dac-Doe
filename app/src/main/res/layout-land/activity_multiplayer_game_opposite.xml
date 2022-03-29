@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="37dp" />
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult3"
         android:layout_width="465dp"
         android:layout_height="380dp"

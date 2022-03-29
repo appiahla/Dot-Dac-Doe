@@ -132,7 +132,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gameView4"
         app:srcCompat="@drawable/user_circle" />
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView4"
         android:layout_width="380dp"
         android:layout_height="465dp"

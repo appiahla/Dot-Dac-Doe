@@ -97,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pause_btn" />
 
-    <com.example.dot_dac_doe.view.GameView
+    <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView3"
         android:layout_width="465dp"
         android:layout_height="380dp"

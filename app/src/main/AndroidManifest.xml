@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dot_dac_doe">
 
+    <supports-screens
+        />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
+        <activity
+            android:name=".Vertical_pause_menu"
+            android:exported="true"
+            android:excludeFromRecents="true"/>
+        <activity
+            android:name=".MultiplayerGame"
+            android:exported="true" />
         <activity
             android:name=".ComputerIconActivity"
             android:exported="true"
@@ -24,29 +34,34 @@
             android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".Horizontal_pause_menu"
-            android:excludeFromRecents="true"
+            android:name=".MultiplayerGameSame"
             android:exported="true"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".vertical_exit_confirmation"
-            android:excludeFromRecents="true"
+            android:name=".MultiplayerGameOpposite"
             android:exported="true"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".Vertical_pause_menu"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
-        <activity
-            android:name=".MultiplayerGame"
-            android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+            android:name=".MultiplayerGameOppositeVertical"
+            android:exported="true" />
         <activity
             android:name=".GameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GameActivitySame"
             android:exported="true"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+        <activity
+            android:name=".GameActivityOpposite"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".GameActivityOppositeVertical"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".Orientation"
             android:exported="true"
@@ -86,7 +101,6 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

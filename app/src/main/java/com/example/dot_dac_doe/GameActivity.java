@@ -35,6 +35,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        //setContentView(R.layout.activity_game_opposite);
 
         gameView = (GameView) findViewById(R.id.gameView_mult);
         gameView.setPlayersState(this);

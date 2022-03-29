@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_opposite.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_same.xml" value="0.2" />
@@ -19,7 +18,7 @@
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.2" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.1" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game_opposite_vertical.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_orientation.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings.xml" value="0.264" />
@@ -37,55 +36,10 @@
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_home.xml" value="0.25905797101449274" />
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_user_select.xml" value="0.264" />
-=======
-
-        <entry key="../../../../layout/custom_preview.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/drawable/border.xml" value="0.2435" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_exit_confirmation.xml" value="0.24625908507909364" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_game.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_home.xml" value="0.14322359982898675" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_icon_page.xml" value="0.14322359982898675" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.24625908507909364" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_tutorial_page.xml" value="0.14322359982898675" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_user_select.xml" value="0.264" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_vertical_pause_menu.xml" value="0.264" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/vertical_pause_menu.xml" value="0.264" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/menu/game.xml" value="0.33689610944848225" />
-
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_computer_game.xml" value="0.16" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_computer_icon.xml" value="0.22" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_icon_page.xml" value="0.2873980054397099" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_main.xml" value="0.18426678067550234" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_orientation.xml" value="0.2" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_tutorial_page.xml" value="0.18426678067550234" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_tutorial_page_part2.xml" value="0.2" />
-        <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_user_select.xml" value="0.2" />
-
->>>>>>> 42a139e7da3e3e0fef35a0a4954ae50197408dea
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1664337158203125" />
         <entry key="app/src/main/res/layout/activity_icon_page.xml" value="0.23493194580078128" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16107940673828125" />
-<<<<<<< HEAD
-=======
-        <entry key="app/src/main/res/layout/activity_orientation.xml" value="0.10175288584865327" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.10175288584865327" />
-        <entry key="app/src/main/res/layout/activity_tutorial.xml" value="0.3285615119381228" />
-        <entry key="app/src/main/res/layout/activity_tutorial_page.xml" value="0.6868759155273437" />
-        <entry key="app/src/main/res/layout/activity_tutorial_page_part2.xml" value="0.29576888775269916" />
-        <entry key="app/src/main/res/layout/activity_tutorial_scrolling_page.xml" value="0.11271529888551166" />
-
-        <entry key="app/src/main/res/layout/activity_user_select.xml" value="0.10175288584865327" />
-        <entry key="app/src/main/res/layout/activity_winner_page.xml" value="0.1" />
-
-        <entry key="app/src/main/res/layout/activity_user_select.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_winner_page.xml" value="0.30364837646484377" />
-
-        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.23809676861207416" />
-        <entry key="app/src/main/res/layout/item_list.xml" value="0.10431808465156049" />
->>>>>>> 42a139e7da3e3e0fef35a0a4954ae50197408dea
       </map>
     </option>
   </component>

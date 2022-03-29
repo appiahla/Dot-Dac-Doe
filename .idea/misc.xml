@@ -78,11 +78,15 @@
         <entry key="app/src/main/res/layout/activity_tutorial_scrolling_page.xml" value="0.11271529888551166" />
 
         <entry key="app/src/main/res/layout/activity_user_select.xml" value="0.10175288584865327" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/activity_winner_page.xml" value="0.1" />
 
         <entry key="app/src/main/res/layout/activity_user_select.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_winner_page.xml" value="0.30364837646484377" />
 
+=======
+        <entry key="app/src/main/res/layout/activity_winner_page.xml" value="0.18944549560546875" />
+>>>>>>> dda5df0 (constraints are still not right)
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.23809676861207416" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.10431808465156049" />
 >>>>>>> 42a139e7da3e3e0fef35a0a4954ae50197408dea

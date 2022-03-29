@@ -62,7 +62,7 @@
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
@@ -73,19 +73,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_header"
-        app:layout_constraintVertical_bias="0.009" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <ImageView
         android:id="@+id/paint_icon"
         android:layout_width="168dp"
         android:layout_height="154dp"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="180dp"
         android:layout_marginTop="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366"
+        app:layout_constraintVertical_bias="0.365"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -109,8 +109,8 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="176dp"
-        android:layout_height="80dp"
+        android:layout_width="145dp"
+        android:layout_height="53dp"
         android:layout_marginTop="204dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

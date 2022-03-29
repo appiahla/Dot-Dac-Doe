@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-//import com.example.dot_dac_doe.model.Player;
+//import com.example.dot_dac_doe.Models.Player;
 
 
 
@@ -50,7 +50,7 @@ public class winner_page extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(winner_page.this, UserSelectActivity.class);
                 startActivity(i);
-                Intent intent = new Intent(getApplicationContext(),winner_page.class);
+                Intent intent = new Intent(getApplicationContext(), winner_page.class);
 //                intent.putExtra("WINNER", winner);
                 startActivity(intent);
             }
@@ -62,39 +62,6 @@ public class winner_page extends AppCompatActivity {
                 startActivity(a);
             }
         });
-//      Button restart = (Button) findViewById(R.id.vertical_restart);
-//        restart.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent i = new Intent(winner_page.this, MultiplayerGame.class);
-//                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                startActivity(i);
-//            }
-//        });
-//
-//
-        }
-//            public void setWinner(final Player winner) {
-//                runOnUiThread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        new AlertDialog.Builder(winner_page.this)
-//                                .setTitle("Dots And Boxes")
-//                                .setMessage(winner.getName() + " Wins!")
-//                                .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog, int which) {
-//                                        recreate();
-//                                    }
-//                                })
-//                                .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-//                                    @Override
-//                                    public void onClick(DialogInterface dialogInterface, int i) {
-//                                    }
-//                                }).show();
-//                    }
-//                });
-//            }
+    }
 
 }

@@ -17,7 +17,7 @@ public class tutorial_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_page);
 
-        ImageView arrow = (ImageView) findViewById(R.id.next_arrow);
+        ImageView arrow = (ImageView) findViewById(R.id.tutorial_next_arrow);
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

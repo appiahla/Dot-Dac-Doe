@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2b35adccb344f654ec82665a69237d83e0f9ac2
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_opposite.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_game_same.xml" value="0.2" />
@@ -14,12 +17,21 @@
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/activity_multiplayer_game_same.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout-land/actvity_game_same.xml" value="0.2118270079435128" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_computer_game.xml" value="0.1731509191962377" />
+<<<<<<< HEAD
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game_opposite_vertical.xml" value="0.264" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.1" />
+=======
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game.xml" value="0.152" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_game_opposite_vertical.xml" value="0.176" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_home.xml" value="0.2860196665241556" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_icon_page.xml" value="0.2" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game.xml" value="0.16" />
+>>>>>>> e2b35adccb344f654ec82665a69237d83e0f9ac2
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_multiplayer_game_opposite_vertical.xml" value="0.17094594594594595" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_orientation.xml" value="0.2860196665241556" />
         <entry key="..\:/Users/kmunk/Downloads/AndroidApp/Dot-Dac-Doe/app/src/main/res/layout/activity_settings.xml" value="0.264" />
@@ -40,6 +52,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1664337158203125" />
         <entry key="app/src/main/res/layout/activity_icon_page.xml" value="0.23493194580078128" />
+<<<<<<< HEAD
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16107940673828125" />
 =======
         <entry key="..\:/Users/lapia/AndroidStudioProjects/DotDacDoe/app/src/main/res/layout/activity_computer_game.xml" value="0.16" />
@@ -68,6 +81,9 @@
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.23809676861207416" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.10431808465156049" />
 >>>>>>> 69df2ef3e47c199429c7fa328a63dc9e09667525
+=======
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16107940673828125" />
+>>>>>>> e2b35adccb344f654ec82665a69237d83e0f9ac2
       </map>
     </option>
   </component>

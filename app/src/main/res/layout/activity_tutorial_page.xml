@@ -8,70 +8,66 @@
 
     <TextView
         android:id="@+id/tutorial_header_DDD"
-        android:layout_width="278dp"
+        android:layout_width="400dp"
         android:layout_height="91dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="HOW TO PLAY!"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
+        android:textSize="48sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/goalofgame"
-        android:layout_width="327dp"
-        android:layout_height="143dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="400dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="47dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The goal of the game is to create a square by joining four dots."
         android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tutorial_header_DDD" />
 
+    =======
+
     <ImageView
         android:id="@+id/tutorial_icon"
-        android:layout_width="222dp"
-        android:layout_height="154dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="92dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="311dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goalofgame"
         app:srcCompat="@drawable/tutorial_header" />
 
     <TextView
         android:id="@+id/firstDirection"
-        android:layout_width="343dp"
-        android:layout_height="208dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The first player draws a line to any dot horizontally or vertically next to it. The next player does the same."
         android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" />
 
-    =======
     <ImageView
-        android:id="@+id/tutorial_back_arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tutorial_next_arrow"
+        android:layout_width="72dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/back_arrow" />
 
->>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
+    >>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
 </androidx.constraintlayout.widget.ConstraintLayout>

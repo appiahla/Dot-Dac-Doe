@@ -17,13 +17,13 @@ public class tutorial_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_page);
 
-//        ImageView arrow = (ImageView) findViewById(R.id.next_arrow);
-//        arrow.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(tutorial_page.this, tutorial_page_part2.class);
-//                startActivity(i);
-//            }
-//        });
+        ImageView arrow = (ImageView) findViewById(R.id.tutorial_next_arrow);
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(tutorial_page.this, tutorial_page_part2.class);
+                startActivity(i);
+            }
+        });
     }
 }

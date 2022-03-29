@@ -37,22 +37,22 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         setContentView(R.layout.activity_game);
         //setContentView(R.layout.activity_game_opposite);
 
-        gameView = (GameView) findViewById(R.id.gameView_mult);
+        gameView = (GameView) findViewById(R.id.gameView);
         gameView.setPlayersState(this);
 
-        ImageView player1 = findViewById(R.id.player1_circle_mult);
-        ImageView player2 = findViewById(R.id.computer_circle_mult);
+        ImageView player1 = findViewById(R.id.player1_circle);
+        ImageView player2 = findViewById(R.id.computer_circle);
         player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
         player1.setTag("red1");
         player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
         player2.setTag("blue2");
 
-        player1name = (TextView) findViewById(R.id.player1name_mult);
-        player2name = (TextView) findViewById(R.id.player2name_mult);
-        player1points = (TextView) findViewById(R.id.player1points_mult);
-        player2points = (TextView) findViewById(R.id.player2points_mult);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
-        pause = (ImageView) findViewById(R.id.multiplayer_pause);
+        player1name = (TextView) findViewById(R.id.player1name);
+        player2name = (TextView) findViewById(R.id.player2name);
+        player1points = (TextView) findViewById(R.id.player1points);
+        player2points = (TextView) findViewById(R.id.player2points);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
+        pause = (ImageView) findViewById(R.id.singleplayer_pause);
         currentPlayerPointer.setColorFilter(getResources().getColor(R.color.red));
 
         players = new Player[]{new HumanPlayer("Player 1"), new Computer("Computer")};
@@ -66,7 +66,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         startGame(players);
 
         //      interaction for pause button
-        ImageView pause = findViewById(R.id.multiplayer_pause);
+        ImageView pause = findViewById(R.id.singleplayer_pause);
         pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

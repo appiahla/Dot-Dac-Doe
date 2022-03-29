@@ -11,7 +11,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="309dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginBottom="280dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textAlignment="center"
@@ -78,13 +78,13 @@
         android:id="@+id/paint_icon"
         android:layout_width="168dp"
         android:layout_height="154dp"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296"
+        app:layout_constraintVertical_bias="0.312"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -92,7 +92,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="314dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="204dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Home"
         android:textAlignment="center"
@@ -108,16 +108,16 @@
 
     <ImageView
         android:id="@+id/confetti1"
-        android:layout_width="204dp"
-        android:layout_height="85dp"
+        android:layout_width="162dp"
+        android:layout_height="67dp"
         android:layout_marginTop="204dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"
-        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintVertical_bias="0.436"
         app:srcCompat="@drawable/winner_icon2" />
 
     <ImageView
@@ -146,10 +146,11 @@
         android:id="@+id/right_side_removed"
         android:layout_width="98dp"
         android:layout_height="682dp"
-        android:layout_marginStart="268dp"
+        android:layout_marginStart="296dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
 
     <ImageView

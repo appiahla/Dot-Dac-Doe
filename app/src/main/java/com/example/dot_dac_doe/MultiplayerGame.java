@@ -369,24 +369,6 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
     @Override
     public void setWinner(final Player winner) {
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                new AlertDialog.Builder(MultiplayerGame.this)
-//                        .setTitle("Dots And Boxes")
-//                        .setMessage(winner.getName() + " Wins!")
-//                        .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                recreate();
-//                            }
-//                        })
-//                        .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                            }
-//                        }).show();
-//            }
-//        });
         Intent i = new Intent(MultiplayerGame.this, winner_page.class);
         startActivity(i);
     }

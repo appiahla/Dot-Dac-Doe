@@ -17,15 +17,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        Button btn = (Button)findViewById(R.id.singlePlayer);
-//
-//        btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(HomeActivity.this, UserSelectActivity.class));
-//            }
-//        });
-
         Button btn2 = (Button)findViewById(R.id.multiplayerButton);
 
         btn2.setOnClickListener(new View.OnClickListener() {

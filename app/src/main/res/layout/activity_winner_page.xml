@@ -61,7 +61,7 @@
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
@@ -135,22 +135,22 @@
         android:id="@+id/confetti_top"
         android:layout_width="362dp"
         android:layout_height="89dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068"
+        app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/confetti_top_removebg_preview" />
 
     <ImageView
         android:id="@+id/right_side_removed"
         android:layout_width="98dp"
         android:layout_height="682dp"
-        android:layout_marginStart="280dp"
+        android:layout_marginStart="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.827"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
 
     <ImageView

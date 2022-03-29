@@ -11,7 +11,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="309dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="308dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Play Again?"
         android:textAlignment="center"
@@ -84,7 +84,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342"
+        app:layout_constraintVertical_bias="0.296"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -92,7 +92,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="314dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="220dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Home"
         android:textAlignment="center"
@@ -117,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paint_icon"
-        app:layout_constraintVertical_bias="0.277"
+        app:layout_constraintVertical_bias="0.49"
         app:srcCompat="@drawable/winner_icon2" />
 
     <ImageView
@@ -156,12 +156,12 @@
         android:id="@+id/left_side_removed"
         android:layout_width="111dp"
         android:layout_height="593dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59"
+        app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

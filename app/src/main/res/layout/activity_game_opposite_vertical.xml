@@ -14,23 +14,28 @@
         android:id="@+id/player1name4"
         android:layout_width="128dp"
         android:layout_height="41dp"
-        android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:text="Player 1"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/player1points4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/player1_circle4"
         android:layout_width="128dp"
         android:layout_height="146dp"
-        android:layout_marginStart="2dp"
         android:layout_marginTop="50dp"
         android:translationY="-25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/player1points4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user_circle" />
@@ -39,13 +44,16 @@
         android:id="@+id/player1points4"
         android:layout_width="128dp"
         android:layout_height="41dp"
-        android:layout_marginStart="2dp"
         android:layout_marginTop="150dp"
+        android:layout_marginBottom="6dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:text="Boxes: 0"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gameView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,8 +89,7 @@
         android:id="@+id/player2name4"
         android:layout_width="128dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="4dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:rotation="180"
@@ -90,32 +97,40 @@
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/player2points4"
         android:layout_width="128dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="2dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:gravity="center"
         android:rotation="180"
         android:text="Boxes: 0"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="679dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameView4"
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <ImageView
         android:id="@+id/computer_circle4"
         android:layout_width="128dp"
         android:layout_height="164dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginTop="52dp"
         android:rotation="180"
         android:translationY="-25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteY="709dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameView4"
+        app:srcCompat="@drawable/user_circle" />
 
     <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameView4"
@@ -134,9 +149,14 @@
         android:layout_width="63dp"
         android:layout_height="54dp"
         android:layout_marginStart="2dp"
+        android:layout_marginTop="141dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameView4"
+        app:layout_constraintVertical_bias="0.51"
         app:srcCompat="@drawable/pause_btn" />
 
     <ImageView
@@ -144,8 +164,11 @@
         android:layout_width="63dp"
         android:layout_height="54dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/gameView4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/undo_btn" />
 

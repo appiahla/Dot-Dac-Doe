@@ -127,13 +127,19 @@
             android:layout_marginTop="64dp"
             android:layout_weight="1" />
 
-        <ImageView
+    <ImageView
+        android:id="@+id/undo_mult"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/undo_btn" />
+
+    <ImageView
             android:id="@+id/multiplayer_pause"
             android:layout_width="63dp"
             android:layout_height="54dp"
             app:srcCompat="@drawable/pause_btn" />
 
-        <!--    <TextView-->
+    <!--    <TextView-->
     <!--        android:layout_width="wrap_content"-->
     <!--        android:layout_height="wrap_content"-->
     <!--        android:layout_gravity="center" />-->

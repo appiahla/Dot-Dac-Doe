@@ -122,6 +122,9 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         });
     }
 
+
+
+
     public void pauseGame() {
 //        alert for pause menu
         View view = getLayoutInflater().inflate(R.layout.activity_vertical_pause_menu, null);
@@ -206,4 +209,5 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         alert.show();
     }
+
 }

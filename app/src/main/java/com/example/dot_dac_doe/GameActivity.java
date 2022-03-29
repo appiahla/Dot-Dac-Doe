@@ -2,9 +2,11 @@ package com.example.dot_dac_doe;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +38,13 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         gameView = (GameView) findViewById(R.id.gameView_mult);
         gameView.setPlayersState(this);
+
+        ImageView player1 = findViewById(R.id.player1_circle_mult);
+        ImageView player2 = findViewById(R.id.computer_circle_mult);
+        player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+        player1.setTag("red1");
+        player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+        player2.setTag("blue2");
 
         player1name = (TextView) findViewById(R.id.player1name_mult);
         player2name = (TextView) findViewById(R.id.player2name_mult);

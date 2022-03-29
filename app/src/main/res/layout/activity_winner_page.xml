@@ -61,7 +61,7 @@
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"

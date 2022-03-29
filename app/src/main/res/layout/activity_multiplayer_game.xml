@@ -144,7 +144,7 @@
                 app:srcCompat="@drawable/pause_btn" />
 
             <ImageView
-                android:id="@+id/undo_mult"
+                android:id="@+id/multiplayer_undo"
                 android:layout_width="63dp"
                 android:layout_height="54dp"
                 android:layout_marginEnd="316dp"

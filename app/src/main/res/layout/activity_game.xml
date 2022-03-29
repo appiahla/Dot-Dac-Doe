@@ -115,14 +115,14 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/singlePlayer_pause"
+                android:id="@+id/singleplayer_pause"
                 android:layout_width="63dp"
                 android:layout_height="54dp"
                 android:translationX="0dp"
                 app:srcCompat="@drawable/pause_btn" />
 
             <ImageView
-                android:id="@+id/singlePlayer_undo"
+                android:id="@+id/singleplayer_undo"
                 android:layout_width="63dp"
                 android:layout_height="54dp"
                 android:layout_marginEnd="316dp"

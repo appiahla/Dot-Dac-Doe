@@ -18,7 +18,8 @@
             android:excludeFromRecents="true"/>
         <activity
             android:name=".MultiplayerGame"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".ComputerIconActivity"
             android:exported="true"

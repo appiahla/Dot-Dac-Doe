@@ -13,7 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dot_dac_doe.Models.Player;
+
+//import com.example.dot_dac_doe.model.Player;
+
 
 
 

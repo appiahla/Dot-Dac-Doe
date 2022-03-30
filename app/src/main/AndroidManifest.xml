@@ -47,6 +47,7 @@
         <activity
             android:name=".VerticalLayouts.MultiplayerGameOppositeVertical"
             android:exported="true"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".VerticalLayouts.GameActivity"

@@ -125,6 +125,17 @@
             app:srcCompat="@drawable/user_circle"
             tools:ignore="ImageContrastCheck" />
 
+        <TextView
+            android:id="@+id/info_4"
+            android:layout_width="107dp"
+            android:layout_height="94dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:text="Click to choose icon"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
         <ImageView
             android:id="@+id/Icon2"
             android:layout_width="91dp"
@@ -137,16 +148,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/info_4"
-            android:layout_width="107dp"
-            android:layout_height="94dp"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/gloria_hallelujah"
-            android:text="Click to choose icon"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="20sp" />
     </RelativeLayout>
 
     <TextView
@@ -194,6 +195,17 @@
             tools:ignore="ImageContrastCheck" />
 
 
+        <TextView
+            android:id="@+id/info_3"
+            android:layout_width="107dp"
+            android:layout_height="94dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:text="Click to choose icon"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
         <ImageView
             android:id="@+id/Icon1"
             android:layout_width="91dp"
@@ -206,16 +218,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/info_3"
-            android:layout_width="107dp"
-            android:layout_height="94dp"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/gloria_hallelujah"
-            android:text="Click to choose icon"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="20sp" />
     </RelativeLayout>
 
     <ImageView

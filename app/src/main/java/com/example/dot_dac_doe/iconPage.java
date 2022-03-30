@@ -205,9 +205,6 @@ public class iconPage extends AppCompatActivity {
             player2_name.setVisibility(View.INVISIBLE);
             Icon2.setVisibility(View.INVISIBLE);
 
-            TextView click_info2 = findViewById(R.id.info_2);
-            click_info2.setVisibility(View.INVISIBLE);
-
             ImageView TreeClick = findViewById(R.id.tree);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -400,9 +397,6 @@ public class iconPage extends AppCompatActivity {
             TextView player1_name = findViewById(R.id.Player1);
             player1_name.setVisibility(View.INVISIBLE);
             Icon1.setVisibility(View.INVISIBLE);
-
-            TextView click_info1 = findViewById(R.id.info_1);
-            click_info1.setVisibility(View.INVISIBLE);
 
             ImageView TreeClick = findViewById(R.id.tree);
             TreeClick.setOnClickListener(new View.OnClickListener() {

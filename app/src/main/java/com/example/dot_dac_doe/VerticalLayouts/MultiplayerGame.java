@@ -1,10 +1,9 @@
-package com.example.dot_dac_doe;
+package com.example.dot_dac_doe.VerticalLayouts;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -13,10 +12,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dot_dac_doe.HomeActivity;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
+import com.example.dot_dac_doe.R;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
+import com.example.dot_dac_doe.tutorial_page;
+import com.example.dot_dac_doe.winner_page;
 
 import java.util.Map;
 

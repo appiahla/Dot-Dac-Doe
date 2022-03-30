@@ -36,14 +36,14 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplayer_game_opposite_vertical);
 
-        gameView = (GameView) findViewById(R.id.gameView_mult4);
+        gameView = findViewById(R.id.gameView_mult4);
         gameView.setPlayersState(this);
 
-        player1name = (TextView) findViewById(R.id.player1name_mult4);
-        player2name = (TextView) findViewById(R.id.player2name_mult4);
-        player1points = (TextView) findViewById(R.id.player1points_mult4);
-        player2points = (TextView) findViewById(R.id.player2points_mult4);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult4);
+        player1name = findViewById(R.id.player1name_mult4);
+        player2name = findViewById(R.id.player2name_mult4);
+        player1points = findViewById(R.id.player1points_mult4);
+        player2points = findViewById(R.id.player2points_mult4);
+        currentPlayerPointer = findViewById(R.id.playerNowPointer_mult4);
 
         players = new Player[]{new HumanPlayer("Human"), new Computer("Computer")};
         startGame(players);
@@ -59,17 +59,14 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
     }
 
     public void updateState() {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                if (currentPlayer == players[0]) {
-                    currentPlayerPointer.setImageResource(R.drawable.a1);
-                } else if (currentPlayer == players[1]) {
-                    currentPlayerPointer.setImageResource(R.drawable.a2);
-                }
-                player1points.setText("Boxes: " + playersPoints[0]);
-                player2points.setText("Boxes: " + playersPoints[1]);
+        runOnUiThread(() -> {
+            if (currentPlayer == players[0]) {
+                currentPlayerPointer.setImageResource(R.drawable.a1);
+            } else if (currentPlayer == players[1]) {
+                currentPlayerPointer.setImageResource(R.drawable.a2);
             }
+            player1points.setText("Boxes: " + playersPoints[0]);
+            player2points.setText("Boxes: " + playersPoints[1]);
         });
     }
 
@@ -88,24 +85,19 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
 
     @Override
     public void setWinner(final Player winner) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                new AlertDialog.Builder(MultiplayerGameOppositeVertical.this)
-                        .setTitle("Dots And Boxes")
-                        .setMessage(winner.getName() + " Wins!")
-                        .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                recreate();
-                            }
-                        })
-                        .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                            }
-                        }).show();
-            }
-        });
+        runOnUiThread(() -> new AlertDialog.Builder(MultiplayerGameOppositeVertical.this)
+                .setTitle("Dots And Boxes")
+                .setMessage(winner.getName() + " Wins!")
+                .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        recreate();
+                    }
+                })
+                .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                    }
+                }).show());
     }
 
     public void pauseGame() {
@@ -126,68 +118,48 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         exitAlert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         exitAlert.setCanceledOnTouchOutside(false);
 
-        Button yes = (Button) exitView.findViewById(R.id.vertical_exit_yes);
-        yes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                exitAlert.dismiss();
-                Intent i = new Intent(MultiplayerGameOppositeVertical.this, HomeActivity.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
-            }
+        Button yes = exitView.findViewById(R.id.vertical_exit_yes);
+        yes.setOnClickListener(view16 -> {
+            exitAlert.dismiss();
+            Intent i = new Intent(MultiplayerGameOppositeVertical.this, HomeActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
         });
 
-        Button no = (Button) exitView.findViewById(R.id.vertical_exit_no);
-        no.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                exitAlert.dismiss();
-                alert.show();
-            }
+        Button no = exitView.findViewById(R.id.vertical_exit_no);
+        no.setOnClickListener(view15 -> {
+            exitAlert.dismiss();
+            alert.show();
         });
 
 
         //      interaction for resuming
-        Button resume = (Button) view.findViewById(R.id.vertical_resume);
-        resume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-            }
-        });
+        Button resume = view.findViewById(R.id.vertical_resume);
+        resume.setOnClickListener(view14 -> alert.dismiss());
 
 
         //      interaction for exiting the game
-        Button exit = (Button) view.findViewById(R.id.vertical_exit);
-        exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-                exitAlert.show();
+        Button exit = view.findViewById(R.id.vertical_exit);
+        exit.setOnClickListener(view13 -> {
+            alert.dismiss();
+            exitAlert.show();
 
-            }
         });
 
         //      interaction for how to play
-        Button howto = (Button) view.findViewById(R.id.vertical_howto);
-        howto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGameOppositeVertical.this, tutorial_page.class);
-                startActivity(i);
-            }
+        Button howto = view.findViewById(R.id.vertical_howto);
+        howto.setOnClickListener(view12 -> {
+            Intent i = new Intent(MultiplayerGameOppositeVertical.this, tutorial_page.class);
+            startActivity(i);
         });
 
         //      interaction for restarting the game
-        Button restart = (Button) view.findViewById(R.id.vertical_restart);
-        restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-                Intent i = new Intent(MultiplayerGameOppositeVertical.this, MultiplayerGame.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
-            }
+        Button restart = view.findViewById(R.id.vertical_restart);
+        restart.setOnClickListener(view1 -> {
+            alert.dismiss();
+            Intent i = new Intent(MultiplayerGameOppositeVertical.this, MultiplayerGame.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
         });
 
         alert.show();

@@ -1,8 +1,10 @@
-package com.example.dot_dac_doe;
+package com.example.dot_dac_doe.VerticalLayouts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.dot_dac_doe.R;
 
 public class vertical_exit_confirmation extends AppCompatActivity {
 

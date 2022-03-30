@@ -1,24 +1,23 @@
-package com.example.dot_dac_doe;
+package com.example.dot_dac_doe.HorizontalLayouts;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dot_dac_doe.Players.Computer;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
+import com.example.dot_dac_doe.R;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 
 import java.util.Map;
 
-public class MultiplayerGameOpposite extends AppCompatActivity implements PlayersStateView {
+public class GameActivityOpposite extends AppCompatActivity implements PlayersStateView {
 
     protected GameView gameView;
     protected TextView player1name, player2name, player1points, player2points;
@@ -30,16 +29,17 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multiplayer_game_opposite);
+        setContentView(R.layout.activity_game_opposite);
 
-        gameView = (GameView) findViewById(R.id.gameView_mult3);
+        gameView = (GameView) findViewById(R.id.gameView3);
         gameView.setPlayersState(this);
 
-        player1name = (TextView) findViewById(R.id.player1name_mult3);
-        player2name = (TextView) findViewById(R.id.player2name_mult3);
-        player1points = (TextView) findViewById(R.id.player1points_mult3);
-        player2points = (TextView) findViewById(R.id.player2points_mult3);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult3);
+        player1name = (TextView) findViewById(R.id.player1name3);
+        player2name = (TextView) findViewById(R.id.player2name3);
+        player1points = (TextView) findViewById(R.id.player1points3);
+        player2points = (TextView) findViewById(R.id.player2points3);
+        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer3);
+        //currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer3_1);
 
         players = new Player[]{new HumanPlayer("Human"), new Computer("Computer")};
         startGame(players);
@@ -83,7 +83,7 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new AlertDialog.Builder(MultiplayerGameOpposite.this)
+                new AlertDialog.Builder(GameActivityOpposite.this)
                         .setTitle("Dots And Boxes")
                         .setMessage(winner.getName() + " Wins!")
                         .setPositiveButton("Restart", new DialogInterface.OnClickListener() {

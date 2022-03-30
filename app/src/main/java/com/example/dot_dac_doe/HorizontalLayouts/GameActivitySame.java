@@ -1,18 +1,17 @@
-package com.example.dot_dac_doe;
+package com.example.dot_dac_doe.HorizontalLayouts;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dot_dac_doe.Players.Computer;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
+import com.example.dot_dac_doe.R;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 

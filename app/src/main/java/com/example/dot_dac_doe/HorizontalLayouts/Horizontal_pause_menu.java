@@ -1,8 +1,10 @@
-package com.example.dot_dac_doe;
+package com.example.dot_dac_doe.HorizontalLayouts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.dot_dac_doe.R;
 
 public class Horizontal_pause_menu extends AppCompatActivity {
 

@@ -48,15 +48,15 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         ImageView Icon1 = findViewById(R.id.Icon1);
         ImageView Icon2 = findViewById(R.id.Icon2);
 
-        gameView = (GameView) findViewById(R.id.gameView_mult);
+        gameView = findViewById(R.id.gameView_mult);
         gameView.setPlayersState(this);
 
-        player1name = (TextView) findViewById(R.id.player1name_mult);
-        player2name = (TextView) findViewById(R.id.player2name_mult);
-        player1points = (TextView) findViewById(R.id.player1points_mult);
-        player2points = (TextView) findViewById(R.id.player2points_mult);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer_mult);
-        pause = (ImageView) findViewById(R.id.multiplayer_pause);
+        player1name = findViewById(R.id.player1name_mult);
+        player2name = findViewById(R.id.player2name_mult);
+        player1points = findViewById(R.id.player1points_mult);
+        player2points = findViewById(R.id.player2points_mult);
+        currentPlayerPointer = findViewById(R.id.playerNowPointer_mult);
+        pause = findViewById(R.id.multiplayer_pause);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -326,12 +326,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
         //      interaction for pause button
         ImageView pause = findViewById(R.id.multiplayer_pause);
-        pause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                pauseGame();
-            }
-        });
+        pause.setOnClickListener(view -> pauseGame());
     }
 
     private void startGame(Player[] players) {
@@ -340,20 +335,17 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     }
 
     public void updateState() {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                if (currentPlayer == players[0]) {
-                    currentPlayerPointer.setImageResource(R.drawable.a1);
-                    currentPlayerPointer.setColorFilter(colorOne);
+        runOnUiThread(() -> {
+            if (currentPlayer == players[0]) {
+                currentPlayerPointer.setImageResource(R.drawable.a1);
+                currentPlayerPointer.setColorFilter(colorOne);
 //                    currentPlayerPointer.setColorFilter(ContextCompat.getColor(colorOne), PorterDuff.Mode.SCREEN);
-                } else if (currentPlayer == players[1]) {
-                    currentPlayerPointer.setImageResource(R.drawable.a2);
-                    currentPlayerPointer.setColorFilter(colorTwo);
-                }
-                player1points.setText("Boxes: " + playersPoints[0]);
-                player2points.setText("Boxes: " + playersPoints[1]);
+            } else if (currentPlayer == players[1]) {
+                currentPlayerPointer.setImageResource(R.drawable.a2);
+                currentPlayerPointer.setColorFilter(colorTwo);
             }
+            player1points.setText("Boxes: " + playersPoints[0]);
+            player2points.setText("Boxes: " + playersPoints[1]);
         });
     }
 
@@ -394,68 +386,48 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         exitAlert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         exitAlert.setCanceledOnTouchOutside(false);
 
-        Button yes = (Button) exitView.findViewById(R.id.vertical_exit_yes);
-        yes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                exitAlert.dismiss();
-                Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
-            }
+        Button yes = exitView.findViewById(R.id.vertical_exit_yes);
+        yes.setOnClickListener(view1 -> {
+            exitAlert.dismiss();
+            Intent i = new Intent(MultiplayerGame.this, HomeActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
         });
 
-        Button no = (Button) exitView.findViewById(R.id.vertical_exit_no);
-        no.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                exitAlert.dismiss();
-                alert.show();
-            }
+        Button no = exitView.findViewById(R.id.vertical_exit_no);
+        no.setOnClickListener(view12 -> {
+            exitAlert.dismiss();
+            alert.show();
         });
 
 
         //      interaction for resuming
-        Button resume = (Button) view.findViewById(R.id.vertical_resume);
-        resume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-            }
-        });
+        Button resume = view.findViewById(R.id.vertical_resume);
+        resume.setOnClickListener(view13 -> alert.dismiss());
 
 
         //      interaction for exiting the game
-        Button exit = (Button) view.findViewById(R.id.vertical_exit);
-        exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-                exitAlert.show();
+        Button exit = view.findViewById(R.id.vertical_exit);
+        exit.setOnClickListener(view14 -> {
+            alert.dismiss();
+            exitAlert.show();
 
-            }
         });
 
         //      interaction for how to play
-        Button howto = (Button) view.findViewById(R.id.vertical_howto);
-        howto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
-                startActivity(i);
-            }
+        Button howto = view.findViewById(R.id.vertical_howto);
+        howto.setOnClickListener(view15 -> {
+            Intent i = new Intent(MultiplayerGame.this, tutorial_page.class);
+            startActivity(i);
         });
 
         //      interaction for restarting the game
-        Button restart = (Button) view.findViewById(R.id.vertical_restart);
-        restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alert.dismiss();
-                Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
-            }
+        Button restart = view.findViewById(R.id.vertical_restart);
+        restart.setOnClickListener(view16 -> {
+            alert.dismiss();
+            Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
         });
 
         alert.show();

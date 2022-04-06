@@ -59,6 +59,7 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         player2points = findViewById(R.id.player2points_mult4);
         currentPlayerPointer1 = findViewById(R.id.playerNowPointer_mult4);
         currentPlayerPointer2 = findViewById(R.id.playerNowPointer_mult5);
+        currentPlayerPointer2.setVisibility(View.INVISIBLE);
 
 
 

@@ -13,8 +13,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 
 //import com.example.dot_dac_doe.Models.Player;
 
@@ -29,30 +27,40 @@ public class winner_page extends AppCompatActivity {
         setContentView(R.layout.activity_winner_page);
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
-
+//        setContentView(R.layout.activity_multiplayer_game);
         TextView winnerLabel = (TextView) findViewById(R.id.winner_header);
         TextView congrats = (TextView) findViewById(R.id.congrats);
+//        String winner = getIntent().getStringExtra("WINNER");
+//        //int score = getIntent().getIntExtra("SCORE", 0);
+//        int player1Score = getIntent().getIntExtra("WINNER", 0);
+//        int player2Score = getIntent().getIntExtra("WINNER", 0);
+//        SharedPreferences gameSettings = getSharedPreferences("DATA", Context.MODE_PRIVATE);
+//
+//        if (player1Score > player2Score){
+//            winnerLabel.setText("CONGRATULATIONS PLAYER 1! "+ player1Score);
+//
+//        }else{
+//            winnerLabel.setText("CONGRATULATIONS PLAYER 2! " + player2Score);
+//
+//        }
 
-        TextView winner_name = findViewById(R.id.winner_name);
-        Intent in = getIntent();
-        Bundle extras = in.getExtras();
-        if (extras != null) {
-            if (extras.containsKey("winner")) {
-                String winner = getIntent().getStringExtra("winner");
-                winner_name.setText(winner);
-            }
-        }
 
-        play_again.setOnClickListener(view -> {
-            Intent i = new Intent(winner_page.this, UserSelectActivity.class);
-            startActivity(i);
-            Intent intent = new Intent(getApplicationContext(), winner_page.class);
+        play_again.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(winner_page.this, UserSelectActivity.class);
+                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), winner_page.class);
 //                intent.putExtra("WINNER", winner);
-            startActivity(intent);
+                startActivity(intent);
+            }
         });
-        home_button.setOnClickListener(view -> {
-            Intent a = new Intent(winner_page.this, HomeActivity.class);
-            startActivity(a);
+        home_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(winner_page.this, HomeActivity.class);
+                startActivity(a);
+            }
         });
     }
 

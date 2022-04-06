@@ -54,6 +54,20 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/user_circle" />
 
+    <ImageView
+        android:id="@+id/icon1_mult4"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
+        app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat" />
+
     <TextView
         android:id="@+id/player1points_mult4"
         android:layout_width="128dp"
@@ -143,6 +157,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/user_circle" />
+
+    <ImageView
+        android:id="@+id/icon2_mult4"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="728dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
+        app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat" />
 
     <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult4"

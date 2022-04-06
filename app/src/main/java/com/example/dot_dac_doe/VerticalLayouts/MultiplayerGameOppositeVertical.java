@@ -23,6 +23,7 @@ import com.example.dot_dac_doe.UserSelectActivity;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 import com.example.dot_dac_doe.tutorial_page;
+import com.example.dot_dac_doe.winner_page;
 
 import java.util.Map;
 
@@ -371,19 +372,8 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
 
     @Override
     public void setWinner(final Player winner) {
-        runOnUiThread(() -> new AlertDialog.Builder(MultiplayerGameOppositeVertical.this)
-                .setTitle("Dots And Boxes")
-                .setMessage(winner.getName() + " Wins!")
-                .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        recreate();
-                    }
-                })
-                .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                    }
-                }).show());
+        Intent i = new Intent(MultiplayerGameOppositeVertical.this, winner_page.class);
+        startActivity(i);
     }
 
     public void pauseGame() {

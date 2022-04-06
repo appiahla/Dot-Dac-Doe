@@ -1,32 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context="com.example.dot_dac_doe.VerticalLayouts.MultiplayerGameOppositeVertical">
 
-    <TextView
-        android:id="@+id/player1name_mult4"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="250dp"
-        android:layout_marginBottom="154dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Player 1"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/gameView_mult4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/player1name_mult4"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="250dp"
+                android:layout_marginBottom="154dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Player 1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationX="8"
+                android:translationY="-150">
+
+                <ImageView
+                    android:id="@+id/player1_circle_mult4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/user_circle" />
+
+                <ImageView
+                    android:id="@+id/icon1_mult4"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/player1points_mult4"
+                android:layout_width="128dp"
+                android:layout_height="41dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:text="Boxes: 0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:translationY="-150" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/multiplayer_undo4"
+            android:layout_width="63dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/undo_btn" />
+
+        <ImageView
+            android:id="@+id/playerNowPointer_mult4"
+            android:layout_width="163dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:src="@drawable/a1"
+            android:translationY="80dp" />
+
+    </LinearLayout>
 
     <!--    <ImageView-->
     <!--        android:id="@+id/playerNowPointer_mult4.1"-->
@@ -46,82 +101,37 @@
         android:layout_height="146dp"
         android:layout_marginTop="50dp"
         android:translationY="-25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gameView_mult4"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/user_circle" />
 
-    <ImageView
-        android:id="@+id/icon1_mult4"
-        android:layout_width="90dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
-        app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/player1points_mult4"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="250dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Boxes: 0"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/gameView_mult4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/playerNowPointer_mult4"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="160dp"
-        android:layout_weight="1"
-        android:src="@drawable/a1"
-        android:translationY="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/gameView_mult4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/player2name_mult4"
+                android:layout_width="128dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/gloria_hallelujah"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="Player 2"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/player2name_mult4"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:rotation="180"
-        android:text="Player 2"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gameView_mult4"
-        app:layout_constraintVertical_bias="0.0" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/player2points_mult4"
@@ -133,44 +143,15 @@
         android:rotation="180"
         android:text="Boxes: 0"
         android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gameView_mult4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/player1_circle_mult4"
-        android:layout_width="128dp"
-        android:layout_height="164dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="25dp"
-        android:rotation="180"
-        android:translationY="-25dp"
-        app:layout_constraintBottom_toTopOf="@+id/gameView_mult4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/user_circle" />
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/icon2_mult4"
         android:layout_width="90dp"
         android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="280dp"
         android:layout_marginTop="728dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
-        app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat" />
+        android:layout_marginEnd="10dp" />
 
     <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult4"
@@ -180,12 +161,7 @@
         android:layout_marginTop="139dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="139dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_weight="1" />
 
     <ImageView
         android:id="@+id/multiplayer_pause4"
@@ -193,29 +169,6 @@
         android:layout_height="54dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="139dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gameView_mult4"
-        app:layout_constraintVertical_bias="0.36"
-        app:srcCompat="@drawable/pause_btn" />
+        android:layout_marginBottom="2dp" />
 
-    <ImageView
-        android:id="@+id/multiplayer_undo4"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="143dp"
-        app:layout_constraintBottom_toTopOf="@+id/gameView_mult4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/undo_btn" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

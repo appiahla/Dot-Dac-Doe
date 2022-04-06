@@ -30,7 +30,7 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
 
     protected GameView gameView;
     protected TextView player1name, player2name, player1points, player2points;
-    ImageView currentPlayerPointer;
+    ImageView currentPlayerPointer1, currentPlayerPointer2;
     Player[] players;
     Integer[] playersPoints = new Integer[]{0, 0};
     Player currentPlayer;
@@ -57,7 +57,8 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         player2name = findViewById(R.id.player2name_mult4);
         player1points = findViewById(R.id.player1points_mult4);
         player2points = findViewById(R.id.player2points_mult4);
-        currentPlayerPointer = findViewById(R.id.playerNowPointer_mult4);
+        currentPlayerPointer1 = findViewById(R.id.playerNowPointer_mult4);
+        currentPlayerPointer2 = findViewById(R.id.playerNowPointer_mult5);
 
 
 
@@ -318,7 +319,8 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
             }
         }
 
-        currentPlayerPointer.setColorFilter(colorOne);
+        currentPlayerPointer1.setColorFilter(colorOne);
+        currentPlayerPointer2.setColorFilter(colorTwo);
 
         players = new Player[]{new HumanPlayer("Human"), new HumanPlayer("Player 2")};
         if (!String.valueOf(player1.getTag()).isEmpty()) {
@@ -338,11 +340,15 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
     public void updateState() {
         runOnUiThread(() -> {
             if (currentPlayer == players[0]) {
-                currentPlayerPointer.setImageResource(R.drawable.a1);
-                currentPlayerPointer.setColorFilter(colorOne);
+                currentPlayerPointer2.setVisibility(View.INVISIBLE);
+                currentPlayerPointer1.setVisibility(View.VISIBLE);
+//                currentPlayerPointer1.setImageResource(R.drawable.a1);
+//                currentPlayerPointer1.setColorFilter(colorOne);
             } else if (currentPlayer == players[1]) {
-                currentPlayerPointer.setImageResource(R.drawable.a2);
-                currentPlayerPointer.setColorFilter(colorTwo);
+                currentPlayerPointer1.setVisibility(View.INVISIBLE);
+                currentPlayerPointer2.setVisibility(View.VISIBLE);
+//                currentPlayerPointer1.setImageResource(R.drawable.a2);
+//                currentPlayerPointer1.setColorFilter(colorTwo);
             }
             player1points.setText("Boxes: " + playersPoints[0]);
             player2points.setText("Boxes: " + playersPoints[1]);

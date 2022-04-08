@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class UserSelectActivity extends AppCompatActivity {
@@ -31,7 +32,8 @@ public class UserSelectActivity extends AppCompatActivity {
         ImageView Icon2 = findViewById(R.id.Icon2);
         ImageView player1 = findViewById(R.id.Circle1);
         ImageView player2 = findViewById(R.id.Circle2);
-
+        TextView click_info1 = findViewById(R.id.info_3);
+        TextView click_info2 = findViewById(R.id.info_4);
 
 
 //      interaction for orientation page
@@ -131,6 +133,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
             if (extras.containsKey("icon1")) {
                 String icon1 = getIntent().getStringExtra("icon1");
+                click_info1.setVisibility(View.GONE);
                 if(icon1.equalsIgnoreCase("tree")) {
                     Icon1.setImageResource(R.drawable.tree);
                     Icon1.setTag("tree");
@@ -180,6 +183,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
             if (extras.containsKey("icon2")) {
                 String icon2 = getIntent().getStringExtra("icon2");
+                click_info2.setVisibility(View.GONE);
                 if(icon2.equalsIgnoreCase("tree")) {
                     Icon2.setImageResource(R.drawable.tree);
                     Icon2.setTag("tree");
@@ -248,6 +252,7 @@ public class UserSelectActivity extends AppCompatActivity {
                     i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
+
                 i.putExtra("player", player);
                 startActivity(i);
             }
@@ -281,6 +286,7 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
 
                 i.putExtra("player", player);
+                i.putExtra("visitedp1", "true");
                 startActivity(i);
             }
         });

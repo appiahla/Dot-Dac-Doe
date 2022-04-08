@@ -30,7 +30,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Player 1"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
             <ImageView
@@ -61,7 +61,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Boxes: 0"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
         </RelativeLayout>
@@ -87,7 +87,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Computer"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/blue"
                 android:textSize="20sp" />
 
             <ImageView
@@ -118,7 +118,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Boxes: 0"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/blue"
                 android:textSize="20sp" />
         </RelativeLayout>
     </LinearLayout>

@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class iconPage extends AppCompatActivity {
@@ -199,6 +200,10 @@ public class iconPage extends AppCompatActivity {
         }
 //        String tag1 = getIntent().getStringExtra()
         if(whichPlayer.equalsIgnoreCase("player1")){
+            Circle2.setVisibility(View.INVISIBLE);
+            TextView player2_name = findViewById(R.id.Player2);
+            player2_name.setVisibility(View.INVISIBLE);
+            Icon2.setVisibility(View.INVISIBLE);
 
             ImageView TreeClick = findViewById(R.id.tree);
             TreeClick.setOnClickListener(new View.OnClickListener() {
@@ -387,6 +392,12 @@ public class iconPage extends AppCompatActivity {
             });
         }
         if(whichPlayer.equalsIgnoreCase("player2")){
+
+            Circle1.setVisibility(View.INVISIBLE);
+            TextView player1_name = findViewById(R.id.Player1);
+            player1_name.setVisibility(View.INVISIBLE);
+            Icon1.setVisibility(View.INVISIBLE);
+
             ImageView TreeClick = findViewById(R.id.tree);
             TreeClick.setOnClickListener(new View.OnClickListener() {
                 @Override

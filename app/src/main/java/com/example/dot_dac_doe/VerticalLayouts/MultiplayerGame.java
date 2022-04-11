@@ -16,6 +16,7 @@ import com.example.dot_dac_doe.HomeActivity;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
 import com.example.dot_dac_doe.R;
+import com.example.dot_dac_doe.UserSelectActivity;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 import com.example.dot_dac_doe.tutorial_page;
@@ -425,7 +426,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         Button restart = view.findViewById(R.id.vertical_restart);
         restart.setOnClickListener(view16 -> {
             alert.dismiss();
-            Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
+            Intent i = new Intent(MultiplayerGame.this, UserSelectActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
         });

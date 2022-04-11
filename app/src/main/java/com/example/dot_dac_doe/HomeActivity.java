@@ -19,6 +19,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Intent i = new Intent(HomeActivity.this, BackgroundSoundService.class);
+        startService(i);
+
         Button btn2 = (Button)findViewById(R.id.multiplayerButton);
 
         btn2.setOnClickListener(new View.OnClickListener() {

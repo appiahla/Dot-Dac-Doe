@@ -1,11 +1,15 @@
 package com.example.dot_dac_doe;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 
@@ -40,7 +44,27 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
             }
         });
 
+        Switch music = findViewById(R.id.music_toggle);
+        music.setChecked(true);
+        music.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (!isChecked) {
+                    Intent i = new Intent(Settings.this, BackgroundSoundService.class);
+                    stopService(i);
+                } else {
+                    Intent i = new Intent(Settings.this, BackgroundSoundService.class);
+                    startService(i);
+                }
+            }
+        });
+
+
     }
+
+//    public void playBackgroundMusic(View view) {
+//        Intent i = new Intent(Settings.this, BackgroundSoundService.class);
+//        startService(i);
+//    }
 
 }
 

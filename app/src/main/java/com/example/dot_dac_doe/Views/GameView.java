@@ -42,9 +42,6 @@ public class GameView extends View implements Observer {
     int color1 = getResources().getColor(R.color.blue);
     int color2 = getResources().getColor(R.color.red);
 
-    int count1 = 0;
-    int count2 = 0;
-
     public GameView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
 
@@ -156,35 +153,12 @@ public class GameView extends View implements Observer {
                 if (horizontal.equals(game.getNewestLine())) {
                     Log.d("CHECK", "THIS IS THE PLAYER HORIZONTAL: " + game.currentPlayer().getName());
                     if(game.currentPlayer().getName().equalsIgnoreCase("Player 1"))  { //actually player 2
-////                        Log.d("CHECK", "THIS IS THE PLAYER 1 count: " + count2);
-//                        count1 = 0;
-//                        count2 = 0;
-//                        if(count2 == 0) {
-//                            paint.setColor(color2);
-////                            count1 = 0;
-////                            count2 = 0;
-//                        } else if(paint.getColor() != color2){
-//                            paint.setColor(color1);
-//                        }
                         paint.setColor(color2);
-//                        count2 = 1;
-                    } else if (game.currentPlayer().getName().equalsIgnoreCase("Player 2")) { //actually player 1
-//                        Log.d("CHECK", "THIS IS THE PLAYER 2 count: " + count1);
-//                        count2 = 0;
-//                        count1 = 0;
-//                        if(count1 == 0) {
-//                            paint.setColor(color1);
-//                            count2 = 0;
-////                            count1 = 0;
-//                        } else if(paint.getColor() != color1){
-//                            paint.setColor(color2);
-//                        }
-                        paint.setColor(color1);
-//                        count1 = 1;
                     }
-//                    paint.setColor(getResources().getColor(playerColors[Player.indexIn(game.getPlayers())]));
+                      else if (game.currentPlayer().getName().equalsIgnoreCase("Player 2")) { //actually player 1
+                        paint.setColor(color1);
+                    }
 
-//                    paint.setColor(getResources().getColor(R.color.black));
                 } else if (game.isLineOccupied(horizontal)) {
                     if (game.getLineOccupier(horizontal) == 1)
                         paint.setColor(playerColors[0]);

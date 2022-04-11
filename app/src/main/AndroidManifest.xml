@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DotDacDoe">
+        <service android:name=".BackgroundSoundService"/>
         <activity
             android:name=".VerticalLayouts.Vertical_pause_menu"
             android:exported="true"

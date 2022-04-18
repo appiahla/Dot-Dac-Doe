@@ -20,6 +20,7 @@ import android.widget.TextView;
 public class UserSelectActivity extends AppCompatActivity {
     Boolean[] sameColors1 = {false, false, false, false, false, false, false, false};
     Boolean[] sameColors2 = {false, false, false, false, false, false, false, false};
+    String status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,9 @@ public class UserSelectActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if (extras != null) {
+            if (extras.containsKey("status")) {
+                status = getIntent().getStringExtra("status");
+            }
             if (extras.containsKey("color1")) {
                 String color1 = getIntent().getStringExtra("color1");
                 if (color1.equalsIgnoreCase("red1")) {

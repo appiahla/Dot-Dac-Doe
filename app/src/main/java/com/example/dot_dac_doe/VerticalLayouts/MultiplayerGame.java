@@ -61,6 +61,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
+
         if (extras != null) {
             if (extras.containsKey("color1")) {
                 String color1 = getIntent().getStringExtra("color1");

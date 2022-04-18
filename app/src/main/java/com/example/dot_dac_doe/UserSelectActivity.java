@@ -272,16 +272,7 @@ public class UserSelectActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-//        String icon1 = getIntent().getStringExtra("icon");
-//        ImageView Icon1 = findViewById(R.id.Icon1);
-//        if(icon1.equalsIgnoreCase("tree")) {
-//            Icon1.setImageResource(R.drawable.tree);
-//        }
-
-
-
-//        interaction for player two icon select
+        //        interaction for player two icon select
         if(status.equalsIgnoreCase("single")) {
             player2.setEnabled(false);
             player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
@@ -300,6 +291,7 @@ public class UserSelectActivity extends AppCompatActivity {
             pink2.setEnabled(false);
             green2.setEnabled(false);
             grey2.setEnabled(false);
+            click_info2.setVisibility(View.GONE);
 
         } else if(status.equalsIgnoreCase("mult")) {
             player2.setEnabled(true);

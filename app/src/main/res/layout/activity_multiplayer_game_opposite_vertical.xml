@@ -71,6 +71,7 @@
             android:id="@+id/multiplayer_undo4"
             android:layout_width="63dp"
             android:layout_height="54dp"
+            android:translationX="180dp"
             app:srcCompat="@drawable/undo_btn" />
 
         <ImageView

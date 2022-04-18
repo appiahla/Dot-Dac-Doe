@@ -61,6 +61,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
+
         if (extras != null) {
             if (extras.containsKey("color1")) {
                 String color1 = getIntent().getStringExtra("color1");
@@ -426,7 +427,11 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
         Button restart = view.findViewById(R.id.vertical_restart);
         restart.setOnClickListener(view16 -> {
             alert.dismiss();
-            Intent i = new Intent(MultiplayerGame.this, UserSelectActivity.class);
+            Intent i = new Intent(MultiplayerGame.this, MultiplayerGame.class);
+            i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+            i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+            i.putExtra("color1", getIntent().getStringExtra("color1"));
+            i.putExtra("color2", getIntent().getStringExtra("color2"));
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
         });

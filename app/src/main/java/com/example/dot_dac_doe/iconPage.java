@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 public class iconPage extends AppCompatActivity {
 
+    String status;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +25,15 @@ public class iconPage extends AppCompatActivity {
         ImageView Icon2 = findViewById(R.id.Icon2);
         ImageView Circle1 = findViewById(R.id.Circle1);
         ImageView Circle2 = findViewById(R.id.Circle2);
+//        String status = null;
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String whichPlayer = intent.getStringExtra("player");
         if (extras != null) {
+            if(extras.containsKey("status")){
+                status = getIntent().getStringExtra("status");
+            }
             if (extras.containsKey("player1color")) {
                 String color1 = getIntent().getStringExtra("player1color");
                 if (color1.equalsIgnoreCase("red1")) {
@@ -386,6 +391,7 @@ public class iconPage extends AppCompatActivity {
                     if(!String.valueOf(Circle2.getTag()).isEmpty()) {
                         i.putExtra("color2", String.valueOf(Circle2.getTag()));
                     }
+                    i.putExtra("status", status);
                     i.putExtra("icon1", icon1);
                     startActivity(i);
                 }
@@ -578,6 +584,7 @@ public class iconPage extends AppCompatActivity {
                     if(!String.valueOf(Circle2.getTag()).isEmpty()) {
                         i.putExtra("color2", String.valueOf(Circle2.getTag()));
                     }
+                    i.putExtra("status", status);
                     i.putExtra("icon2", icon2);
                     startActivity(i);
                 }

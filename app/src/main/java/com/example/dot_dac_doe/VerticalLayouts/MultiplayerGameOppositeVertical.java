@@ -433,7 +433,11 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         Button restart = view.findViewById(R.id.vertical_restart);
         restart.setOnClickListener(view1 -> {
             alert.dismiss();
-            Intent i = new Intent(MultiplayerGameOppositeVertical.this, UserSelectActivity.class);
+            Intent i = new Intent(MultiplayerGameOppositeVertical.this, MultiplayerGameOppositeVertical.class);
+            i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+            i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+            i.putExtra("color1", getIntent().getStringExtra("color1"));
+            i.putExtra("color2", getIntent().getStringExtra("color2"));
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
         });

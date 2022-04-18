@@ -27,7 +27,9 @@ public class HomeActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, UserSelectActivity.class));
+                Intent i = new Intent(HomeActivity.this, UserSelectActivity.class);
+                i.putExtra("status", "mult");
+                startActivity(i);
             }
         });
 
@@ -54,7 +56,9 @@ public class HomeActivity extends AppCompatActivity {
         singlePlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomeActivity.this, GameActivity.class);
+//                Intent i = new Intent(HomeActivity.this, GameActivity.class);
+                Intent i = new Intent(HomeActivity.this, UserSelectActivity.class);
+                i.putExtra("status", "single");
                 startActivity(i);
             }
         });

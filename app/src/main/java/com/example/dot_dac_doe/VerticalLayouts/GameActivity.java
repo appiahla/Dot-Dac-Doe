@@ -45,8 +45,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         ImageView player1 = findViewById(R.id.player1_circle);
         ImageView player2 = findViewById(R.id.computer_circle);
-        player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-        player1.setTag("red1");
+//        player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+//        player1.setTag("red1");
         player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
         player2.setTag("blue2");
 

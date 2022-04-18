@@ -55,6 +55,7 @@ public class UserSelectActivity extends AppCompatActivity {
                 if(!String.valueOf(player2.getTag()).isEmpty()) {
                     i.putExtra("color2", String.valueOf(player2.getTag()));
                 }
+                i.putExtra("status", status);
                 startActivity(i);
             }
         });
@@ -256,7 +257,7 @@ public class UserSelectActivity extends AppCompatActivity {
                     i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
-
+                i.putExtra("status", status);
                 i.putExtra("player", player);
                 startActivity(i);
             }
@@ -271,6 +272,15 @@ public class UserSelectActivity extends AppCompatActivity {
 
 
 //        interaction for player two icon select
+        if(status.equalsIgnoreCase("single")) {
+            player2.setEnabled(false);
+            player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+            player2.setTag("blue2");
+            Icon2.setImageResource(R.drawable.cat);
+            Icon2.setTag("cat");
+        } else if(status.equalsIgnoreCase("mult")) {
+            player2.setEnabled(true);
+        }
         player2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -289,6 +299,7 @@ public class UserSelectActivity extends AppCompatActivity {
                     i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
+                i.putExtra("status", status);
                 i.putExtra("player", player);
                 i.putExtra("visitedp1", "true");
                 startActivity(i);

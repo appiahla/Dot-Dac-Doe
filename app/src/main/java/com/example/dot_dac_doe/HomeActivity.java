@@ -54,7 +54,8 @@ public class HomeActivity extends AppCompatActivity {
         singlePlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(HomeActivity.this, GameActivity.class);
+//                Intent i = new Intent(HomeActivity.this, GameActivity.class);
+                Intent i = new Intent(HomeActivity.this, UserSelectActivity.class);
                 startActivity(i);
             }
         });

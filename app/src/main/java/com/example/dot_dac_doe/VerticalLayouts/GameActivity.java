@@ -349,10 +349,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
                 alert.dismiss();
                 Intent i = new Intent(GameActivity.this, GameActivity.class);
                     i.putExtra("icon1", getIntent().getStringExtra("icon1"));
-//                    i.putExtra("icon2", getIntent().getStringExtra("icon2"));
                     i.putExtra("color1", getIntent().getStringExtra("color1"));
-//                    i.putExtra("color2", getIntent().getStringExtra("color2"));
-//                UserSelectActivity.class
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }

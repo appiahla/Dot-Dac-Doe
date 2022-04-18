@@ -18,6 +18,7 @@ import com.example.dot_dac_doe.Players.Computer;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
 import com.example.dot_dac_doe.R;
+import com.example.dot_dac_doe.UserSelectActivity;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 import com.example.dot_dac_doe.tutorial_page;
@@ -62,7 +63,6 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         player2points = (TextView) findViewById(R.id.player2points);
         currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
         pause = (ImageView) findViewById(R.id.singleplayer_pause);
-        currentPlayerPointer.setColorFilter(getResources().getColor(R.color.red));
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -199,6 +199,7 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         }
         players[1].setTag("blue2");
         startGame(players);
+        currentPlayerPointer.setColorFilter(colorOne);
 
         //      interaction for pause button
         ImageView pause = findViewById(R.id.singleplayer_pause);
@@ -347,6 +348,11 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
             public void onClick(View view) {
                 alert.dismiss();
                 Intent i = new Intent(GameActivity.this, GameActivity.class);
+                    i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+//                    i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+                    i.putExtra("color1", getIntent().getStringExtra("color1"));
+//                    i.putExtra("color2", getIntent().getStringExtra("color2"));
+//                UserSelectActivity.class
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }

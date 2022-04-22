@@ -151,7 +151,14 @@ public class GameView extends View implements Observer {
             for (int j = 0; j < game.getWidth(); j++) {
                 Line horizontal = new Line(Direction.HORIZONTAL, i, j);
                 if (horizontal.equals(game.getNewestLine())) {
-                    paint.setColor(0xFFFF7700);
+                    Log.d("CHECK", "THIS IS THE PLAYER HORIZONTAL: " + game.currentPlayer().getName());
+                    if(game.currentPlayer().getName().equalsIgnoreCase("Player 1"))  { //actually player 2
+                        paint.setColor(color2);
+                    }
+                      else if (game.currentPlayer().getName().equalsIgnoreCase("Player 2")) { //actually player 1
+                        paint.setColor(color1);
+                    }
+
                 } else if (game.isLineOccupied(horizontal)) {
                     if (game.getLineOccupier(horizontal) == 1)
                         paint.setColor(playerColors[0]);
@@ -167,7 +174,13 @@ public class GameView extends View implements Observer {
 
                 Line vertical = new Line(Direction.VERTICAL, j, i);
                 if (vertical.equals(game.getNewestLine())) {
-                    paint.setColor(0xFFFF7700);
+                    Log.d("CHECK", "THIS IS THE PLAYER VERTICAL : " + game.currentPlayer().getName());
+                    if(game.currentPlayer().getName().equalsIgnoreCase("Player 1"))  {
+                        paint.setColor(color2);
+                    } else if (game.currentPlayer().getName().equalsIgnoreCase("Player 2")) {
+                        paint.setColor(color1);
+                    }
+//                    paint.setColor(getResources().getColor(playerColors[Player.indexIn(game.getBoxOccupier(j, i), game.getPlayers())]));
                 } else if (game.isLineOccupied(vertical)) {
                     if (game.getLineOccupier(vertical) == 1)
                         paint.setColor(playerColors[0]);

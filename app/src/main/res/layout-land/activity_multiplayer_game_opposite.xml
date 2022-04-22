@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.MultiplayerGameOpposite">
+    tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameOpposite">
 
     <ImageView
         android:id="@+id/multiplayer_pause3"

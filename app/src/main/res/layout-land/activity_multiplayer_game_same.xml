@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.MultiplayerGameSame">
+    tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameSame">
 
     <TextView
         android:id="@+id/player1name_mult2"

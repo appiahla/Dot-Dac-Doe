@@ -151,9 +151,8 @@
         android:textColor="#050505"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/menu_drop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="106dp" />
 
     <ImageView
         android:id="@+id/text_border_music"

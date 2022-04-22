@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameOpposite">
+    tools:context="com.example.dot_dac_doe.MultiplayerGameOpposite">
 
     <ImageView
         android:id="@+id/multiplayer_pause3"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="37dp" />
 
-    <com.example.dot_dac_doe.Views.GameView
+    <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameView_mult3"
         android:layout_width="465dp"
         android:layout_height="380dp"

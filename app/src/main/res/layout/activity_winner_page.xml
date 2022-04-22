@@ -61,55 +61,11 @@
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_marginStart="12dp"
-=======
-        android:layout_marginStart="52dp"
->>>>>>> e84e0f9 (pulling from origin)
-=======
-        android:layout_marginStart="52dp"
->>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
-        android:layout_marginTop="16dp"
-
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congratulations!"
-        android:textAlignment="center"
-        android:textColor="#F0000000"
-        android:textSize="36sp"
+        android:layout_marginBottom="628dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/winner_header"
-        app:layout_constraintVertical_bias="0.003" />
-
-    <ImageView
-        android:id="@+id/paint_icon"
-        android:layout_width="168dp"
-        android:layout_height="154dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        android:layout_marginStart="88dp"
-=======
-        android:layout_marginStart="140dp"
->>>>>>> e84e0f9 (pulling from origin)
-=======
-        android:layout_marginStart="140dp"
->>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
-        android:layout_marginTop="36dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.346"
-=======
-        app:layout_constraintVertical_bias="0.353"
->>>>>>> e84e0f9 (pulling from origin)
-=======
-        app:layout_constraintVertical_bias="0.353"
->>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
-        app:srcCompat="@drawable/winner_paint_icon" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/home_button"
@@ -189,4 +145,37 @@
         app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
+    <ImageView
+        android:id="@+id/paint_icon"
+        android:layout_width="168dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        android:layout_marginStart="52dp"-->
+<!--        android:layout_marginStart="52dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:fontFamily="@font/gloria_hallelujah"-->
+<!--        android:text="Congratulations!"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#F0000000"-->
+<!--        android:textSize="36sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/winner_header"-->
+<!--        app:layout_constraintVertical_bias="0.003" -->
+<!--        android:layout_marginStart="140dp"-->
+<!--        android:layout_marginStart="140dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.353"-->
+<!--        app:layout_constraintVertical_bias="0.353"-->
+<!--        app:srcCompat="@drawable/winner_paint_icon" />-->
+
+

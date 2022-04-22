@@ -157,10 +157,16 @@
 
     <TextView
         android:id="@+id/winner_name"
-        android:layout_width="119dp"
-        android:layout_height="44dp"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:layout_width="194dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confetti_top" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 <!--        android:layout_marginStart="52dp"-->

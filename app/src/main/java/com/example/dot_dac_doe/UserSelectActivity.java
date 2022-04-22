@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dot_dac_doe.VerticalLayouts.GameActivity;
+
 
 public class UserSelectActivity extends AppCompatActivity {
     Boolean[] sameColors1 = {false, false, false, false, false, false, false, false};
@@ -52,7 +54,12 @@ public class UserSelectActivity extends AppCompatActivity {
         orientation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserSelectActivity.this, Orientation.class);
+                Intent i = new Intent();
+                if (status.equalsIgnoreCase("single")) {
+                    i = new Intent(UserSelectActivity.this, GameActivity.class);
+                } else {
+                    i = new Intent(UserSelectActivity.this, Orientation.class);
+                }
                 if(!String.valueOf(Icon1.getTag()).isEmpty()) {
                     i.putExtra("icon1", String.valueOf(Icon1.getTag()));
                 }
@@ -248,6 +255,9 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         }
 
+        if (status.equalsIgnoreCase("single")) {
+            orientation.setText("Play");
+        }
 //        interaction for player one icon select
         player1.setOnClickListener(new View.OnClickListener() {
             @Override

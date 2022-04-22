@@ -18,19 +18,15 @@
             android:exported="true"
             android:excludeFromRecents="true"/>
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             android:name=".VerticalLayouts.MultiplayerGame"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
-=======
             android:name=".MultiplayerGame"
             android:exported="true" />
->>>>>>> e84e0f9 (pulling from origin)
-=======
+
             android:name=".MultiplayerGame"
             android:exported="true" />
->>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
         <activity
             android:name=".ComputerIconActivity"
             android:exported="true"

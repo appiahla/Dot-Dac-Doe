@@ -62,10 +62,14 @@
         android:layout_width="348dp"
         android:layout_height="128dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginStart="12dp"
 =======
         android:layout_marginStart="52dp"
 >>>>>>> e84e0f9 (pulling from origin)
+=======
+        android:layout_marginStart="52dp"
+>>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
@@ -83,20 +87,28 @@
         android:layout_width="168dp"
         android:layout_height="154dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginStart="88dp"
 =======
         android:layout_marginStart="140dp"
 >>>>>>> e84e0f9 (pulling from origin)
+=======
+        android:layout_marginStart="140dp"
+>>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
         android:layout_marginTop="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.346"
 =======
         app:layout_constraintVertical_bias="0.353"
 >>>>>>> e84e0f9 (pulling from origin)
+=======
+        app:layout_constraintVertical_bias="0.353"
+>>>>>>> e84e0f9c074bcf40ad423eb522f579f69149116e
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button

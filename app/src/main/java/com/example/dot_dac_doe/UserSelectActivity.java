@@ -269,6 +269,7 @@ public class UserSelectActivity extends AppCompatActivity {
 
                 i.putExtra("status", status);
                 i.putExtra("player", player);
+                i.putExtra("visitedp1", "true");
                 startActivity(i);
             }
         });

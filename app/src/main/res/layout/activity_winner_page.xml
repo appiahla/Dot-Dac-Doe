@@ -61,7 +61,11 @@
         android:id="@+id/congrats"
         android:layout_width="348dp"
         android:layout_height="128dp"
+<<<<<<< HEAD
         android:layout_marginStart="12dp"
+=======
+        android:layout_marginStart="52dp"
+>>>>>>> e84e0f9 (pulling from origin)
         android:layout_marginTop="16dp"
 
         android:fontFamily="@font/gloria_hallelujah"
@@ -78,13 +82,21 @@
         android:id="@+id/paint_icon"
         android:layout_width="168dp"
         android:layout_height="154dp"
+<<<<<<< HEAD
         android:layout_marginStart="88dp"
+=======
+        android:layout_marginStart="140dp"
+>>>>>>> e84e0f9 (pulling from origin)
         android:layout_marginTop="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.346"
+=======
+        app:layout_constraintVertical_bias="0.353"
+>>>>>>> e84e0f9 (pulling from origin)
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -164,13 +176,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="220dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,11 +14,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class UserSelectActivity extends AppCompatActivity {
     Boolean[] sameColors1 = {false, false, false, false, false, false, false, false};
     Boolean[] sameColors2 = {false, false, false, false, false, false, false, false};
+    String status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,17 @@ public class UserSelectActivity extends AppCompatActivity {
         ImageView Icon2 = findViewById(R.id.Icon2);
         ImageView player1 = findViewById(R.id.Circle1);
         ImageView player2 = findViewById(R.id.Circle2);
+        TextView click_info1 = findViewById(R.id.info_3);
+        TextView click_info2 = findViewById(R.id.info_4);
+
+        ImageView red2 = findViewById(R.id.pick_red_2_user_select);
+        ImageView blue2 = findViewById(R.id.pick_blue_2_user_select);
+        ImageView orange2 = findViewById(R.id.pick_orange_2_user_select);
+        ImageView purple2 = findViewById(R.id.pick_purple_2_user_select);
+        ImageView yellow2 = findViewById(R.id.pick_yellow_2_user_select);
+        ImageView pink2 = findViewById(R.id.pick_pink_2_user_select);
+        ImageView green2 = findViewById(R.id.pick_green_2_user_select);
+        ImageView grey2 = findViewById(R.id.pick_grey_2_user_select);
 
 
 
@@ -52,6 +65,7 @@ public class UserSelectActivity extends AppCompatActivity {
                 if(!String.valueOf(player2.getTag()).isEmpty()) {
                     i.putExtra("color2", String.valueOf(player2.getTag()));
                 }
+                i.putExtra("status", status);
                 startActivity(i);
             }
         });
@@ -59,6 +73,9 @@ public class UserSelectActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if (extras != null) {
+            if (extras.containsKey("status")) {
+                status = getIntent().getStringExtra("status");
+            }
             if (extras.containsKey("color1")) {
                 String color1 = getIntent().getStringExtra("color1");
                 if (color1.equalsIgnoreCase("red1")) {
@@ -131,6 +148,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
             if (extras.containsKey("icon1")) {
                 String icon1 = getIntent().getStringExtra("icon1");
+                click_info1.setVisibility(View.GONE);
                 if(icon1.equalsIgnoreCase("tree")) {
                     Icon1.setImageResource(R.drawable.tree);
                     Icon1.setTag("tree");
@@ -180,6 +198,7 @@ public class UserSelectActivity extends AppCompatActivity {
             }
             if (extras.containsKey("icon2")) {
                 String icon2 = getIntent().getStringExtra("icon2");
+                click_info2.setVisibility(View.GONE);
                 if(icon2.equalsIgnoreCase("tree")) {
                     Icon2.setImageResource(R.drawable.tree);
                     Icon2.setTag("tree");
@@ -248,20 +267,43 @@ public class UserSelectActivity extends AppCompatActivity {
                     i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
+                i.putExtra("status", status);
                 i.putExtra("player", player);
                 startActivity(i);
             }
         });
+        //        interaction for player two icon select
+        if(status.equalsIgnoreCase("single")) {
+            player2.setEnabled(false);
+            player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+            player2.setTag("blue2");
+            Icon2.setImageResource(R.drawable.fish);
+            Icon2.setTag("fish");
 
-//        String icon1 = getIntent().getStringExtra("icon");
-//        ImageView Icon1 = findViewById(R.id.Icon1);
-//        if(icon1.equalsIgnoreCase("tree")) {
-//            Icon1.setImageResource(R.drawable.tree);
-//        }
+            sameColors2[1] = true;
+            unTrue2(1);
 
+            red2.setEnabled(false);
+            blue2.setEnabled(false);
+            orange2.setEnabled(false);
+            purple2.setEnabled(false);
+            yellow2.setEnabled(false);
+            pink2.setEnabled(false);
+            green2.setEnabled(false);
+            grey2.setEnabled(false);
+            click_info2.setVisibility(View.GONE);
 
-
-//        interaction for player two icon select
+        } else if(status.equalsIgnoreCase("mult")) {
+            player2.setEnabled(true);
+            red2.setEnabled(true);
+            blue2.setEnabled(true);
+            orange2.setEnabled(true);
+            purple2.setEnabled(true);
+            yellow2.setEnabled(true);
+            pink2.setEnabled(true);
+            green2.setEnabled(true);
+            grey2.setEnabled(true);
+        }
         player2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -280,7 +322,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     i.putExtra("player2color", String.valueOf(player2.getTag()));
                 }
 
+                i.putExtra("status", status);
                 i.putExtra("player", player);
+                i.putExtra("visitedp1", "true");
                 startActivity(i);
             }
         });
@@ -386,7 +430,6 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
-        ImageView red2 = findViewById(R.id.pick_red_2_user_select);
         red2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -399,7 +442,6 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         });
 
-        ImageView blue2 = findViewById(R.id.pick_blue_2_user_select);
         blue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -411,7 +453,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView orange2 = findViewById(R.id.pick_orange_2_user_select);
         orange2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -423,7 +464,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView purple2 = findViewById(R.id.pick_purple_2_user_select);
         purple2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -435,7 +475,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView yellow2 = findViewById(R.id.pick_yellow_2_user_select);
         yellow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -447,7 +486,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView pink2 = findViewById(R.id.pick_pink_2_user_select);
         pink2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -459,7 +497,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView green2 = findViewById(R.id.pick_green_2_user_select);
         green2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -471,7 +508,6 @@ public class UserSelectActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageView grey2 = findViewById(R.id.pick_grey_2_user_select);
         grey2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

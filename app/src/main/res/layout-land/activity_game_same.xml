@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.GameActivitySame">
+    tools:context="com.example.dot_dac_doe.HorizontalLayouts.GameActivitySame">
 
     <ImageView
         android:id="@+id/playerNowPointer2"

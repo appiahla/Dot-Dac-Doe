@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dot_dac_doe.GameActivity">
+    tools:context="com.example.dot_dac_doe.VerticalLayouts.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Player 1"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
             <ImageView
@@ -47,8 +47,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="70dp"
                 android:layout_marginEnd="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/player1_circle_mult"
-                app:layout_constraintEnd_toStartOf="@+id/player1_circle_mult"
+                app:layout_constraintBottom_toTopOf="@+id/player1_circle"
+                app:layout_constraintEnd_toStartOf="@+id/player1_circle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/cat" />
@@ -61,7 +61,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Boxes: 0"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
         </RelativeLayout>
@@ -87,7 +87,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Computer"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/blue"
                 android:textSize="20sp" />
 
             <ImageView
@@ -104,8 +104,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="70dp"
                 android:layout_marginEnd="10dp"
-                app:layout_constraintBottom_toTopOf="@+id/computer_circle_mult"
-                app:layout_constraintEnd_toStartOf="@+id/computer_circle_mult"
+                app:layout_constraintBottom_toTopOf="@+id/computer_circle"
+                app:layout_constraintEnd_toStartOf="@+id/computer_circle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/fish" />
@@ -118,7 +118,7 @@
                 android:fontFamily="@font/gloria_hallelujah"
                 android:gravity="center"
                 android:text="Boxes: 0"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/blue"
                 android:textSize="20sp" />
         </RelativeLayout>
     </LinearLayout>

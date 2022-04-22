@@ -11,26 +11,13 @@
         android:id="@+id/Player1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 1"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Player2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="66dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Player 2"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--    <RelativeLayout-->
@@ -74,6 +61,19 @@
 
     <!--    </RelativeLayout>-->
 
+
+    <TextView
+        android:id="@+id/Player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="188dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 2"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/umbrella"
@@ -263,7 +263,7 @@
         android:id="@+id/Layout1"
         android:layout_width="149dp"
         android:layout_height="145dp"
-        android:layout_marginStart="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Player1">
 
@@ -288,6 +288,7 @@
             app:layout_constraintEnd_toStartOf="@+id/Circle1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <!--        app:srcCompat="@drawable/paint"-->
     </RelativeLayout>
 
@@ -295,8 +296,8 @@
         android:id="@+id/relativeLayout"
         android:layout_width="149dp"
         android:layout_height="145dp"
-        android:layout_marginEnd="41dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Player2">
 
         <ImageView
@@ -320,6 +321,7 @@
             app:layout_constraintEnd_toStartOf="@+id/Circle2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <!--        app:srcCompat="@drawable/paint"-->
     </RelativeLayout>
 
@@ -334,6 +336,7 @@
         android:text="Select icon"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:cornerRadius="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lightning"
         app:strokeColor="#000000" />

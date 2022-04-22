@@ -165,4 +165,12 @@
         app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="220dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

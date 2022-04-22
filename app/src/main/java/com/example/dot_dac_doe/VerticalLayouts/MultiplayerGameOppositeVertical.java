@@ -324,7 +324,7 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         currentPlayerPointer1.setColorFilter(colorOne);
         currentPlayerPointer2.setColorFilter(colorTwo);
 
-        players = new Player[]{new HumanPlayer("Human"), new HumanPlayer("Player 2")};
+        players = new Player[]{new HumanPlayer("Player 1"), new HumanPlayer("Player 2")};
         if (!String.valueOf(player1.getTag()).isEmpty()) {
             players[0].setTag(String.valueOf(player1.getTag()));
         }

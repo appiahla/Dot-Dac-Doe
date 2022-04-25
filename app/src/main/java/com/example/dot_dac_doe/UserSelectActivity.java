@@ -23,6 +23,8 @@ public class UserSelectActivity extends AppCompatActivity {
     Boolean[] sameColors1 = {false, false, false, false, false, false, false, false};
     Boolean[] sameColors2 = {false, false, false, false, false, false, false, false};
     String status;
+    ImageView selectedColor1;
+    ImageView selectedColor2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,9 @@ public class UserSelectActivity extends AppCompatActivity {
         ImageView pink2 = findViewById(R.id.pick_pink_2_user_select);
         ImageView green2 = findViewById(R.id.pick_green_2_user_select);
         ImageView grey2 = findViewById(R.id.pick_grey_2_user_select);
+
+        selectedColor1 = player1;
+        selectedColor2 = player2;
 
 
 
@@ -351,6 +356,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(red1.getTag());
                     sameColors1[0] = true;
                     unTrue1(0);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = red1;
+                    selectedColor1.setColorFilter(R.color.red);
                 }
             }
         });
@@ -364,6 +372,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(blue1.getTag());
                     sameColors1[1] = true;
                     unTrue1(1);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = blue1;
+                    selectedColor1.setColorFilter(R.color.blue);
                 }
             }
         });
@@ -376,6 +387,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(orange1.getTag());
                     sameColors1[2] = true;
                     unTrue1(2);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = orange1;
+                    selectedColor1.setColorFilter(R.color.orange);
                 }
             }
         });
@@ -388,6 +402,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(purple1.getTag());
                     sameColors1[3] = true;
                     unTrue1(3);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = purple1;
+                    selectedColor1.setColorFilter(R.color.purple);
                 }
             }
         });
@@ -400,6 +417,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(yellow1.getTag());
                     sameColors1[4] = true;
                     unTrue1(4);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = yellow1;
+                    selectedColor1.setColorFilter(R.color.yellow);
                 }
             }
         });
@@ -412,6 +432,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(pink1.getTag());
                     sameColors1[5] = true;
                     unTrue1(5);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = pink1;
+                    selectedColor1.setColorFilter(R.color.pink);
                 }
             }
         });
@@ -424,6 +447,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(green1.getTag());
                     sameColors1[6] = true;
                     unTrue1(6);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = green1;
+                    selectedColor1.setColorFilter(R.color.green);
                 }
             }
         });
@@ -436,6 +462,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player1.setTag(grey1.getTag());
                     sameColors1[7] = true;
                     unTrue1(7);
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = grey1;
+                    selectedColor1.setColorFilter(R.color.grey);
                 }
             }
         });
@@ -448,6 +477,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(red2.getTag());
                     sameColors2[0] = true;
                     unTrue2(0);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = red2;
+                    selectedColor2.setColorFilter(R.color.red);
                 }
             }
         });
@@ -460,6 +492,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(blue2.getTag());
                     sameColors2[1] = true;
                     unTrue2(1);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = blue2;
+                    selectedColor2.setColorFilter(R.color.blue);
                 }
             }
         });
@@ -471,6 +506,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(orange2.getTag());
                     sameColors2[2] = true;
                     unTrue2(2);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = orange2;
+                    selectedColor2.setColorFilter(R.color.orange);
                 }
             }
         });
@@ -482,6 +520,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(purple2.getTag());
                     sameColors2[3] = true;
                     unTrue2(3);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = purple2;
+                    selectedColor2.setColorFilter(R.color.purple);
                 }
             }
         });
@@ -493,6 +534,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(yellow2.getTag());
                     sameColors2[4] = true;
                     unTrue2(4);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = yellow2;
+                    selectedColor2.setColorFilter(R.color.yellow);
                 }
             }
         });
@@ -504,6 +548,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(pink2.getTag());
                     sameColors2[5] = true;
                     unTrue2(5);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = pink2;
+                    selectedColor2.setColorFilter(R.color.pink);
                 }
             }
         });
@@ -515,6 +562,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(green2.getTag());
                     sameColors2[6] = true;
                     unTrue2(6);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = green2;
+                    selectedColor2.setColorFilter(R.color.green);
                 }
             }
         });
@@ -526,6 +576,9 @@ public class UserSelectActivity extends AppCompatActivity {
                     player2.setTag(grey2.getTag());
                     sameColors2[7] = true;
                     unTrue2(7);
+                    selectedColor2.clearColorFilter();
+                    selectedColor2 = grey2;
+                    selectedColor2.setColorFilter(R.color.grey);
                 }
             }
         });
@@ -550,4 +603,8 @@ public class UserSelectActivity extends AppCompatActivity {
             }
         }
     }
+
+//    private void removeColorFilter() {
+//        red1
+//    }
 }

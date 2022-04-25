@@ -50,10 +50,6 @@
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
-            android:name=".VerticalLayouts.GameActivity"
-            android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
-        <activity
             android:name=".HorizontalLayouts.GameActivitySame"
             android:exported="true"
             android:screenOrientation="landscape"

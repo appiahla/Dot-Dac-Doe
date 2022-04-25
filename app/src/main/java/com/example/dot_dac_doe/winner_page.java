@@ -27,23 +27,13 @@ public class winner_page extends AppCompatActivity {
         setContentView(R.layout.activity_winner_page);
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
-//        setContentView(R.layout.activity_multiplayer_game);
-        TextView winnerLabel = (TextView) findViewById(R.id.winner_header);
-        TextView congrats = (TextView) findViewById(R.id.congrats);
-//        String winner = getIntent().getStringExtra("WINNER");
-//        //int score = getIntent().getIntExtra("SCORE", 0);
-//        int player1Score = getIntent().getIntExtra("WINNER", 0);
-//        int player2Score = getIntent().getIntExtra("WINNER", 0);
-//        SharedPreferences gameSettings = getSharedPreferences("DATA", Context.MODE_PRIVATE);
-//
-//        if (player1Score > player2Score){
-//            winnerLabel.setText("CONGRATULATIONS PLAYER 1! "+ player1Score);
-//
-//        }else{
-//            winnerLabel.setText("CONGRATULATIONS PLAYER 2! " + player2Score);
-//
-//        }
-
+        TextView winner_name = findViewById(R.id.winner_name);
+        Intent in = getIntent();
+        Bundle extras = in.getExtras();
+        if (extras != null) {
+            if (extras.containsKey("winner")) {
+                String winner = getIntent().getStringExtra("winner");
+                winner_name.setText(winner);            }        }
 
         play_again.setOnClickListener(new View.OnClickListener() {
             @Override

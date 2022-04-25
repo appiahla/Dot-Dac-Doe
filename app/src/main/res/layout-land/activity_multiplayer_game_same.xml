@@ -8,7 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameSame">
+    tools:context="com.example.dot_dac_doe.MultiplayerGameSame">
 
     <TextView
         android:id="@+id/player1name_mult2"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="159dp" />
 
-    <com.example.dot_dac_doe.Views.GameView
+    <com.example.dot_dac_doe.view.GameView
         android:id="@+id/gameView_mult2"
         android:layout_width="465dp"
         android:layout_height="380dp"

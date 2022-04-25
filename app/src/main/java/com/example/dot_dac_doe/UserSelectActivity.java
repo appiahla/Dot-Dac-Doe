@@ -68,6 +68,7 @@ public class UserSelectActivity extends AppCompatActivity {
         lastColor1 = player1;
         lastColor2 = player2;
 
+
 //      interaction for orientation page
         Button orientation = findViewById(R.id.orientation_button_user_select);
         orientation.setOnClickListener(new View.OnClickListener() {

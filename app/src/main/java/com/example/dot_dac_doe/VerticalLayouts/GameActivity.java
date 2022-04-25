@@ -22,7 +22,6 @@ import com.example.dot_dac_doe.UserSelectActivity;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
 import com.example.dot_dac_doe.tutorial_page;
-import com.example.dot_dac_doe.winner_page;
 
 import java.util.Map;
 
@@ -247,32 +246,28 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
         updateState();
     }
 
-//    @Override
-//    public void setWinner(final Player winner) {
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                new AlertDialog.Builder(GameActivity.this)
-//                        .setTitle("Dots And Boxes")
-//                        .setMessage(winner.getName() + " Wins!")
-//                        .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                recreate();
-//                            }
-//                        })
-//                        .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                            }
-//                        }).show();
-//            }
-//        });
-//    }
     @Override
     public void setWinner(final Player winner) {
-        Intent i = new Intent(GameActivity.this, winner_page.class);
-        startActivity(i);
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                new AlertDialog.Builder(GameActivity.this)
+                        .setTitle("Dots And Boxes")
+                        .setMessage(winner.getName() + " Wins!")
+                        .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                recreate();
+                            }
+                        })
+                        .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                            }
+                        }).show();
+            }
+        });
     }
+
 
 
 
@@ -353,8 +348,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
             public void onClick(View view) {
                 alert.dismiss();
                 Intent i = new Intent(GameActivity.this, GameActivity.class);
-                    i.putExtra("icon1", getIntent().getStringExtra("icon1"));
-                    i.putExtra("color1", getIntent().getStringExtra("color1"));
+                i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+                i.putExtra("color1", getIntent().getStringExtra("color1"));
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }

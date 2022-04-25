@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dot_dac_doe.VerticalLayouts.GameActivity;
+
 
 public class UserSelectActivity extends AppCompatActivity {
     Boolean[] sameColors1 = {false, false, false, false, false, false, false, false};

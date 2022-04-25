@@ -68,13 +68,6 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/multiplayer_undo4"
-            android:layout_width="63dp"
-            android:layout_height="54dp"
-            android:translationX="140dp"
-            app:srcCompat="@drawable/undo_btn" />
-
-        <ImageView
             android:id="@+id/playerNowPointer_mult4"
             android:layout_width="0dp"
             android:layout_height="75dp"

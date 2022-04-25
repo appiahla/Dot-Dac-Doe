@@ -130,7 +130,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="64dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:translationY="-45dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -148,13 +149,6 @@
                 android:translationX="0dp"
                 app:srcCompat="@drawable/pause_btn" />
 
-            <ImageView
-                android:id="@+id/multiplayer_undo"
-                android:layout_width="63dp"
-                android:layout_height="54dp"
-                android:layout_marginEnd="316dp"
-                android:translationX="315dp"
-                app:srcCompat="@drawable/undo_btn" />
         </RelativeLayout>
     </LinearLayout>
 

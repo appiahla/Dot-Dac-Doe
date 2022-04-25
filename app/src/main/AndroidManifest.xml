@@ -53,21 +53,6 @@
             android:name=".VerticalLayouts.GameActivity"
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
-<!--        <activity-->
-<!--            android:name=".HorizontalLayouts.GameActivitySame"-->
-<!--            android:exported="true"-->
-<!--            android:screenOrientation="landscape"-->
-<!--            android:theme="@style/Theme.DotDacDoe.NoActionBar" />-->
-<!--        <activity-->
-<!--            android:name=".HorizontalLayouts.GameActivityOpposite"-->
-<!--            android:exported="true"-->
-<!--            android:screenOrientation="landscape"-->
-<!--            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>-->
-<!--        <activity-->
-<!--            android:name=".VerticalLayouts.GameActivityOppositeVertical"-->
-<!--            android:exported="true"-->
-<!--            android:screenOrientation="landscape"-->
-<!--            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>-->
         <activity
             android:name=".Orientation"
             android:exported="true"

@@ -13,12 +13,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-//import com.example.dot_dac_doe.Models.Player;
-
-
-
-
 public class winner_page extends AppCompatActivity {
 
     @Override

@@ -355,6 +355,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pick_grey_2_user_select"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 

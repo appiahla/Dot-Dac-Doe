@@ -338,6 +338,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goggles"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

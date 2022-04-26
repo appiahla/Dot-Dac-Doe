@@ -28,8 +28,8 @@ public class UserSelectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
-        getWindow().setEnterTransition(new Explode());
+//        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+//        getWindow().setEnterTransition(new Explode());
         setContentView(R.layout.activity_user_select);
 
 
@@ -444,27 +444,30 @@ public class UserSelectActivity extends AppCompatActivity {
 
 
 //        interactions for changing the color of the profiles
-
-//        ImageView red1 = findViewById(R.id.pick_red_1_user_select);
         red1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!sameColors2[0]) {
-                    lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-                    player1.setTag(red1.getTag());
-                    sameColors1[0] = true;
+
+
                     red2.setVisibility(View.INVISIBLE);
-                    unTrue1(0);
+
                     selectedColor1.clearColorFilter();
                     selectedColor1 = red1;
                     selectedColor1.setColorFilter(R.color.red);
+
+                    lastColor1.setVisibility(View.VISIBLE);
                     lastColor1 = red2;
+
+                    sameColors1[0] = true;
+                    unTrue1(0);
+
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player1.setTag(red1.getTag());
                 }
             }
         });
 
-//        ImageView blue1 = findViewById(R.id.pick_blue_1_user_select);
         blue1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

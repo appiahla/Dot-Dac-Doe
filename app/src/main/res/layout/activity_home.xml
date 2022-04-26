@@ -39,6 +39,7 @@
         app:layout_constraintBottom_toTopOf="@+id/multiplayerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -59,6 +60,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
 

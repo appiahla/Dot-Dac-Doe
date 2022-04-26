@@ -38,6 +38,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/vertical_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/vertical_resume"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -58,6 +59,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/vertical_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/vertical_exit"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -78,6 +80,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/vertical_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/vertical_howto"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -112,6 +115,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/vertical_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/vertical_pause_title"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

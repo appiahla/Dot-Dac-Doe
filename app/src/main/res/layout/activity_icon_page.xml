@@ -7,19 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".iconPage">
 
-    <TextView
-        android:id="@+id/Player1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:text="Player 1"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!--    <RelativeLayout-->
     <!--        android:id="@+id/Relative1"-->
     <!--        android:layout_width="fill_parent"-->
@@ -63,16 +50,29 @@
 
 
     <TextView
+        android:id="@+id/Player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/Layout1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/Player2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="188dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 2"
         android:textColor="@color/black"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Layout1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -138,12 +138,24 @@
         app:srcCompat="@drawable/row_2_column_2" />
 
     <ImageView
+        android:id="@+id/fish"
+        android:layout_width="107dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="76dp"
+        android:tag="fish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smile"
+        app:layout_constraintTop_toBottomOf="@+id/paint"
+        app:srcCompat="@drawable/row_5_column_3" />
+
+    <ImageView
         android:id="@+id/paint"
         android:layout_width="107dp"
         android:layout_height="100dp"
         android:layout_marginEnd="45dp"
         android:tag="paint"
-        app:layout_constraintBottom_toTopOf="@+id/fish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/goggles"
         app:layout_constraintTop_toBottomOf="@+id/cat"
@@ -167,26 +179,12 @@
         android:id="@+id/smile"
         android:layout_width="107dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginTop="4dp"
         android:tag="smile"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fish"
         app:layout_constraintStart_toEndOf="@+id/lightning"
         app:layout_constraintTop_toBottomOf="@+id/goggles"
         app:srcCompat="@drawable/row_5_column_2" />
-
-    <ImageView
-        android:id="@+id/fish"
-        android:layout_width="107dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="76dp"
-        android:tag="fish"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/smile"
-        app:layout_constraintTop_toBottomOf="@+id/paint"
-        app:srcCompat="@drawable/row_5_column_3" />
 
     <ImageView
         android:id="@+id/planet"
@@ -210,18 +208,6 @@
         app:layout_constraintStart_toEndOf="@+id/planet"
         app:layout_constraintTop_toBottomOf="@+id/wave"
         app:srcCompat="@drawable/row_3_column_2" />
-
-    <ImageView
-        android:id="@+id/cat"
-        android:layout_width="107dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="45dp"
-        android:tag="cat"
-        app:layout_constraintBottom_toTopOf="@+id/paint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rain"
-        app:layout_constraintTop_toBottomOf="@+id/peach"
-        app:srcCompat="@drawable/row_3_column_3" />
 
     <ImageView
         android:id="@+id/flower"
@@ -251,6 +237,7 @@
         android:id="@+id/peach"
         android:layout_width="107dp"
         android:layout_height="100dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="45dp"
         android:tag="peach"
         app:layout_constraintBottom_toTopOf="@+id/cat"
@@ -258,6 +245,18 @@
         app:layout_constraintStart_toEndOf="@+id/wave"
         app:layout_constraintTop_toBottomOf="@+id/umbrella"
         app:srcCompat="@drawable/row_2_column_3" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="107dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="45dp"
+        android:tag="cat"
+        app:layout_constraintBottom_toTopOf="@+id/paint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rain"
+        app:layout_constraintTop_toBottomOf="@+id/peach"
+        app:srcCompat="@drawable/row_3_column_3" />
 
     <RelativeLayout
         android:id="@+id/Layout1"
@@ -329,16 +328,17 @@
         android:id="@+id/Selected"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Select icon"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lightning"
+        app:layout_constraintTop_toBottomOf="@+id/goggles"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

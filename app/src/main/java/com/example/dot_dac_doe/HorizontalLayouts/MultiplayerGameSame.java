@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,8 +13,10 @@ import com.example.dot_dac_doe.Players.Computer;
 import com.example.dot_dac_doe.Models.HumanPlayer;
 import com.example.dot_dac_doe.Models.Player;
 import com.example.dot_dac_doe.R;
+import com.example.dot_dac_doe.VerticalLayouts.MultiplayerGame;
 import com.example.dot_dac_doe.Views.GameView;
 import com.example.dot_dac_doe.Views.PlayersStateView;
+import com.example.dot_dac_doe.winner_page;
 
 import java.util.Map;
 
@@ -79,23 +82,8 @@ public class MultiplayerGameSame extends AppCompatActivity implements PlayersSta
 
     @Override
     public void setWinner(final Player winner) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                new AlertDialog.Builder(MultiplayerGameSame.this)
-                        .setTitle("Dots And Boxes")
-                        .setMessage(winner.getName() + " Wins!")
-                        .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                recreate();
-                            }
-                        })
-                        .setNeutralButton("Dismiss", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                            }
-                        }).show();
-            }
-        });
+        Intent i = new Intent(MultiplayerGameSame.this, winner_page.class);
+        i.putExtra("winner", winner.getName());
+        startActivity(i);
     }
 }

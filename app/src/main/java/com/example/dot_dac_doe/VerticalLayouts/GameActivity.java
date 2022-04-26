@@ -43,9 +43,8 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        //setContentView(R.layout.activity_game_opposite);
 
-        gameView = (GameView) findViewById(R.id.gameView);
+        gameView = findViewById(R.id.gameView);
         gameView.setPlayersState(this);
 
         ImageView player1 = findViewById(R.id.player1_circle);
@@ -53,17 +52,15 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
 
         ImageView Icon1 = findViewById(R.id.Icon1);
 
-//        player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-//        player1.setTag("red1");
         player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
         player2.setTag("blue2");
 
-        player1name = (TextView) findViewById(R.id.player1name);
-        player2name = (TextView) findViewById(R.id.player2name);
-        player1points = (TextView) findViewById(R.id.player1points);
-        player2points = (TextView) findViewById(R.id.player2points);
-        currentPlayerPointer = (ImageView) findViewById(R.id.playerNowPointer);
-        pause = (ImageView) findViewById(R.id.singleplayer_pause);
+        player1name = findViewById(R.id.player1name);
+        player2name =  findViewById(R.id.player2name);
+        player1points = findViewById(R.id.player1points);
+        player2points = findViewById(R.id.player2points);
+        currentPlayerPointer = findViewById(R.id.playerNowPointer);
+        pause = findViewById(R.id.singleplayer_pause);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -251,6 +248,13 @@ public class GameActivity extends AppCompatActivity implements PlayersStateView 
     public void setWinner(final Player winner) {
         Intent i = new Intent(GameActivity.this, winner_page.class);
         i.putExtra("winner", winner.getName());
+        if (winner.getName().equalsIgnoreCase("Player 1")) {
+            i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+            i.putExtra("color1", getIntent().getStringExtra("color1"));
+        } else if (winner.getName().equalsIgnoreCase("Computer")){
+            i.putExtra("icon1", getIntent().getStringExtra("icon2"));
+            i.putExtra("color1", getIntent().getStringExtra("color2"));
+        }
         startActivity(i);
     }
 

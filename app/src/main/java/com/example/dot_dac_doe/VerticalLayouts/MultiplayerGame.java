@@ -368,6 +368,13 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
     public void setWinner(final Player winner) {
         Intent i = new Intent(MultiplayerGame.this, winner_page.class);
         i.putExtra("winner", winner.getName());
+        if (winner.getName().equalsIgnoreCase("Player 1")) {
+            i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+            i.putExtra("color1", getIntent().getStringExtra("color1"));
+        } else {
+            i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+            i.putExtra("color1", getIntent().getStringExtra("color2"));
+        }
         startActivity(i);
     }
 

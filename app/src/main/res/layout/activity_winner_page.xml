@@ -78,13 +78,13 @@
         android:id="@+id/paint_icon"
         android:layout_width="168dp"
         android:layout_height="154dp"
-        android:layout_marginStart="88dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="36dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346"
+        app:layout_constraintVertical_bias="0.427"
         app:srcCompat="@drawable/winner_paint_icon" />
 
     <Button
@@ -134,9 +134,11 @@
     <ImageView
         android:id="@+id/confetti_top"
         android:layout_width="362dp"
-        android:layout_height="89dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068"
@@ -144,10 +146,13 @@
 
     <ImageView
         android:id="@+id/right_side_removed"
-        android:layout_width="98dp"
+        android:layout_width="0dp"
         android:layout_height="682dp"
         android:layout_marginStart="280dp"
+        android:layout_marginEnd="33dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/winner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -164,5 +169,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.647"
         app:srcCompat="@drawable/left_side_confetti_removebg_preview" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="595dp"
+        android:fontFamily="@font/gloria_hallelujah"
+        android:text="Player 1"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_side_removed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confetti_top" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

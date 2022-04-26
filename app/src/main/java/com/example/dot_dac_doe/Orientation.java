@@ -29,16 +29,7 @@ public class Orientation extends AppCompatActivity {
         ImageView same_side_vert = findViewById(R.id.ss_vertical);
         same_side_vert.setOnClickListener(view -> {
             Intent i = new Intent(Orientation.this, MultiplayerGame.class);
-//            Intent i = new Intent();
             if (extras != null) {
-//                if (extras.containsKey("status")) {
-//                    status = getIntent().getStringExtra("status");
-//                }
-//                if (status.equalsIgnoreCase("single")) {
-//                    i = new Intent(Orientation.this, GameActivity.class);
-//                } else if (status.equalsIgnoreCase("mult")) {
-//                    i = new Intent(Orientation.this, MultiplayerGame.class);
-//                }
                 if (extras.containsKey("icon1")){
                     i.putExtra("icon1", getIntent().getStringExtra("icon1"));
                 }
@@ -59,16 +50,7 @@ public class Orientation extends AppCompatActivity {
         ImageView opp_side_vert = findViewById(R.id.os_vertical);
         opp_side_vert.setOnClickListener(view -> {
             Intent i = new Intent(Orientation.this, MultiplayerGameOppositeVertical.class);
-//            Intent i = new Intent();
             if (extras != null) {
-//                if (extras.containsKey("status")) {
-//                    status = getIntent().getStringExtra("status");
-//                }
-//                if (status.equalsIgnoreCase("single")) {
-//                    i = new Intent(Orientation.this, GameActivityOppositeVertical.class);
-//                } else if (status.equalsIgnoreCase("mult")) {
-//                    i = new Intent(Orientation.this, MultiplayerGameOppositeVertical.class);
-//                }
                 if (extras.containsKey("icon1")){
                     i.putExtra("icon1", getIntent().getStringExtra("icon1"));
                 }
@@ -88,17 +70,8 @@ public class Orientation extends AppCompatActivity {
         //        action between orientation and same side horizontal
         ImageView same_side_hort = findViewById(R.id.ss_horizontal);
         same_side_hort.setOnClickListener(view -> {
-//            Intent i = new Intent(Orientation.this, MultiplayerGameSame.class);
             Intent i = new Intent(Orientation.this, MultiplayerGameSame.class);
             if (extras != null) {
-//                if (extras.containsKey("status")) {
-//                    status = getIntent().getStringExtra("status");
-//                }
-//                if (status.equalsIgnoreCase("single")) {
-//                    i = new Intent(Orientation.this, GameActivitySame.class);
-//                } else if (status.equalsIgnoreCase("mult")) {
-//                    i = new Intent(Orientation.this, MultiplayerGameSame.class);
-//                }
                 if (extras.containsKey("icon1")){
                     i.putExtra("icon1", getIntent().getStringExtra("icon1"));
                 }
@@ -118,17 +91,8 @@ public class Orientation extends AppCompatActivity {
         //        action between orientation and opposite side horizontal
         ImageView opp_side_hort = findViewById(R.id.os_horizontal);
         opp_side_hort.setOnClickListener(view -> {
-//            Intent i = new Intent(Orientation.this, MultiplayerGameOpposite.class);
             Intent i = new Intent(Orientation.this, MultiplayerGameOpposite.class);
             if (extras != null) {
-//                if (extras.containsKey("status")) {
-//                    status = getIntent().getStringExtra("status");
-//                }
-//                if (status.equalsIgnoreCase("single")) {
-//                    i = new Intent(Orientation.this, GameActivityOpposite.class);
-//                } else if (status.equalsIgnoreCase("mult")) {
-//                    i = new Intent(Orientation.this, MultiplayerGameOpposite.class);
-//                }
                 if (extras.containsKey("icon1")){
                     i.putExtra("icon1", getIntent().getStringExtra("icon1"));
                 }

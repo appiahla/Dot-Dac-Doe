@@ -598,9 +598,9 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!sameColors1[0]) {
-                    lastColor2.setVisibility(View.VISIBLE);
                     player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     player2.setTag(red2.getTag());
+                    lastColor2.setVisibility(View.VISIBLE);
                     sameColors2[0] = true;
                     unTrue2(0);
                     selectedColor2.clearColorFilter();

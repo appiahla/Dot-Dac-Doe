@@ -27,6 +27,7 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".ComputerGameActivity"
+<<<<<<< HEAD
             android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
@@ -51,22 +52,45 @@
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".VerticalLayouts.GameActivity"
+=======
             android:exported="true"
-            android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".HorizontalLayouts.GameActivitySame"
+            android:name=".HorizontalLayouts.horizontal_exit_confirmation"
+            android:excludeFromRecents="true"
             android:exported="true"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar" />
         <activity
-            android:name=".HorizontalLayouts.GameActivityOpposite"
+            android:name=".HorizontalLayouts.MultiplayerGameSame"
+>>>>>>> cc7c8ad796ded48582f726e99a09d63b83c3b636
             android:exported="true"
             android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+        <activity
+<<<<<<< HEAD
+            android:name=".HorizontalLayouts.GameActivitySame"
+=======
+            android:name=".HorizontalLayouts.MultiplayerGameOpposite"
+>>>>>>> cc7c8ad796ded48582f726e99a09d63b83c3b636
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.DotDacDoe.NoActionBar" />
+        <activity
+<<<<<<< HEAD
+            android:name=".HorizontalLayouts.GameActivityOpposite"
+=======
+            android:name=".VerticalLayouts.MultiplayerGameOppositeVertical"
+>>>>>>> cc7c8ad796ded48582f726e99a09d63b83c3b636
+            android:exported="true"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
+<<<<<<< HEAD
             android:name=".VerticalLayouts.GameActivityOppositeVertical"
+=======
+            android:name=".VerticalLayouts.GameActivity"
+>>>>>>> cc7c8ad796ded48582f726e99a09d63b83c3b636
             android:exported="true"
-            android:screenOrientation="landscape"
             android:theme="@style/Theme.DotDacDoe.NoActionBar"/>
         <activity
             android:name=".Orientation"

@@ -144,6 +144,7 @@
         android:id="@+id/settings_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/gloria_hallelujah"
@@ -151,8 +152,8 @@
         android:textColor="#050505"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/menu_drop"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="106dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/text_border_music"

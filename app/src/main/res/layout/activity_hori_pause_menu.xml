@@ -38,6 +38,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/horizontal_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/horizontal_pause_title"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -58,6 +59,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@+id/horizontal_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/horizontal_pause_title"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -78,6 +80,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintStart_toStartOf="@+id/horizontal_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/horizontal_resume"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 
@@ -98,6 +101,7 @@
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@+id/horizontal_sticky_note"
         app:layout_constraintTop_toBottomOf="@+id/horizontal_exit"
+        app:rippleColor="#B6B5B5"
         app:strokeColor="#000000"
         app:strokeWidth="1dp" />
 

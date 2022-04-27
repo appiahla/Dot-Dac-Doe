@@ -8,62 +8,71 @@
 
     <TextView
         android:id="@+id/tutorial_header_DDD"
-        android:layout_width="278dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="33dp"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="52dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="HOW TO PLAY!"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    =======
+
     <TextView
         android:id="@+id/goalofgame"
-        android:layout_width="327dp"
-        android:layout_height="143dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="The goal of the game is to create a square by joining four dots."
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tutorial_header_DDD" />
 
     <ImageView
         android:id="@+id/tutorial_icon"
-        android:layout_width="222dp"
-        android:layout_height="154dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="92dp"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goalofgame"
         app:srcCompat="@drawable/tutorial_header" />
 
     <TextView
         android:id="@+id/firstDirection"
-        android:layout_width="343dp"
-        android:layout_height="208dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="0dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="The first player draws a line to any dot horizontally or vertically next to it. The next player does the same."
+        android:text="The first player draws a line to any dot horizontally or vertically next to it by tapping between the dots. The next player does the same."
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" /><![CDATA[
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorial_icon" />
 
-    =======
+    <ImageView
+        android:id="@+id/tutorial_next_arrow"
+        android:layout_width="72dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/back_arrow" />
 
->>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
-]]>
+    >>>>>>> 187de0c5ab467996f58e3ce7983c52162f58e932
 </androidx.constraintlayout.widget.ConstraintLayout>

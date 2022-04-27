@@ -43,11 +43,23 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         ImageView btn4 = (ImageView) findViewById(R.id.imageView7);
-
+        btn4.setTag("on");
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, Settings.class));
+                if(btn4.getTag().toString().equalsIgnoreCase("on")) {
+                    Intent i = new Intent(HomeActivity.this, BackgroundSoundService.class);
+                    stopService(i);
+                    btn4.setImageResource(R.drawable.musicoff);
+                    btn4.setTag("off");
+                }
+                else if(btn4.getTag().toString().equalsIgnoreCase("off")){
+                    Intent i = new Intent(HomeActivity.this, BackgroundSoundService.class);
+                    startService(i);
+                    btn4.setImageResource(R.drawable.musicon);
+                    btn4.setTag("on");
+                }
+//                startActivity(new Intent(HomeActivity.this, Settings.class));
             }
         });
 

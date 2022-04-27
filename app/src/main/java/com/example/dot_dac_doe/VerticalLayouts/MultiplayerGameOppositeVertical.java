@@ -62,8 +62,6 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
         currentPlayerPointer2 = findViewById(R.id.playerNowPointer_mult5);
         currentPlayerPointer2.setVisibility(View.INVISIBLE);
 
-
-
         //      interaction for pause button
         ImageView pause = findViewById(R.id.multiplayer_pause4);
         pause.setOnClickListener(view -> pauseGame());
@@ -344,13 +342,9 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
             if (currentPlayer == players[0]) {
                 currentPlayerPointer2.setVisibility(View.INVISIBLE);
                 currentPlayerPointer1.setVisibility(View.VISIBLE);
-//                currentPlayerPointer1.setImageResource(R.drawable.a1);
-//                currentPlayerPointer1.setColorFilter(colorOne);
             } else if (currentPlayer == players[1]) {
                 currentPlayerPointer1.setVisibility(View.INVISIBLE);
                 currentPlayerPointer2.setVisibility(View.VISIBLE);
-//                currentPlayerPointer1.setImageResource(R.drawable.a2);
-//                currentPlayerPointer1.setColorFilter(colorTwo);
             }
             player1points.setText("Boxes: " + playersPoints[0]);
             player2points.setText("Boxes: " + playersPoints[1]);
@@ -374,6 +368,13 @@ public class MultiplayerGameOppositeVertical extends AppCompatActivity implement
     public void setWinner(final Player winner) {
         Intent i = new Intent(MultiplayerGameOppositeVertical.this, winner_page.class);
         i.putExtra("winner", winner.getName());
+        if (winner.getName().equalsIgnoreCase("Player 1")) {
+            i.putExtra("icon1", getIntent().getStringExtra("icon1"));
+            i.putExtra("color1", getIntent().getStringExtra("color1"));
+        } else {
+            i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+            i.putExtra("color1", getIntent().getStringExtra("color2"));
+        }
         startActivity(i);
     }
 

@@ -90,16 +90,14 @@
 
         <ImageView
             android:id="@+id/playerNowPointer2_mult3"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:rotation="90"
             app:srcCompat="@drawable/a2" />
 
         <TextView
             android:id="@+id/player2name_mult3"
-            android:layout_width="100dp"
+            android:layout_width="128dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="2dp"
@@ -132,7 +130,7 @@
 
         <TextView
             android:id="@+id/player2points_mult3"
-            android:layout_width="100dp"
+            android:layout_width="128dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/gloria_hallelujah"

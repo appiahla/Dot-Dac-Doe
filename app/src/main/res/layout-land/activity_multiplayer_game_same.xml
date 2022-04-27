@@ -1,122 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="horizontal"
     tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameSame">
 
-    <TextView
-        android:id="@+id/player1name_mult2"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Player 1"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/player1_circle_mult2"
-        android:layout_width="128dp "
-        android:layout_height="164dp"
-        android:translationY="-25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteY="41dp" />
+        <TextView
+            android:id="@+id/player1name_mult2"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/player1points_mult2"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="2dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Boxes: 0"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="155dp" />
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
 
-    <ImageView
-        android:id="@+id/playerNowPointer_mult2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
-        android:layout_weight="1"
-        android:rotation="90"
-        android:src="@drawable/a1"
-        android:translationY="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="763dp" />
+            <ImageView
+                android:id="@+id/player1_circle_mult2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/user_circle" />
 
-    <TextView
-        android:id="@+id/player2name_mult2"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Player 2"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/player1_icon_mult2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/cat" />
+        </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/player2_circle_mult2"
-        android:layout_width="128dp"
-        android:layout_height="164dp"
-        android:layout_marginEnd="2dp"
-        android:translationY="-25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/user_circle"
-        tools:layout_editor_absoluteY="40dp" />
+        <TextView
+            android:id="@+id/player1points_mult2"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:gravity="center"
+            android:text="Boxes: 0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/player2points_mult2"
-        android:layout_width="128dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="2dp"
-        android:fontFamily="@font/gloria_hallelujah"
-        android:gravity="center"
-        android:text="Boxes: 0"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="159dp" />
+        <ImageView
+            android:id="@+id/playerNowPointer1_mult2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="160dp"
+            android:rotation="90"
+            android:src="@drawable/a1"
+            app:srcCompat="@drawable/a1" />
+
+        <ImageView
+            android:id="@+id/multiplayer_pause2"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:translationY="-160dp"
+            app:srcCompat="@drawable/pause_btn" />
+
+    </LinearLayout>
 
     <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult2"
-        android:layout_width="465dp"
-        android:layout_height="380dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
+        android:layout_width="435dp"
+        android:layout_height="275dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        android:translationX="115dp"
+        android:translationY="15dp" />
 
-    <ImageView
-        android:id="@+id/multiplayer_pause2"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="2dp"
-        android:onClick="pauseGame()"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pause_btn" />
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/player2name_mult2"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/player2_circle_mult2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="2dp"
+                app:srcCompat="@drawable/user_circle" />
+
+            <ImageView
+                android:id="@+id/player2_icon_mult2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/fish" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/player2points_mult2"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:gravity="center"
+            android:text="Boxes: 0"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/playerNowPointer2_mult2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:rotation="-90"
+            app:srcCompat="@drawable/a2" />
+    </LinearLayout>
+
+</LinearLayout>

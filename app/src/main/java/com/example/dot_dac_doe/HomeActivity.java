@@ -44,7 +44,6 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageView btn4 = (ImageView) findViewById(R.id.imageView7);
         btn4.setTag("on");
-//        btn4.setImageResource(R.drawable.musicon);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

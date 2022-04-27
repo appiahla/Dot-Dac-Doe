@@ -29,7 +29,7 @@ public class winner_page extends AppCompatActivity {
 
         ImageView winner_circle = findViewById(R.id.winner_circle);
         ImageView winner_icon = findViewById(R.id.winner_icon);
-
+        winner
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 

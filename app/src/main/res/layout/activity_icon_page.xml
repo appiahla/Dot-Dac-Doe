@@ -53,8 +53,8 @@
         android:id="@+id/Player1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 1"
         android:textColor="@color/black"
@@ -66,8 +66,8 @@
         android:id="@+id/Player2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 2"
         android:textColor="@color/black"
@@ -79,14 +79,13 @@
         android:id="@+id/umbrella"
         android:layout_width="107dp"
         android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="45dp"
         android:tag="umbrella"
         app:layout_constraintBottom_toTopOf="@+id/wave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/egg"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/row_1_column_3" />
 
     <ImageView
@@ -141,6 +140,7 @@
         android:id="@+id/fish"
         android:layout_width="107dp"
         android:layout_height="100dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="76dp"
         android:tag="fish"
@@ -237,7 +237,7 @@
         android:id="@+id/peach"
         android:layout_width="107dp"
         android:layout_height="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="45dp"
         android:tag="peach"
         app:layout_constraintBottom_toTopOf="@+id/cat"
@@ -260,8 +260,8 @@
 
     <RelativeLayout
         android:id="@+id/Layout1"
-        android:layout_width="149dp"
-        android:layout_height="145dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Player1">
@@ -278,8 +278,8 @@
 
         <ImageView
             android:id="@+id/Icon1"
-            android:layout_width="107dp"
-            android:layout_height="94dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_centerInParent="true"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
@@ -293,8 +293,8 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="149dp"
-        android:layout_height="145dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Player2">
@@ -311,8 +311,8 @@
 
         <ImageView
             android:id="@+id/Icon2"
-            android:layout_width="107dp"
-            android:layout_height="94dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_centerInParent="true"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"

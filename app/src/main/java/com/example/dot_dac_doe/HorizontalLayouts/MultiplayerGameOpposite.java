@@ -391,7 +391,7 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
         exitAlert.getWindow().setBackgroundDrawableResource(R.color.transparent);
         exitAlert.setCanceledOnTouchOutside(false);
 
-        Button yes = exitView.findViewById(R.id.vertical_exit_yes);
+        Button yes = exitView.findViewById(R.id.horizontal_exit_yes);
         yes.setOnClickListener(view16 -> {
             exitAlert.dismiss();
             Intent i = new Intent(MultiplayerGameOpposite.this, HomeActivity.class);
@@ -399,7 +399,7 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
             startActivity(i);
         });
 
-        Button no = exitView.findViewById(R.id.vertical_exit_no);
+        Button no = exitView.findViewById(R.id.horizontal_exit_no);
         no.setOnClickListener(view15 -> {
             exitAlert.dismiss();
             alert.show();
@@ -407,12 +407,12 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
 
 
         //      interaction for resuming
-        Button resume = view.findViewById(R.id.vertical_resume);
+        Button resume = view.findViewById(R.id.horizontal_resume);
         resume.setOnClickListener(view14 -> alert.dismiss());
 
 
         //      interaction for exiting the game
-        Button exit = view.findViewById(R.id.vertical_exit);
+        Button exit = view.findViewById(R.id.horizontal_exit);
         exit.setOnClickListener(view13 -> {
             alert.dismiss();
             exitAlert.show();
@@ -420,17 +420,17 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
         });
 
         //      interaction for how to play
-        Button howto = view.findViewById(R.id.vertical_howto);
+        Button howto = view.findViewById(R.id.horizontal_howto);
         howto.setOnClickListener(view12 -> {
             Intent i = new Intent(MultiplayerGameOpposite.this, tutorial_page.class);
             startActivity(i);
         });
 
         //      interaction for restarting the game
-        Button restart = view.findViewById(R.id.vertical_restart);
+        Button restart = view.findViewById(R.id.horizontal_restart);
         restart.setOnClickListener(view1 -> {
             alert.dismiss();
-            Intent i = new Intent(MultiplayerGameOpposite.this, MultiplayerGameOppositeVertical.class);
+            Intent i = new Intent(MultiplayerGameOpposite.this, MultiplayerGameOpposite.class);
             i.putExtra("icon1", getIntent().getStringExtra("icon1"));
             i.putExtra("icon2", getIntent().getStringExtra("icon2"));
             i.putExtra("color1", getIntent().getStringExtra("color1"));

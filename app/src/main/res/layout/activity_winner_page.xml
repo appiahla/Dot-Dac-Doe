@@ -66,7 +66,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginEnd="31dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congratulations!"
+        android:text="Congratulations,"
         android:textAlignment="center"
         android:textColor="#F0000000"
         android:textSize="36sp"

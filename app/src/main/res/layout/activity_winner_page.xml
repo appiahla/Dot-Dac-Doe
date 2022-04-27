@@ -66,11 +66,12 @@
         android:layout_marginStart="31dp"
         android:layout_marginEnd="31dp"
         android:fontFamily="@font/gloria_hallelujah"
-        android:text="Congratulations!"
+        android:text="Congratulations,"
         android:textAlignment="center"
         android:textColor="#F0000000"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_header" />
 
@@ -98,10 +99,11 @@
         android:id="@+id/confetti1"
         android:layout_width="144dp"
         android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/winner_icon2" />
 
@@ -109,38 +111,35 @@
         android:id="@+id/confetti2_removed"
         android:layout_width="375dp"
         android:layout_height="97dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263"
+        app:layout_constraintVertical_bias="0.287"
         app:srcCompat="@drawable/confetti2_removebg_preview" />
 
     <ImageView
         android:id="@+id/confetti_top"
         android:layout_width="362dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/winner"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/congrats"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/confetti_top_removebg_preview" />
 
     <ImageView
         android:id="@+id/right_side_removed"
-        android:layout_width="0dp"
-        android:layout_height="682dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginEnd="33dp"
+        android:layout_width="97dp"
+        android:layout_height="721dp"
+        android:layout_marginStart="304dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/winner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.682"
         app:srcCompat="@drawable/right_side_confetti_removebg_preview" />
 
     <ImageView
@@ -159,13 +158,14 @@
         android:id="@+id/winner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Player 1"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/congrats" />
 

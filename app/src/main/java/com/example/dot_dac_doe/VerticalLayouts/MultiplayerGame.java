@@ -372,7 +372,7 @@ public class MultiplayerGame extends AppCompatActivity implements PlayersStateVi
             i.putExtra("icon1", getIntent().getStringExtra("icon1"));
             i.putExtra("color1", getIntent().getStringExtra("color1"));
         } else {
-            i.putExtra("icon2", getIntent().getStringExtra("icon2"));
+            i.putExtra("icon1", getIntent().getStringExtra("icon2"));
             i.putExtra("color1", getIntent().getStringExtra("color2"));
         }
         startActivity(i);

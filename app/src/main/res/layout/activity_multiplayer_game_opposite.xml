@@ -43,6 +43,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
                 app:srcCompat="@drawable/umbrella" />
         </RelativeLayout>
 
@@ -63,50 +64,47 @@
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
             android:rotation="90"
-            android:src="@drawable/a1" />
+            android:src="@drawable/a1"
+            android:translationY="25dp" />
 
         <ImageView
             android:id="@+id/multiplayer_pause3"
             android:layout_width="55dp"
             android:layout_height="45dp"
             android:layout_gravity="center"
-            android:translationY="2dp"
+            android:translationY="70dp"
             app:srcCompat="@drawable/pause_btn" />
     </LinearLayout>
 
 
     <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult3"
-        android:layout_width="435dp"
-        android:layout_height="275dp"
-        android:translationX="110dp"
-        android:translationY="13dp" />
+        android:layout_width="465dp"
+        android:layout_height="380dp" />
 
     <LinearLayout
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:layout_gravity="fill_vertical|end"
-        android:orientation="vertical"
-        android:translationX="60dp">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/playerNowPointer2_mult3"
-            android:layout_width="50dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:rotation="90"
             app:srcCompat="@drawable/a2" />
 
         <TextView
-            android:id="@+id/player2points_mult3"
-            android:layout_width="100dp"
+            android:id="@+id/player2name_mult3"
+            android:layout_width="128dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
             android:fontFamily="@font/gloria_hallelujah"
             android:gravity="center"
             android:rotation="180"
-            android:text="Boxes: 0"
+            android:text="Player 2"
             android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 
@@ -131,15 +129,14 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/player2name_mult3"
-            android:layout_width="100dp"
+            android:id="@+id/player2points_mult3"
+            android:layout_width="128dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
-            android:layout_marginBottom="2dp"
             android:fontFamily="@font/gloria_hallelujah"
             android:gravity="center"
             android:rotation="180"
-            android:text="Player 2"
+            android:text="Boxes: 0"
             android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 

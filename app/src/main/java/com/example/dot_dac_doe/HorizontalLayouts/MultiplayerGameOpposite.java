@@ -56,6 +56,7 @@ public class MultiplayerGameOpposite extends AppCompatActivity implements Player
         player2points = (TextView) findViewById(R.id.player2points_mult3);
         currentPlayerPointer1 = findViewById(R.id.playerNowPointer1_mult3);
         currentPlayerPointer2 = (ImageView) findViewById(R.id.playerNowPointer2_mult3);
+        currentPlayerPointer2.setVisibility(View.INVISIBLE);
 
         ImageView pause = findViewById(R.id.multiplayer_pause3);
         pause.setOnClickListener(view -> pauseGame());

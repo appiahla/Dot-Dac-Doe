@@ -80,8 +80,8 @@
         android:id="@+id/gameView_mult3"
         android:layout_width="435dp"
         android:layout_height="275dp"
-        android:translationX="80dp"
-        android:translationY="5dp" />
+        android:translationX="110dp"
+        android:translationY="13dp" />
 
     <LinearLayout
         android:layout_width="100dp"
@@ -100,15 +100,14 @@
             app:srcCompat="@drawable/a2" />
 
         <TextView
-            android:id="@+id/player2name_mult3"
+            android:id="@+id/player2points_mult3"
             android:layout_width="100dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
-            android:layout_marginBottom="2dp"
             android:fontFamily="@font/gloria_hallelujah"
             android:gravity="center"
             android:rotation="180"
-            android:text="Player 2"
+            android:text="Boxes: 0"
             android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 
@@ -133,14 +132,15 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/player2points_mult3"
+            android:id="@+id/player2name_mult3"
             android:layout_width="100dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
             android:fontFamily="@font/gloria_hallelujah"
             android:gravity="center"
             android:rotation="180"
-            android:text="Boxes: 0"
+            android:text="Player 2"
             android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 

@@ -448,22 +448,16 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!sameColors2[0]) {
-
-
-                    red2.setVisibility(View.INVISIBLE);
-
-                    selectedColor1.clearColorFilter();
-                    selectedColor1 = red1;
-                    selectedColor1.setColorFilter(R.color.red);
-
                     lastColor1.setVisibility(View.VISIBLE);
-                    lastColor1 = red2;
-
                     sameColors1[0] = true;
                     unTrue1(0);
-
+                    selectedColor1.clearColorFilter();
+                    selectedColor1 = red1;
                     player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     player1.setTag(red1.getTag());
+                    selectedColor1.setColorFilter(R.color.red);
+                    red2.setVisibility(View.INVISIBLE);
+                    lastColor1 = red2;
                 }
             }
         });
@@ -472,15 +466,15 @@ public class UserSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!sameColors2[1]) {
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
-                    player1.setTag(blue1.getTag());
+                    lastColor1.setVisibility(View.VISIBLE);
                     sameColors1[1] = true;
                     unTrue1(1);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = blue1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player1.setTag(blue1.getTag());
                     selectedColor1.setColorFilter(R.color.blue);
                     blue2.setVisibility(View.INVISIBLE);
-                    lastColor1.setVisibility(View.VISIBLE);
                     lastColor1 = blue2;
                 }
             }
@@ -491,12 +485,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[2]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
-                    player1.setTag(orange1.getTag());
                     sameColors1[2] = true;
                     unTrue1(2);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = orange1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player1.setTag(orange1.getTag());
                     selectedColor1.setColorFilter(R.color.orange);
                     orange2.setVisibility(View.INVISIBLE);
                     lastColor1 = orange2;
@@ -509,12 +503,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[3]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
-                    player1.setTag(purple1.getTag());
                     sameColors1[3] = true;
                     unTrue1(3);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = purple1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player1.setTag(purple1.getTag());
                     selectedColor1.setColorFilter(R.color.purple);
                     purple2.setVisibility(View.INVISIBLE);
                     lastColor1 = purple2;
@@ -527,12 +521,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[4]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
-                    player1.setTag(yellow1.getTag());
                     sameColors1[4] = true;
                     unTrue1(4);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = yellow1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player1.setTag(yellow1.getTag());
                     selectedColor1.setColorFilter(R.color.yellow);
                     yellow2.setVisibility(View.INVISIBLE);
                     lastColor1 = yellow2;
@@ -545,12 +539,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[5]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
-                    player1.setTag(pink1.getTag());
                     sameColors1[5] = true;
                     unTrue1(5);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = pink1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player1.setTag(pink1.getTag());
                     selectedColor1.setColorFilter(R.color.pink);
                     pink2.setVisibility(View.INVISIBLE);
                     lastColor1 = pink2;
@@ -563,12 +557,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[6]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
-                    player1.setTag(green1.getTag());
                     sameColors1[6] = true;
                     unTrue1(6);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = green1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player1.setTag(green1.getTag());
                     selectedColor1.setColorFilter(R.color.green);
                     green2.setVisibility(View.INVISIBLE);
                     lastColor1 = green2;
@@ -581,12 +575,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors2[7]) {
                     lastColor1.setVisibility(View.VISIBLE);
-                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
-                    player1.setTag(grey1.getTag());
                     sameColors1[7] = true;
                     unTrue1(7);
                     selectedColor1.clearColorFilter();
                     selectedColor1 = grey1;
+                    player1.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player1.setTag(grey1.getTag());
                     selectedColor1.setColorFilter(R.color.grey);
                     grey2.setVisibility(View.INVISIBLE);
                     lastColor1 = grey2;
@@ -599,12 +593,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[0]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
-                    player2.setTag(red2.getTag());
                     sameColors2[0] = true;
                     unTrue2(0);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = red2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
+                    player2.setTag(red2.getTag());
                     selectedColor2.setColorFilter(R.color.red);
                     red1.setVisibility(View.INVISIBLE);
                     lastColor2 = red1;
@@ -617,12 +611,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[1]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
-                    player2.setTag(blue2.getTag());
                     sameColors2[1] = true;
                     unTrue2(1);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = blue2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
+                    player2.setTag(blue2.getTag());
                     selectedColor2.setColorFilter(R.color.blue);
                     blue1.setVisibility(View.INVISIBLE);
                     lastColor2 = blue1;
@@ -634,12 +628,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[2]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
-                    player2.setTag(orange2.getTag());
                     sameColors2[2] = true;
                     unTrue2(2);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = orange2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
+                    player2.setTag(orange2.getTag());
                     selectedColor2.setColorFilter(R.color.orange);
                     orange1.setVisibility(View.INVISIBLE);
                     lastColor2 = orange1;
@@ -651,12 +645,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[3]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
-                    player2.setTag(purple2.getTag());
                     sameColors2[3] = true;
                     unTrue2(3);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = purple2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
+                    player2.setTag(purple2.getTag());
                     selectedColor2.setColorFilter(R.color.purple);
                     purple1.setVisibility(View.INVISIBLE);
                     lastColor2 = purple1;
@@ -668,12 +662,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[4]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
-                    player2.setTag(yellow2.getTag());
                     sameColors2[4] = true;
                     unTrue2(4);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = yellow2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
+                    player2.setTag(yellow2.getTag());
                     selectedColor2.setColorFilter(R.color.yellow);
                     yellow1.setVisibility(View.INVISIBLE);
                     lastColor2 = yellow1;
@@ -685,12 +679,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[5]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
-                    player2.setTag(pink2.getTag());
                     sameColors2[5] = true;
                     unTrue2(5);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = pink2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
+                    player2.setTag(pink2.getTag());
                     selectedColor2.setColorFilter(R.color.pink);
                     pink1.setVisibility(View.INVISIBLE);
                     lastColor2 = pink1;
@@ -702,12 +696,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[6]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
-                    player2.setTag(green2.getTag());
                     sameColors2[6] = true;
                     unTrue2(6);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = green2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
+                    player2.setTag(green2.getTag());
                     selectedColor2.setColorFilter(R.color.green);
                     green1.setVisibility(View.INVISIBLE);
                     lastColor2 = green1;
@@ -719,12 +713,12 @@ public class UserSelectActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!sameColors1[7]) {
                     lastColor2.setVisibility(View.VISIBLE);
-                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
-                    player2.setTag(grey2.getTag());
                     sameColors2[7] = true;
                     unTrue2(7);
                     selectedColor2.clearColorFilter();
                     selectedColor2 = grey2;
+                    player2.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
+                    player2.setTag(grey2.getTag());
                     selectedColor2.setColorFilter(R.color.grey);
                     grey1.setVisibility(View.INVISIBLE);
                     lastColor2 = grey1;

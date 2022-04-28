@@ -29,8 +29,10 @@ public class Orientation extends AppCompatActivity {
         getWindow().setEnterTransition(new Slide());
         getWindow().setExitTransition(new Slide());
         setContentView(R.layout.activity_orientation);
+
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
+
         // action between orientation same-side vertical
         ImageView same_side_vert = findViewById(R.id.ss_vertical);
         same_side_vert.setOnClickListener(view -> {

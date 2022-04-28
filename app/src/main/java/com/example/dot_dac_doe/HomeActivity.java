@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Fade;
 import android.transition.Slide;
 import android.view.View;
 import android.view.Window;
@@ -42,7 +43,7 @@ public class HomeActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, tutorial_page.class));
+                startActivity(new Intent(HomeActivity.this, tutorial_page.class), ActivityOptions.makeSceneTransitionAnimation(HomeActivity.this).toBundle());
             }
         });
 
@@ -73,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(HomeActivity.this, UserSelectActivity.class);
                 i.putExtra("status", "single");
-                startActivity(i);
+                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(HomeActivity.this).toBundle());
             }
         });
 

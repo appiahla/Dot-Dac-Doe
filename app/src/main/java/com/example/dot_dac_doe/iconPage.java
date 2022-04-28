@@ -3,6 +3,7 @@ package com.example.dot_dac_doe;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class iconPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         getWindow().setEnterTransition(new Explode());
+        getWindow().setExitTransition(new Explode());
         setContentView(R.layout.activity_icon_page);
         ImageView Icon1 = findViewById(R.id.Icon1);
         ImageView Icon2 = findViewById(R.id.Icon2);
@@ -395,7 +397,7 @@ public class iconPage extends AppCompatActivity {
                     }
                     i.putExtra("status", status);
                     i.putExtra("icon1", icon1);
-                    startActivity(i);
+                    startActivity(i, ActivityOptions.makeSceneTransitionAnimation(iconPage.this).toBundle());
                 }
             });
         }
@@ -588,7 +590,7 @@ public class iconPage extends AppCompatActivity {
                     }
                     i.putExtra("status", status);
                     i.putExtra("icon2", icon2);
-                    startActivity(i);
+                    startActivity(i, ActivityOptions.makeSceneTransitionAnimation(iconPage.this).toBundle());
                 }
             });
         }

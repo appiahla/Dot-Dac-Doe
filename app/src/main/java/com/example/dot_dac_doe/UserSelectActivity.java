@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.transition.Fade;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -31,7 +32,7 @@ public class UserSelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         getWindow().setEnterTransition(new Explode());
-        getWindow().setExitTransition(new Explode());
+//        getWindow().setExitTransition(new Fade());
         setContentView(R.layout.activity_user_select);
 
         ImageView Icon1 = findViewById(R.id.Icon1);
@@ -439,7 +440,7 @@ public class UserSelectActivity extends AppCompatActivity {
                 i.putExtra("status", status);
                 i.putExtra("player", player);
                 i.putExtra("visitedp1", "true");
-                startActivity(i);
+                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(UserSelectActivity.this).toBundle());
             }
         });
 

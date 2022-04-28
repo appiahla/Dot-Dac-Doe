@@ -10,7 +10,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,6 +23,9 @@ public class winner_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+        getWindow().setEnterTransition(new Fade());
+        getWindow().setExitTransition(new Fade());
         setContentView(R.layout.activity_winner_page);
         Button play_again = findViewById(R.id.play_again);
         Button home_button = findViewById(R.id.home_button);
@@ -39,42 +45,34 @@ public class winner_page extends AppCompatActivity {
                 if (color1.contains("red")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.red), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("red1");
-                    winner_text.setTextColor(getResources().getColor(R.color.red));
                 }
                 if (color1.contains("blue")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.blue), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("blue1");
-                    winner_text.setTextColor(getResources().getColor(R.color.blue));
                 }
                 if (color1.contains("orange")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.orange), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("orange1");
-                    winner_text.setTextColor(getResources().getColor(R.color.orange));
                 }
                 if (color1.contains("purple")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.purple), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("purple1");
-                    winner_text.setTextColor(getResources().getColor(R.color.purple));
                 }
                 if (color1.contains("yellow")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.yellow), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("yellow1");
-                    winner_text.setTextColor(getResources().getColor(R.color.yellow));
                 }
                 if (color1.contains("pink")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.pink), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("pink1");
-                    winner_text.setTextColor(getResources().getColor(R.color.pink));
                 }
                 if (color1.contains("green")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.green), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("green1");
-                    winner_text.setTextColor(getResources().getColor(R.color.green));
                 }
                 if (color1.contains("grey")) {
                     winner_circle.setColorFilter(ContextCompat.getColor(getApplicationContext(), R.color.grey), PorterDuff.Mode.SCREEN);
                     winner_circle.setTag("grey1");
-                    winner_text.setTextColor(getResources().getColor(R.color.grey));
                 }
             }
             if (extras.containsKey("icon1")) {

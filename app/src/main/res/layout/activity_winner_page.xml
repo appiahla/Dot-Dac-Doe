@@ -26,6 +26,33 @@
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
 
+    <RelativeLayout
+        android:id="@+id/winner_icon_set"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/play_again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner">
+
+        <ImageView
+            android:id="@+id/winner_circle"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/user_circle" />
+
+        <ImageView
+            android:id="@+id/winner_icon"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/cat" />
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/bottom_confetti"
         android:layout_width="320dp"
@@ -163,37 +190,10 @@
         android:text="Player 1"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="36sp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/congrats" />
-
-    <RelativeLayout
-        android:id="@+id/winner_icon_set"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/play_again"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/winner">
-
-        <ImageView
-            android:id="@+id/winner_circle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/user_circle" />
-
-        <ImageView
-            android:id="@+id/winner_icon"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_centerInParent="true"
-            app:srcCompat="@drawable/cat" />
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@
     tools:context="com.example.dot_dac_doe.HorizontalLayouts.MultiplayerGameOpposite">
 
     <LinearLayout
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -26,22 +26,22 @@
             android:gravity="center"
             android:text="Player 1"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <RelativeLayout
-            android:layout_width="100dp"
-            android:layout_height="100dp">
+            android:layout_width="150dp"
+            android:layout_height="150dp">
 
             <ImageView
                 android:id="@+id/player1_circle_mult3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/user_circle" />
 
             <ImageView
                 android:id="@+id/player1_icon_mult3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerInParent="true"
                 app:srcCompat="@drawable/umbrella" />
         </RelativeLayout>
@@ -55,43 +55,44 @@
             android:gravity="center"
             android:text="Boxes: 0"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/playerNowPointer1_mult3"
-            android:layout_width="50dp"
+            android:layout_width="90dp"
             android:layout_height="75dp"
             android:layout_gravity="center_horizontal"
             android:rotation="90"
-            android:src="@drawable/a1" />
+            android:src="@drawable/a1"
+            android:translationY="10dp" />
 
         <ImageView
             android:id="@+id/multiplayer_pause3"
-            android:layout_width="55dp"
-            android:layout_height="45dp"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
             android:layout_gravity="center"
-            android:translationY="2dp"
+            android:translationY="35dp"
             app:srcCompat="@drawable/pause_btn" />
     </LinearLayout>
 
 
     <com.example.dot_dac_doe.Views.GameView
         android:id="@+id/gameView_mult3"
-        android:layout_width="435dp"
-        android:layout_height="275dp"
-        android:translationX="110dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:translationX="135dp"
         android:translationY="13dp" />
 
     <LinearLayout
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_gravity="fill_vertical|end"
         android:orientation="vertical"
-        android:translationX="60dp">
+        android:translationX="275dp">
 
         <ImageView
             android:id="@+id/playerNowPointer2_mult3"
-            android:layout_width="50dp"
+            android:layout_width="90dp"
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -100,7 +101,7 @@
 
         <TextView
             android:id="@+id/player2points_mult3"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/gloria_hallelujah"
@@ -108,23 +109,23 @@
             android:rotation="180"
             android:text="Boxes: 0"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <RelativeLayout
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="end">
 
             <ImageView
                 android:id="@+id/player2_circle_mult3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 app:srcCompat="@drawable/user_circle" />
 
             <ImageView
                 android:id="@+id/player2_icon_mult3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerInParent="true"
                 android:rotation="180"
                 app:srcCompat="@drawable/cat" />
@@ -132,7 +133,7 @@
 
         <TextView
             android:id="@+id/player2name_mult3"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="41dp"
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="2dp"
@@ -141,7 +142,7 @@
             android:rotation="180"
             android:text="Player 2"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 

@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Slide;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 
 //import com.example.dot_dac_doe.HorizontalLayouts.GameActivityOpposite;
@@ -22,9 +25,14 @@ public class Orientation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+        getWindow().setEnterTransition(new Slide());
+        getWindow().setExitTransition(new Slide());
         setContentView(R.layout.activity_orientation);
+
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
+
         // action between orientation same-side vertical
         ImageView same_side_vert = findViewById(R.id.ss_vertical);
         same_side_vert.setOnClickListener(view -> {

@@ -148,13 +148,6 @@
                 android:translationX="0dp"
                 app:srcCompat="@drawable/pause_btn" />
 
-            <ImageView
-                android:id="@+id/singleplayer_undo"
-                android:layout_width="63dp"
-                android:layout_height="54dp"
-                android:layout_marginEnd="250dp"
-                android:translationX="260dp"
-                app:srcCompat="@drawable/undo_btn" />
         </RelativeLayout>
     </LinearLayout>
 

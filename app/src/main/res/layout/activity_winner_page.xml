@@ -78,8 +78,8 @@
     <Button
         android:id="@+id/home_button"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="314dp"
-        android:layout_height="65dp"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="100dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="Home"
@@ -89,7 +89,7 @@
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#B6B5B5"
         app:strokeColor="@color/black"
@@ -103,7 +103,7 @@
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/winner_icon2" />
 

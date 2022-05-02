@@ -97,6 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:translationX="15dp"
         android:translationY="5dp" />
 
     <LinearLayout

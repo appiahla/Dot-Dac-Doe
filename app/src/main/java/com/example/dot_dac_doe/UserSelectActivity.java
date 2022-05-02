@@ -407,6 +407,7 @@ public class UserSelectActivity extends AppCompatActivity {
             green2.setEnabled(false);
             grey2.setEnabled(false);
             click_info2.setVisibility(View.GONE);
+            blue1.setVisibility(View.INVISIBLE);
 
         } else if(status.equalsIgnoreCase("mult")) {
             player2.setEnabled(true);

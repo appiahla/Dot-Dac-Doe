@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="@font/gloria_hallelujah"
         android:text="HOW TO PLAY!"
